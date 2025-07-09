@@ -667,8 +667,9 @@ compile:
   topModule: chip_sim_tb
   mainClock: chip_sim_tb.clk_i
   verilatorArgs: [
-    --unroll-count, 512,
-    --autoflush
+    --no-assert,
+    --autoflush,
+    --unroll-count, 512
   ]
 
 execute:
