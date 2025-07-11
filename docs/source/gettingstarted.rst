@@ -22,6 +22,18 @@ Setting up dependencies
 We assume you have Python 3.12 or newer available through your shell ``$PATH``
 as ``python3``. To confirm, you can run ``python3 --version``.
 
+Or ,install a conda env for python 3.12
+.. code:: shell
+
+  mkdir -p ~/miniconda3
+  wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
+  bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
+  rm ~/miniconda3/miniconda.sh
+  source ~/miniconda3/bin/activate
+  conda create --name rtlmeter python=3.12
+  conda activate rtlmeter
+
+
 Python dependencies are manged through a virtual environment that you can
 set up automatically by running the following command once, after cloning or
 updating the repository:
