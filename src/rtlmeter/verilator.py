@@ -19,11 +19,11 @@ import json
 import os
 from typing import Final, List, Tuple
 
-import metrics
-from cgraph import CGraph, CNode
-from context import CTX
-from descriptors import CompileDescriptor, ExecuteDescriptor
-from runcmd import runcmd
+from rtlmeter import metrics
+from rtlmeter.cgraph import CGraph, CNode
+from rtlmeter.context import CTX
+from rtlmeter.descriptors import CompileDescriptor, ExecuteDescriptor
+from rtlmeter.runcmd import runcmd
 
 _PREFIX: Final[str] = "Vsim"
 

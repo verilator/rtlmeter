@@ -30,7 +30,12 @@ concurrency:
 jobs:
   check:
     name: "Check RTLMeter"
-    runs-on: ubuntu-24.04
+    strategy:
+      matrix:
+        os:
+          - ubuntu-22.04
+          - ubuntu-24.04
+    runs-on: ${{ matrix.os }}
     outputs:
       cases: ${{ steps.gatherCases.outputs.cases }}
     steps:
@@ -57,6 +62,7 @@ jobs:
         run: make spellcheck
       - name: Gather cases for run
         id: gatherCases
+        if: ${{ matrix.os == 'ubuntu-24.04' }}
         run: |
           # Gather all configurations into a JSON list
           echo "cases=[" >> cases.json
@@ -72,17 +78,22 @@ jobs:
   build-verilator:
     name: "Build Verilator"
     needs: check # Not really a dependency, but don't bother if 'check' fails
-    runs-on: ubuntu-24.04
     strategy:
       matrix:
         cxx:
           - g++
           - clang++
+        os:
+          - ubuntu-22.04
+          - ubuntu-24.04
+    runs-on: ${{ matrix.os }}
     steps:
       - name: Install dependencies
         run: |
           sudo apt update
-          sudo apt install ccache mold help2man libfl-dev libgoogle-perftools-dev libsystemc-dev
+          sudo apt install ccache mold help2man libfl-dev libsystemc-dev
+          # Some conflict of libunwind verison on 22.04, can live without it
+          [[ "${{ matrix.os }}" == "ubuntu-22.04" ]] || sudo apt install libgoogle-perftools-dev
       - name: Checkout Verilator
         uses: actions/checkout@v4
         with:
@@ -101,26 +112,31 @@ jobs:
         run: make install
       - name: Tar up installation
         working-directory: verilator
-        run: tar --posix -c -z -f verilator-${{ matrix.cxx }}.tar.gz install
+        run: tar --posix -c -z -f verilator-${{ matrix.cxx }}-${{ matrix.os }}.tar.gz install
       - name: Upload Verilator installation archive
         uses: actions/upload-artifact@v4
         with:
-          path: verilator/verilator-${{ matrix.cxx }}.tar.gz
-          name: verilator-${{ matrix.cxx }}
+          path: verilator/verilator-${{ matrix.cxx }}-${{ matrix.os }}.tar.gz
+          name: verilator-${{ matrix.cxx }}-${{ matrix.os }}
 
   run-with-verilator:
     name: Run
     needs:
       - check
       - build-verilator
-    runs-on: ubuntu-24.04
     strategy:
       max-parallel: 8
       matrix:
         cxx:
           - g++
           - clang++
+        os:
+          - ubuntu-22.04
+          - ubuntu-24.04
         case: ${{ fromJson(needs.check.outputs.cases) }}
+        exclude:
+          - { os: ubuntu-22.04, cxx: clang++ } # Seems to fill up disk space
+    runs-on: ${{ matrix.os }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -136,10 +152,10 @@ jobs:
       - name: Download Verilator installation archive
         uses: actions/download-artifact@v4
         with:
-          name: verilator-${{ matrix.cxx }}
+          name: verilator-${{ matrix.cxx }}-${{ matrix.os }}
       - name: Unpack Verilator installation archive
         run: |
-          tar -x -z -f verilator-${{ matrix.cxx }}.tar.gz
+          tar -x -z -f verilator-${{ matrix.cxx }}-${{ matrix.os }}.tar.gz
           ls -la
       - name: Run
         working-directory: rtlmeter

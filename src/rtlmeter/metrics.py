@@ -18,7 +18,7 @@ import json
 import operator
 import os
 from dataclasses import dataclass
-from typing import Callable, Dict, Final, List, Literal, final
+from typing import Callable, Dict, Final, List, Literal, TypeAlias, final
 
 Step = Literal[
     "verilate",
@@ -104,7 +104,7 @@ class Sample:
 
 
 # Metrics are stored as a map from 'case' to 'step' to 'metric' to list of samples
-type Metrics = Dict[str, Dict[Step, Dict[Metric, List[Sample]]]]
+Metrics : TypeAlias = Dict[str, Dict[Step, Dict[Metric, List[Sample]]]]
 
 
 # Read all metrics from the given working directory and collate into single data structure

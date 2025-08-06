@@ -22,13 +22,13 @@ from typing import Any, Dict
 import jsonschema
 import yaml
 
-import misc
+from rtlmeter import misc
 
 
 # Load schema and compile validator
 @functools.cache
 def _validator():
-    with (importlib.resources.files() / "schema.yaml").open("r", encoding="utf-8") as f:
+    with (importlib.resources.files("rtlmeter") / "schema.yaml").open("r", encoding="utf-8") as f:
         textSchema = f.read()
         yamlSchema = yaml.safe_load(textSchema)
         yamlSchema = {key: val for key, val in yamlSchema.items() if not key.startswith("_")}

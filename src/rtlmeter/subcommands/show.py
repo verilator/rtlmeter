@@ -20,10 +20,10 @@ from typing import Set
 
 import tabulate
 
-import metrics
-from context import CTX
-from descriptors import ExecuteDescriptor
-from subcommands.common import TAGS, ArgExistingFileOrDirectory
+from rtlmeter import metrics
+from rtlmeter.context import CTX
+from rtlmeter.descriptors import ExecuteDescriptor
+from rtlmeter.subcommands.common import TAGS, ArgExistingFileOrDirectory
 
 
 def showCases(dataPath: str | None) -> None:

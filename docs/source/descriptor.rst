@@ -10,8 +10,8 @@ For examples, please refer to the existing descriptors in the repository (
 ``designs/*/descriptor.yaml``).
 
 The formal schema of the descriptor used for run-time validation can
-be found in `src/schema.yaml
-<https://github.com/verilator/rtlmeter/blob/main/src/schema.yaml>`_.
+be found in `src/rtlmeter/schema.yaml
+<https://github.com/verilator/rtlmeter/blob/main/src/rtlmeter/schema.yaml>`_.
 
 Types of entries
 ----------------

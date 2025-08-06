@@ -34,7 +34,7 @@ Dependencies
 We try to keep external dependencies to a minimum. You will need the following
 available through your shell ``$PATH``:
 
-- Python 3.12 or newer as ``python3``
+- Python 3.10 or newer as ``python3``
 - An installation of Verilator as ``verilator``
 
 All other dependencies are managed via a Python virtual environment, please see

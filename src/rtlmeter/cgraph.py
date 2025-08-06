@@ -19,9 +19,9 @@ import enum
 import os
 import shutil
 from dataclasses import dataclass
-from typing import Any, Callable, Dict, List, Self, final
+from typing import Any, Callable, Dict, List, final
 
-import misc
+from rtlmeter import misc
 
 
 @final
@@ -51,8 +51,8 @@ class CNode:
     workDir: str
     step: str
     computation: Callable[[], bool]
-    oNodes: List[Self] = dataclasses.field(default_factory=list)  # Nodes that depend on this node
-    iNodes: List[Self] = dataclasses.field(default_factory=list)  # Nodes that this node depends on
+    oNodes: List = dataclasses.field(default_factory=list)  # Nodes that depend on this node
+    iNodes: List = dataclasses.field(default_factory=list)  # Nodes that this node depends on
 
     def __eq__(self, other: Any) -> bool:
         return isinstance(other, CNode) and other.graph == self.graph and other.id == self.id

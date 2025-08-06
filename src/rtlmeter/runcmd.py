@@ -22,8 +22,8 @@ import subprocess
 import time
 from typing import Dict, Final, List
 
-import misc
-from context import CTX
+from rtlmeter import misc
+from rtlmeter.context import CTX
 
 _TIMEFORMAT: Final[str] = """{
     "elapsed" : %e,

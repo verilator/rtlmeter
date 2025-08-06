@@ -17,4 +17,4 @@
 
 export RTLMETER_ROOT=$(dirname $(readlink -f $0))
 export PYTHONPATH="${RTLMETER_ROOT}/src:$PYTHONPATH"
-exec ${RTLMETER_ROOT}/venv/bin/python3 -m src.main "$@"
+exec ${RTLMETER_ROOT}/venv/bin/python3 -m src.rtlmeter.main "$@"

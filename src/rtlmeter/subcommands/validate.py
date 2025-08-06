@@ -23,10 +23,10 @@ import urllib.request
 from collections import Counter, defaultdict
 from typing import Dict, Set
 
-import misc
-from context import CTX
-from descriptors import CompileDescriptor, ExecuteDescriptor
-from subcommands.common import TAGS, ArgPatternMatcher, casesByTag
+from rtlmeter import misc
+from rtlmeter.context import CTX
+from rtlmeter.descriptors import CompileDescriptor, ExecuteDescriptor
+from rtlmeter.subcommands.common import TAGS, ArgPatternMatcher, casesByTag
 
 
 def checkFile(case: str, relFileName: str, absFileName: str, attrName: str) -> bool:

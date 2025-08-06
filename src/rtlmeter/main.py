@@ -16,10 +16,10 @@
 
 import argparse
 
-import subcommands.reporting
-import subcommands.run
-import subcommands.show
-import subcommands.validate
+import rtlmeter.subcommands.reporting
+import rtlmeter.subcommands.run
+import rtlmeter.subcommands.show
+import rtlmeter.subcommands.validate
 
 if __name__ == "__main__":
     # Create the command line parser
@@ -29,10 +29,10 @@ if __name__ == "__main__":
     subparsers = parser.add_subparsers(title="subcommands", required=True)
 
     # Add the subcommands
-    subcommands.show.addSubcommands(subparsers)
-    subcommands.run.addSubcommands(subparsers)
-    subcommands.reporting.addSubcommands(subparsers)
-    subcommands.validate.addSubcommands(subparsers)
+    rtlmeter.subcommands.show.addSubcommands(subparsers)
+    rtlmeter.subcommands.run.addSubcommands(subparsers)
+    rtlmeter.subcommands.reporting.addSubcommands(subparsers)
+    rtlmeter.subcommands.validate.addSubcommands(subparsers)
 
     # Parse arguments and dispatch to entry point
     args = parser.parse_args()

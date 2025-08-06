@@ -21,8 +21,8 @@ import os
 from functools import cached_property
 from typing import Callable, Dict, Final, Iterable, List, Set, final
 
-from context import CTX
-from descriptors import ExecuteDescriptor
+from rtlmeter.context import CTX
+from rtlmeter.descriptors import ExecuteDescriptor
 
 # fmt: off
 TAGS: Final[Dict[str, str]] = {

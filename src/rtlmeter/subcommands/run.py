@@ -24,13 +24,13 @@ from typing import Dict, List, Tuple
 
 import tabulate
 
-import misc
-import verilator as sim
-from cgraph import CGraph, CNode, CStatus
-from context import CTX
-from descriptors import CompileDescriptor, ExecuteDescriptor
-from runcmd import runcmd
-from subcommands.common import ArgPatternMatcher, ArgRangedInt, casesByTag
+import rtlmeter.verilator as sim
+from rtlmeter import misc
+from rtlmeter.cgraph import CGraph, CNode, CStatus
+from rtlmeter.context import CTX
+from rtlmeter.descriptors import CompileDescriptor, ExecuteDescriptor
+from rtlmeter.runcmd import runcmd
+from rtlmeter.subcommands.common import ArgPatternMatcher, ArgRangedInt, casesByTag
 
 
 # Add 'prep' and 'post' hooks if present

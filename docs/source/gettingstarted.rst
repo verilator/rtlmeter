@@ -19,7 +19,7 @@ Start by cloning the repository, then ``cd`` to the root of the project:
 Setting up dependencies
 -----------------------
 
-We assume you have Python 3.12 or newer available through your shell ``$PATH``
+We assume you have Python 3.10 or newer available through your shell ``$PATH``
 as ``python3``. To confirm, you can run ``python3 --version``.
 
 Python dependencies are manged through a virtual environment that you can

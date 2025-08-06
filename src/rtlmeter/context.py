@@ -18,7 +18,7 @@ import os
 from functools import cached_property
 from typing import Any, Dict, Final, List, final
 
-import yaml_descriptor
+from rtlmeter import yaml_descriptor
 
 ###############################################################################
 # All global state in the program are contained in the singleton Context object

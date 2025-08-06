@@ -18,8 +18,8 @@ import os
 from dataclasses import dataclass
 from typing import Any, Dict, List, final
 
-import misc
-from context import CTX
+from rtlmeter import misc
+from rtlmeter.context import CTX
 
 
 # Get scalar attribute from the last descriptor that contains it, later overwrites earlier

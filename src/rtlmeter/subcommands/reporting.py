@@ -27,10 +27,9 @@ import scipy.stats
 import tabulate
 from sklearn.neighbors import LocalOutlierFactor
 
-import metrics
-import misc
-from context import CTX
-from subcommands.common import (
+from rtlmeter import metrics, misc
+from rtlmeter.context import CTX
+from rtlmeter.subcommands.common import (
     ArgExistingDirectory,
     ArgExistingFileOrDirectory,
     ArgPatternMatcher,
@@ -389,7 +388,7 @@ def rawdataMain(args: argparse.Namespace) -> None:
 
 def collateMain(args: argparse.Namespace) -> None:
     # Include the current date and time
-    now = datetime.datetime.now(datetime.UTC).replace(microsecond=0)
+    now = datetime.datetime.now(datetime.timezone.utc).replace(microsecond=0)
 
     # Include git revsion or RTLMeter
     rltmeterVersion = subprocess.run(

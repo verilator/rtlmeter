@@ -33,7 +33,7 @@ release = gitDescribe
 
 # -- General configuration ---------------------------------------------------
 
-needs_sphinx = "8.2"
+needs_sphinx = "8.1"
 
 extensions = ["sphinx_copybutton"]
 

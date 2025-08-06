@@ -29,7 +29,7 @@ venv:
 
 .PHONY: typecheck
 typecheck:
-	env MYPYPATH=$(PYTHONPATH) $(PYTHON) -m mypy --disable-error-code=import-untyped src/main.py
+	env MYPYPATH=$(PYTHONPATH) $(PYTHON) -m mypy --disable-error-code=import-untyped src/rtlmeter/main.py
 
 .PHONY: lint
 lint:
