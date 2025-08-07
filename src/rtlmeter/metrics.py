@@ -51,6 +51,7 @@ Metric = Literal[
     "clocks",
     "traceSize",
     "ccacheHit",
+    "codeSize",
 ]
 
 
@@ -87,6 +88,8 @@ METRICS: Final[Dict[Metric, MetricDef]] = {
                             "Size of trace dumps"),
     "ccacheHit" : MetricDef("ccache hit rate", "%",         None,           None, True,
                             "ccache hit rate during C++ compilation"),
+    "codeSize"  : MetricDef("Code size", "MB",              operator.add,   0,    False,
+                            "Total size of all generated hot code"),
 }
 #fmt : on
 

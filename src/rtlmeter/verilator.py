@@ -17,6 +17,8 @@
 import itertools
 import json
 import os
+import re
+import subprocess
 from typing import Final, List, Tuple
 
 from rtlmeter import metrics
@@ -96,7 +98,16 @@ def _cppbuild(cgraph: CGraph, descr: CompileDescriptor, compileDir: str) -> CNod
     step = "cppbuild"
 
     def job() -> bool:
-        cmd = ["make", "-j", str(len(CTX.usableCpus)), "-C", "obj_dir", "-f", f"{_PREFIX}.mk"]
+        cmd = [
+            "make",
+            "-j",
+            str(len(CTX.usableCpus)),
+            "-C",
+            "obj_dir",
+            "-f",
+            f"{_PREFIX}.mk",
+            "VM_PARALLEL_BUILDS=1",
+        ]
         env = {"CCACHE_DEBUG": "1", "CCACHE_DEBUGLEVEL": "1"}
         # Run it
         if runcmd(cmd, step, env):
@@ -115,13 +126,37 @@ def _cppbuild(cgraph: CGraph, descr: CompileDescriptor, compileDir: str) -> CNod
                             if "Succeeded getting cached result" in fd.read():
                                 ccacheHits += 1
             cData["ccacheHit"] = 100.0 * ccacheHits / max(objectFiles, 1)
+            # Gather code size
+            with subprocess.Popen(
+                args=["objdump", "-w", "-h", os.path.join(compileDir, "obj_dir", "Vsim__ALL.a")],
+                stdout=subprocess.PIPE,
+                stderr=subprocess.STDOUT,
+                text=True,
+                encoding="utf-8",
+            ) as process:
+                assert process.stdout, "stdout is None"
+                filenameRe = re.compile(r"^Vsim.*?(Slow)?.o:")
+                codesectionRe = re.compile(r"^\s*\d+\s+(\S+)\s+(\S+)\s+.*\bCODE\b.*")
+                slowFile: bool = False
+                hotCodeSize: int = 0
+                for line in process.stdout:
+                    if filenameMatch := filenameRe.match(line):
+                        slowFile = filenameMatch.group(1) is not None
+                        continue
+                    if slowFile:
+                        continue
+                    if codesectionMatch := codesectionRe.match(line):
+                        hotCodeSize += int(codesectionMatch.group(2), base=16)
+                cData["codeSize"] = hotCodeSize * 1e-6
+            # Result data
             data = {descr.case: {step: cData}}
             # Add combined 'verilate' + 'cppbuild'
             with open("_verilate/time.json", "r", encoding="utf-8") as fd:
                 tData = json.load(fd)
             for k, v in cData.items():
-                if (accumulate := metrics.metricDef(k).accumulate) is not None:
-                    tData[k] = accumulate(tData[k], v)
+                mDef = metrics.metricDef(k)
+                if (accumulate := mDef.accumulate) is not None:
+                    tData[k] = accumulate(tData.get(k, mDef.identityValue), v)
             data[descr.case]["compile"] = tData
             with open(f"_{step}/metrics.json", "w", encoding="utf-8") as fd:
                 json.dump(data, fd)
