@@ -14,7 +14,6 @@ origin:
 
 compile:
   verilogSourceFiles:
-    # Packages
     # Basejump Packages
     - src/basejump_stl/bsg_axi_pkg.sv
     - src/basejump_stl/bsg_cache_pkg.sv
@@ -167,6 +166,11 @@ compile:
     - src/basejump_stl/bsg_wormhole_router_decoder_dor.sv
     - src/basejump_stl/bsg_wormhole_router_input_control.sv
     - src/basejump_stl/bsg_wormhole_router_output_control.sv
+    - src/basejump_stl/bsg_fifo_1r1w_rolly.sv
+    - src/basejump_stl/bsg_bus_pack.sv
+    - src/basejump_stl/bsg_async_noc_link.sv
+    - src/basejump_stl/bsg_dff_sync_read.sv
+    - src/basejump_stl/bsg_rom_param.sv
     # HardFloat RTL
     - src/hardfloat/compareRecFN.v
     - src/hardfloat/divSqrtRecFN.v
@@ -183,13 +187,10 @@ compile:
     - src/hardfloat/recFNToIN.v
     - src/hardfloat/recFNToRecFN.v
     - src/hardfloat/HardFloat_specialize.v
-    # BlackParrot Common Files
-    - src/bp/bsg_fifo_1r1w_rolly.sv
-    - src/bp/bsg_bus_pack.sv
+    # BlackParrot RTL
     - src/bp/bp_mmu.sv
     - src/bp/bp_pma.sv
     - src/bp/bp_tlb.sv
-    # BlackParrot RTL
     - src/bp/bp_be_top.sv
     - src/bp/bp_be_calculator_top.sv
     - src/bp/bp_be_csr.sv
@@ -304,9 +305,6 @@ compile:
     - src/bp/bp_core_tile.sv
     - src/bp/bp_core_tile_node.sv
     - src/bp/bp_processor.sv
-    - src/bp/bsg_async_noc_link.sv
-    - src/bp/bsg_dff_sync_read.sv
-    - src/bp/bsg_rom_param.sv
     - src/bp/wrapper.sv
     # Miscellaneous Files
     - src/basejump_stl/bsg_tag_pkg.sv
