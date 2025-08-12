@@ -308,46 +308,6 @@ module testbench
        ,.instret_i(calculator.commit_pkt_cast_o.instret)
        );
 
-
-  bind bp_be_top
-    bp_nonsynth_cosim
-     #(.bp_params_p(bp_params_p))
-     cosim
-      (.clk_i(clk_i)
-       ,.reset_i(reset_i)
-
-       // We want to pass these values as parameters, but cannot in Verilator 4.025
-       // Parameter-resolved constants must not use dotted references
-       ,.trace_en_i(testbench.cmt_trace_p == 1)
-       ,.mhartid_i(calculator.pipe_sys.csr.cfg_bus_cast_i.core_id)
-       ,.checkpoint_i(testbench.checkpoint_p == 1)
-
-       ,.decode_i(calculator.dispatch_pkt_cast_i.decode)
-
-       ,.is_debug_mode_i(calculator.pipe_sys.csr.is_debug_mode)
-       ,.commit_pkt_i(calculator.commit_pkt_cast_o)
-
-       ,.priv_mode_i(calculator.pipe_sys.csr.priv_mode_r)
-       ,.mstatus_i(calculator.pipe_sys.csr.mstatus_lo)
-       ,.mcause_i(calculator.pipe_sys.csr.mcause_lo)
-       ,.scause_i(calculator.pipe_sys.csr.scause_lo)
-
-       ,.ird_w_v_i(scheduler.iwb_pkt_cast_i.ird_w_v)
-       ,.ird_addr_i(scheduler.iwb_pkt_cast_i.rd_addr)
-       ,.ird_data_i(scheduler.iwb_pkt_cast_i.rd_data)
-
-       ,.frd_w_v_i(scheduler.fwb_pkt_cast_i.frd_w_v)
-       ,.frd_addr_i(scheduler.fwb_pkt_cast_i.rd_addr)
-       ,.frd_data_i(scheduler.fwb_pkt_cast_i.rd_data)
-
-       ,.cache_req_yumi_i(calculator.pipe_mem.dcache.cache_req_yumi_i)
-       ,.cache_req_nonblocking_i(calculator.pipe_mem.dcache.nonblocking_req)
-       ,.cache_req_complete_i(calculator.pipe_mem.dcache.complete_recv)
-
-       ,.cosim_clk_i(testbench.cosim_clk_i)
-       ,.cosim_reset_i(testbench.cosim_reset_i)
-       );
-
   bind bp_fe_icache
     bp_fe_nonsynth_icache_tracer
      #(.bp_params_p(bp_params_p)
@@ -388,7 +348,7 @@ module testbench
      #(.bp_params_p(bp_params_p))
      vm_tracer
       (.clk_i(clk_i && testbench.vm_trace_p)
-       ,.reset_i(reset_i || testbench.vm_trace_p)
+       ,.reset_i(reset_i || !testbench.vm_trace_p)
        ,.mhartid_i(be.calculator.pipe_sys.csr.cfg_bus_cast_i.core_id)
 
        ,.itlb_clear_i(fe.immu.tlb.fence_i)
@@ -701,26 +661,6 @@ module testbench
       @(negedge reset_i);
       $asserton();
     end
-`endif
-
-`ifdef TRACE_ENABLE
-  string dumpfile;
-  initial
-    if ($value$plusargs("bsg_trace=%s", dumpfile))
-      begin
-        $display("[BSG-INFO]: Dumping to %s", dumpfile);
-`ifdef FSDB_ENABLE
-        $fsdbDumpfile(dumpfile);
-        $fsdbDumpvars(0,testbench.wrapper);
-`elsif VPD_ENABLE
-        $vcdplusfile(dumpfile);
-        $vcdpluson(0,testbench.wrapper);
-        $vcdplusautoflushon();
-`else
-        $dumpfile(dumpfile);
-        $dumpvars(0,testbench.wrapper);
-`endif
-      end
 `endif
 
 `include  "__rtlmeter_top_include.vh"

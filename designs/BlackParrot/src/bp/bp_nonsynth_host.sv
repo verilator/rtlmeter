@@ -41,22 +41,6 @@ module bp_nonsynth_host
 
   import "DPI-C" context function int getchar();
 
-  integer tmp;
-  integer stdout[num_core_p];
-  integer stdout_global;
-  integer signature;
-
-  always_ff @(negedge reset_i)
-    begin
-      for (integer j = 0; j < num_core_p; j++)
-        begin
-          tmp = $fopen($sformatf("stdout_%0x.txt", j), "w");
-          stdout[j] = tmp;
-        end
-      stdout_global = $fopen("stdout_global.txt", "w");
-      signature = $fopen("DUT-blackparrot.signature", "w");
-    end
-
   localparam bedrock_reg_els_lp = 8;
   logic putint_r_v_li, signature_r_v_li, paramrom_r_v_li, bootrom_r_v_li, finish_r_v_li, getchar_r_v_li, putchar_r_v_li, putch_core_r_v_li;
   logic putint_w_v_li, signature_w_v_li, paramrom_w_v_li, bootrom_w_v_li, finish_w_v_li, getchar_w_v_li, putchar_w_v_li, putch_core_w_v_li;
@@ -111,12 +95,10 @@ module bp_nonsynth_host
     begin
       if (putchar_w_v_li) begin
         $write("%c", data_lo[0+:8]);
-        $fwrite(stdout_global, "%c", data_lo[0+:8]);
       end
 
       if (putch_core_w_v_li) begin
         $write("%c", data_lo[0+:8]);
-        $fwrite(stdout[addr_core_enc], "%c", data_lo[0+:8]);
       end
 
       if (putint_w_v_li) begin
@@ -143,9 +125,6 @@ module bp_nonsynth_host
             
         end
 
-      if (signature_w_v_li)
-        $fwrite(signature, "%8x\n", data_lo[0+:32]);
-
       if (putint_w_v_li) begin
         $write("%x", data_lo);
       end
@@ -159,10 +138,6 @@ module bp_nonsynth_host
 
   final
     begin
-      $fclose(signature);
-      $fclose(stdout_global);
-      for (integer j = 0; j < num_core_p; j++)
-        $fclose(stdout[j]);
       $system("stty echo");
     end
 

@@ -2,7 +2,15 @@ origin:
   - repository: https://github.com/black-parrot/black-parrot.git
     revision: 45a28bf96e58f55687f8e09b2521ceada121ad95
     licenses:
-      - LICENSE
+      - LICENSE-BlackParrot
+  - repository: https://github.com/bespoke-silicon-group/basejump_stl.git
+    revision: 86af8eac0bdf2ed9a6ac2146490f9dc7982870da
+    licenses: 
+      - LICENSE-basejump_stl
+  - repository: https://github.com/bsg-external/HardFloat.git
+    revision: 5b7d5fe2df7e297b5ba095b3eb8a9517dc2e9d88
+    licenses: 
+      - LICENSE-HardFloat
 
 compile:
   verilogSourceFiles:
@@ -12,7 +20,7 @@ compile:
     - src/basejump_stl/bsg_cache_pkg.sv
     - src/basejump_stl/bsg_noc_pkg.sv
     - src/basejump_stl/bsg_wormhole_router_pkg.sv
-    # BP Packages
+    # BlackParrot Packages
     - src/bp/bp_common_pkg.sv
     - src/bp/bp_be_pkg.sv
     - src/bp/bp_fe_pkg.sv
@@ -48,8 +56,8 @@ compile:
     - src/basejump_stl/bsg_parallel_in_serial_out.sv
     - src/basejump_stl/bsg_parallel_in_serial_out_dynamic.sv
     - src/basejump_stl/bsg_parallel_in_serial_out_passthrough.sv
-    - src/bp/bsg_parallel_in_serial_out_passthrough_dynamic.sv
-    - src/bp/bsg_serial_in_parallel_out_passthrough_dynamic.sv
+    - src/basejump_stl/bsg_parallel_in_serial_out_passthrough_dynamic.sv
+    - src/basejump_stl/bsg_serial_in_parallel_out_passthrough_dynamic.sv
     - src/basejump_stl/bsg_round_robin_1_to_n.sv
     - src/basejump_stl/bsg_round_robin_2_to_2.sv
     - src/basejump_stl/bsg_round_robin_n_to_1.sv
@@ -175,13 +183,13 @@ compile:
     - src/hardfloat/recFNToIN.v
     - src/hardfloat/recFNToRecFN.v
     - src/hardfloat/HardFloat_specialize.v
-    #BP Common Files
+    # BlackParrot Common Files
     - src/bp/bsg_fifo_1r1w_rolly.sv
     - src/bp/bsg_bus_pack.sv
     - src/bp/bp_mmu.sv
     - src/bp/bp_pma.sv
     - src/bp/bp_tlb.sv
-    # BP RTL
+    # BlackParrot RTL
     - src/bp/bp_be_top.sv
     - src/bp/bp_be_calculator_top.sv
     - src/bp/bp_be_csr.sv
@@ -300,7 +308,7 @@ compile:
     - src/bp/bsg_dff_sync_read.sv
     - src/bp/bsg_rom_param.sv
     - src/bp/wrapper.sv
-    #Basejump Memory Files
+    # Miscellaneous Files
     - src/basejump_stl/bsg_tag_pkg.sv
     - src/basejump_stl/bsg_dramsim3_pkg.sv
     - src/basejump_stl/bsg_cache_to_axi.sv
@@ -336,7 +344,6 @@ compile:
     - src/bp/bp_fe_nonsynth_icache_tracer.sv
     - src/bp/bp_nonsynth_watchdog.sv
     - src/bp/bp_nonsynth_vm_tracer.sv
-    - src/bp/bp_nonsynth_cosim.sv
     - src/bp/bp_nonsynth_host.sv
     - src/bp/bp_nonsynth_if_verif.sv
     - src/bp/bp_nonsynth_nbf_loader.sv
@@ -407,10 +414,8 @@ compile:
     sg5: 1
     x16: 1
     FULL_MEM: 1
-    TRACE_ENABLE: 1
   cppSourceFiles:
     - src/basejump_stl/bsg_mem_dma.cpp
-    - src/bp/null_cosim.cpp
   cppIncludeFiles:
     - src/basejump_stl/bsg_mem_dma.hpp
   topModule: testbench
@@ -421,12 +426,18 @@ compile:
 execute:
   common:
     postHook: tests/post.bash
+    files: 
+      - tests/prog.nbf
   tests:
     hello: 
       files:
         - tests/hello/prog.mem
-        - tests/hello/prog.nbf
-        - tests/hello/prog.riscv
       tags:
         - sanity
+    fp:
+      files:
+        - tests/fp/prog.mem
+    vector:
+      files:
+        - tests/vector/prog.mem
   
