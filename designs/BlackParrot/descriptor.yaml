@@ -345,9 +345,6 @@ compile:
     - src/bp/bp_nonsynth_host.sv
     - src/bp/bp_nonsynth_if_verif.sv
     - src/bp/bp_nonsynth_nbf_loader.sv
-    - src/bp/bp_nonsynth_core_profiler.sv
-    - src/bp/bp_nonsynth_pc_profiler.sv
-    - src/bp/bp_nonsynth_branch_profiler.sv
     - src/bp/bp_nonsynth_perf.sv
     - src/bp/bp_monitor.cpp
     - src/bp/bp_nonsynth_dram.sv

@@ -105,7 +105,7 @@ module bp_me_clint_slice
 
   logic rt_clk_lo;
   bsg_mux
-   #(.width_p(1), .els_p(4), .balanced_p(1), .harden_p(1))
+   #(.width_p(1), .els_p(4), .balanced_p(0), .harden_p(1))
    rtc_mux
     (.data_i({1'b0, rt_clk_i, clk_ds_lo, clk_i})
      ,.sel_i(mtimesel_r)
