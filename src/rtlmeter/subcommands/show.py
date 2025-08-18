@@ -32,7 +32,7 @@ def showCases(dataPath: str | None) -> None:
         allData = metrics.load(dataPath)
         items = [_ for _ in items if _ in allData]
     # Print them
-    table = [[_, ", ".join(ExecuteDescriptor(_).tags)] for _ in items]
+    table = [[_, ", ".join(sorted(ExecuteDescriptor(_).tags))] for _ in items]
     print(tabulate.tabulate(table, headers=["Case", "Tags"], tablefmt="simple"))
 
 
@@ -79,7 +79,7 @@ def showMetrics(dataPath: str | None) -> None:
         items = [_ for _ in items if _ in available]
     # Print them
     table = []
-    for metric in items:
+    for metric in sorted(items):
         mdef = metrics.metricDef(metric)
         table.append([metric, mdef.header, mdef.description])
     print(
@@ -106,7 +106,7 @@ def showSteps(dataPath: str | None) -> None:
             return
         items = [_ for _ in items if _ in available]
     # Print them
-    table = [[_, metrics.stepDescription(_)] for _ in items]
+    table = [[_, metrics.stepDescription(_)] for _ in sorted(items)]
     print(tabulate.tabulate(table, headers=["Step", "Description"], tablefmt="simple"))
 
 
@@ -118,7 +118,7 @@ def showTags(dataPath: str | None) -> None:
         available = set(tag for case in cases for tag in ExecuteDescriptor(case).tags)
         items = [_ for _ in items if _ in available]
     # Print them
-    table = [[_, TAGS[_]] for _ in items]
+    table = [[_, TAGS[_]] for _ in sorted(items)]
     print(tabulate.tabulate(table, headers=["Tag", "Description"], tablefmt="simple"))
 
 

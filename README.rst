@@ -38,14 +38,14 @@ available through your shell ``$PATH``:
 - An installation of Verilator as ``verilator``
 
 All other dependencies are managed via a Python virtual environment, please see
-the `Getting started guide
+the `RTLMeter Getting Started Guide
 <https://verilator.github.io/rtlmeter/gettingstarted.html>`_.
 
 Documentation
 =============
 
-Please see the published User and Developer
-`documentation <https://verilator.github.io/rtlmeter/>`_.
+Please see the published `RTLMeter User and Developer
+Documentation <https://verilator.github.io/rtlmeter/>`_.
 
 Nightly metrics
 ===============
