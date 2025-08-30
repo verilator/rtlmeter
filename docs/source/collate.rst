@@ -4,7 +4,8 @@ Collated results
 You can use ``./rtlmeter collate`` to collect and combine all recorded data
 from a working directory into as single JSON data file. This collated data
 file can be used for archiving results or feeding them into downstream tools
-for further processing.
+for further processing. You can also use the ``collate`` subcommand to combine
+multiple JSON data files into a single one.
 
 Using collated data for reporting
 ---------------------------------

@@ -20,6 +20,8 @@ import os
 from dataclasses import dataclass
 from typing import Callable, Dict, Final, List, Literal, TypeAlias, final
 
+from rtlmeter import misc
+
 Step = Literal[
     "verilate",
     "cppbuild",
@@ -157,10 +159,16 @@ def load(dataPath: str) -> Metrics:
         return collate(dataPath)
 
     # Otherwise it's a collated JSON file, just load it
+    allData = {}
     with open(dataPath, "r", encoding="utf-8") as fd:
-        allData = json.load(fd)["cases"]
-    for caseData in allData.values():
-        for stepData in caseData.values():
-            for samples in stepData.values():
-                samples[:] = map(lambda _ : Sample(_, dataPath), samples)
+        for item in json.load(fd):
+            itemCases = item["cases"]
+            for caseData in itemCases.values():
+                for stepData in caseData.values():
+                    for samples in stepData.values():
+                        samples[:] = map(lambda _ : Sample(_, dataPath), samples)
+            for caseName, caseData in itemCases.items():
+                if caseName in allData:
+                    misc.fatal(f"Multiple entries for case '{caseName}' in {dataPath}")
+                allData[caseName] = caseData
     return allData

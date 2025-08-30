@@ -30,7 +30,6 @@ from sklearn.neighbors import LocalOutlierFactor
 from rtlmeter import metrics, misc
 from rtlmeter.context import CTX
 from rtlmeter.subcommands.common import (
-    ArgExistingDirectory,
     ArgExistingFileOrDirectory,
     ArgPatternMatcher,
     casesByTag,
@@ -387,6 +386,34 @@ def rawdataMain(args: argparse.Namespace) -> None:
 
 
 def collateMain(args: argparse.Namespace) -> None:
+    allFiles = all(os.path.isfile(_) for _ in args.items)
+    allDirs = all(os.path.isdir(_) for _ in args.items)
+
+    if not allFiles and not allDirs or allDirs and len(args.items) != 1:
+        misc.fatal(
+            "Positional arguments must be either a single work directory,"
+            " or one or more collated data files"
+        )
+
+    @final
+    class Encoder(json.JSONEncoder):
+        def default(self, o):
+            if isinstance(o, metrics.Sample):
+                return o.value
+            return super().default(o)
+
+    # If given collated files, just concatenate them
+    if allFiles:
+        results = []
+        for item in args.items:
+            with open(item, "r", encoding="utf-8") as fd:
+                results.extend(json.load(fd))
+        print(json.dumps(results, indent=2, sort_keys=True, cls=Encoder))
+        return
+
+    # Otherwise it's a working directory, process it
+    workDir = args.items[0]
+
     # Include the current date and time
     now = datetime.datetime.now(datetime.timezone.utc).replace(microsecond=0)
 
@@ -439,7 +466,7 @@ def collateMain(args: argparse.Namespace) -> None:
     }
 
     # Gather data from working directory
-    caseData = metrics.load(args.dir)
+    caseData = metrics.load(workDir)
 
     # Assemble final record
     result = {
@@ -456,14 +483,11 @@ def collateMain(args: argparse.Namespace) -> None:
     if args.runName is not None:
         result["runName"] = args.runName
 
-    @final
-    class Encoder(json.JSONEncoder):
-        def default(self, o):
-            if isinstance(o, metrics.Sample):
-                return o.value
-            return super().default(o)
+    # Turn it into a list
+    results = [result]
 
-    print(json.dumps(result, indent=2, sort_keys=True, cls=Encoder))
+    # Print it
+    print(json.dumps(results, indent=2, sort_keys=True, cls=Encoder))
 
 
 def addCommonArgs(parser: argparse.ArgumentParser) -> None:
@@ -589,7 +613,9 @@ def addSubcommands(subparsers) -> None:
     collateParser: argparse.ArgumentParser = subparsers.add_parser(
         "collate",
         help="Collect and combine metrics gathered in working directory",
-        description="Print collated JSON data to stdout.",
+        description="""
+            Print collated JSON data to stdout, or combine multiple collated data files.
+        """,
         allow_abbrev=False,
         formatter_class=argparse.ArgumentDefaultsHelpFormatter,
     )
@@ -602,10 +628,10 @@ def addSubcommands(subparsers) -> None:
         default=None,
     )
     collateParser.add_argument(
-        "dir",
-        help="Work directory of run",
-        type=ArgExistingDirectory(),
-        default=CTX.defaultWorkDir,
-        metavar="DIR",
-        nargs="?",
+        "items",
+        help="Single work directory of run, or existing collated data files",
+        type=ArgExistingFileOrDirectory(),
+        default=[CTX.defaultWorkDir],
+        metavar="ITEM",
+        nargs="*",
     )
