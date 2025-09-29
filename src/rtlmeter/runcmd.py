@@ -69,6 +69,14 @@ def runcmd(
     timeFile = os.path.join(tagDir, "time.json")
     cmd = ["time", "-o", timeFile, "-f", _TIMEFORMAT, cmdFileName]
 
+    # Apply timeout if a deadline is set
+    if (timeout := CTX.timeout()) is not None:
+        # If already passed, fail now
+        if timeout == 0:
+            misc.error("Timeout deadline already passed")
+            return False
+        cmd = ["timeout", "-v", "-s", "KILL", f"{timeout}s"] + cmd
+
     # Base of time stamps in stdout log
     startTime = time.monotonic_ns()
 

@@ -15,8 +15,9 @@
 # SPDX-License-Identifier: Apache-2.0
 
 import os
+import time
 from functools import cached_property
-from typing import Any, Dict, Final, List, final
+from typing import Any, Dict, Final, List, Optional, final
 
 from rtlmeter import yaml_descriptor
 
@@ -29,9 +30,12 @@ from rtlmeter import yaml_descriptor
 class Context:
     # Verbose mode enable
     verbose: bool
+    # Timeout deadline in seconds from epoch
+    deadline: Optional[float]
 
     def __init__(self) -> None:
         self.verbose = False
+        self.deadline = None
 
     # Absolute path to root of repository
     @cached_property
@@ -77,6 +81,16 @@ class Context:
     @cached_property
     def usableCpus(self) -> List[int]:
         return sorted(_ for _ in os.sched_getaffinity(0))
+
+    # Set deadline to now + 'timeout' minutes
+    def setTimeout(self, timeout: Optional[int]) -> None:
+        self.deadline = None if timeout is None else time.time() + (60 * timeout) + 1
+
+    # Return number of seconds remaining until deadline
+    def timeout(self) -> Optional[int]:
+        if self.deadline is None:
+            return None
+        return int(max(0, self.deadline - time.time()))
 
 
 CTX: Final[Context] = Context()

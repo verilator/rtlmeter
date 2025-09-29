@@ -124,6 +124,7 @@ def execute(
 
 def main(args: argparse.Namespace) -> None:
     CTX.verbose = args.verbose
+    CTX.setTimeout(args.timeout)
 
     if CTX.verbose and args.compileArgs:
         misc.echo(f"compileArgs: {args.compileArgs}")
@@ -245,7 +246,15 @@ def addSubcommands(subParsers) -> None:
         metavar="N",
     )
     parser.add_argument("--retry", help="Retry steps that failed earleir", action="store_true")
+    parser.add_argument(
+        "--timeout",
+        help="Fail with a timeout after the specified number of minutes",
+        type=ArgRangedInt(1, None),
+        default=None,
+        metavar="MINUTES",
+    )
     parser.add_argument("--verbose", help="Report more info about the process", action="store_true")
+
     parserWorkRootGroup = parser.add_argument_group("Options to specify working directory")
     parserWorkRootGroup.add_argument(
         "--compileRoot",
