@@ -40,7 +40,7 @@ jobs:
       cases: ${{ steps.gatherCases.outputs.cases }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: Setup venv
         run: make venv
       - name: Format
@@ -95,7 +95,7 @@ jobs:
           # Some conflict of libunwind verison on 22.04, can live without it
           [[ "${{ matrix.os }}" == "ubuntu-22.04" ]] || sudo apt install libgoogle-perftools-dev
       - name: Checkout Verilator
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           repository: "verilator/verilator"
           path: verilator
@@ -139,7 +139,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           path: rtlmeter
       - name: Setup venv
