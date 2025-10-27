@@ -34,7 +34,7 @@ module tile(
     input wire [`NOC_X_WIDTH-1:0]       default_coreid_x,
     input wire [`NOC_Y_WIDTH-1:0]       default_coreid_y,
     input wire [31:0]                   default_total_num_tiles,
-    input wire [`JTAG_FLATID_WIDTH-1:0] flat_tileid,
+    input wire [31:0]                   flat_tileid,
 
     // UCB interface for test access port
     input                               jtag_tiles_ucb_val,
@@ -713,7 +713,7 @@ if (1) begin : g_ariane_core
         .reset_l     ( rst_n_f                ),
         .spc_grst_l  ( spc_grst_l             ),
         .boot_addr_i ( ariane_bootaddr        ),
-        .hart_id_i   ( {{64-`JTAG_FLATID_WIDTH{1'b0}}, flat_tileid} ),
+        .hart_id_i   ( 64'(flat_tileid)       ),
         .irq_i       ( irq_i                  ),
         .ipi_i       ( ipi_i                  ),
         .time_irq_i  ( timer_irq_i            ),

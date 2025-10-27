@@ -39837,7 +39837,7 @@ tile0 (
     .default_coreid_x           (8'd0),
     .default_coreid_y           (8'd0),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd0)
+    .flat_tileid                (32'd0)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[0]   )
@@ -39946,7 +39946,7 @@ tile32 (
     .default_coreid_x           (8'd0),
     .default_coreid_y           (8'd1),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd32)
+    .flat_tileid                (32'd32)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[32]   )
@@ -40055,7 +40055,7 @@ tile64 (
     .default_coreid_x           (8'd0),
     .default_coreid_y           (8'd2),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd64)
+    .flat_tileid                (32'd64)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[64]   )
@@ -40164,7 +40164,7 @@ tile96 (
     .default_coreid_x           (8'd0),
     .default_coreid_y           (8'd3),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd96)
+    .flat_tileid                (32'd96)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[96]   )
@@ -40273,7 +40273,7 @@ tile128 (
     .default_coreid_x           (8'd0),
     .default_coreid_y           (8'd4),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd128)
+    .flat_tileid                (32'd128)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[128]   )
@@ -40382,7 +40382,7 @@ tile160 (
     .default_coreid_x           (8'd0),
     .default_coreid_y           (8'd5),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd160)
+    .flat_tileid                (32'd160)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[160]   )
@@ -40491,7 +40491,7 @@ tile192 (
     .default_coreid_x           (8'd0),
     .default_coreid_y           (8'd6),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd192)
+    .flat_tileid                (32'd192)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[192]   )
@@ -40600,7 +40600,7 @@ tile224 (
     .default_coreid_x           (8'd0),
     .default_coreid_y           (8'd7),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd224)
+    .flat_tileid                (32'd224)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[224]   )
@@ -40709,7 +40709,7 @@ tile256 (
     .default_coreid_x           (8'd0),
     .default_coreid_y           (8'd8),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd256)
+    .flat_tileid                (32'd256)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[256]   )
@@ -40818,7 +40818,7 @@ tile288 (
     .default_coreid_x           (8'd0),
     .default_coreid_y           (8'd9),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd288)
+    .flat_tileid                (32'd288)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[288]   )
@@ -40927,7 +40927,7 @@ tile320 (
     .default_coreid_x           (8'd0),
     .default_coreid_y           (8'd10),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd320)
+    .flat_tileid                (32'd320)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[320]   )
@@ -41036,7 +41036,7 @@ tile352 (
     .default_coreid_x           (8'd0),
     .default_coreid_y           (8'd11),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd352)
+    .flat_tileid                (32'd352)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[352]   )
@@ -41145,7 +41145,7 @@ tile384 (
     .default_coreid_x           (8'd0),
     .default_coreid_y           (8'd12),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd384)
+    .flat_tileid                (32'd384)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[384]   )
@@ -41254,7 +41254,7 @@ tile416 (
     .default_coreid_x           (8'd0),
     .default_coreid_y           (8'd13),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd416)
+    .flat_tileid                (32'd416)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[416]   )
@@ -41363,7 +41363,7 @@ tile448 (
     .default_coreid_x           (8'd0),
     .default_coreid_y           (8'd14),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd448)
+    .flat_tileid                (32'd448)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[448]   )
@@ -41472,7 +41472,7 @@ tile480 (
     .default_coreid_x           (8'd0),
     .default_coreid_y           (8'd15),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd480)
+    .flat_tileid                (32'd480)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[480]   )
@@ -41581,7 +41581,7 @@ tile512 (
     .default_coreid_x           (8'd0),
     .default_coreid_y           (8'd16),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd512)
+    .flat_tileid                (32'd512)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[512]   )
@@ -41690,7 +41690,7 @@ tile544 (
     .default_coreid_x           (8'd0),
     .default_coreid_y           (8'd17),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd544)
+    .flat_tileid                (32'd544)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[544]   )
@@ -41799,7 +41799,7 @@ tile576 (
     .default_coreid_x           (8'd0),
     .default_coreid_y           (8'd18),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd576)
+    .flat_tileid                (32'd576)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[576]   )
@@ -41908,7 +41908,7 @@ tile608 (
     .default_coreid_x           (8'd0),
     .default_coreid_y           (8'd19),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd608)
+    .flat_tileid                (32'd608)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[608]   )
@@ -42017,7 +42017,7 @@ tile640 (
     .default_coreid_x           (8'd0),
     .default_coreid_y           (8'd20),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd640)
+    .flat_tileid                (32'd640)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[640]   )
@@ -42126,7 +42126,7 @@ tile672 (
     .default_coreid_x           (8'd0),
     .default_coreid_y           (8'd21),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd672)
+    .flat_tileid                (32'd672)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[672]   )
@@ -42235,7 +42235,7 @@ tile704 (
     .default_coreid_x           (8'd0),
     .default_coreid_y           (8'd22),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd704)
+    .flat_tileid                (32'd704)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[704]   )
@@ -42344,7 +42344,7 @@ tile736 (
     .default_coreid_x           (8'd0),
     .default_coreid_y           (8'd23),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd736)
+    .flat_tileid                (32'd736)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[736]   )
@@ -42453,7 +42453,7 @@ tile768 (
     .default_coreid_x           (8'd0),
     .default_coreid_y           (8'd24),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd768)
+    .flat_tileid                (32'd768)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[768]   )
@@ -42562,7 +42562,7 @@ tile800 (
     .default_coreid_x           (8'd0),
     .default_coreid_y           (8'd25),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd800)
+    .flat_tileid                (32'd800)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[800]   )
@@ -42671,7 +42671,7 @@ tile832 (
     .default_coreid_x           (8'd0),
     .default_coreid_y           (8'd26),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd832)
+    .flat_tileid                (32'd832)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[832]   )
@@ -42780,7 +42780,7 @@ tile864 (
     .default_coreid_x           (8'd0),
     .default_coreid_y           (8'd27),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd864)
+    .flat_tileid                (32'd864)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[864]   )
@@ -42889,7 +42889,7 @@ tile896 (
     .default_coreid_x           (8'd0),
     .default_coreid_y           (8'd28),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd896)
+    .flat_tileid                (32'd896)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[896]   )
@@ -42998,7 +42998,7 @@ tile928 (
     .default_coreid_x           (8'd0),
     .default_coreid_y           (8'd29),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd928)
+    .flat_tileid                (32'd928)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[928]   )
@@ -43107,7 +43107,7 @@ tile960 (
     .default_coreid_x           (8'd0),
     .default_coreid_y           (8'd30),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd960)
+    .flat_tileid                (32'd960)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[960]   )
@@ -43216,7 +43216,7 @@ tile992 (
     .default_coreid_x           (8'd0),
     .default_coreid_y           (8'd31),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd992)
+    .flat_tileid                (32'd992)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[992]   )
@@ -43325,7 +43325,7 @@ tile1 (
     .default_coreid_x           (8'd1),
     .default_coreid_y           (8'd0),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd1)
+    .flat_tileid                (32'd1)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[1]   )
@@ -43434,7 +43434,7 @@ tile33 (
     .default_coreid_x           (8'd1),
     .default_coreid_y           (8'd1),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd33)
+    .flat_tileid                (32'd33)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[33]   )
@@ -43543,7 +43543,7 @@ tile65 (
     .default_coreid_x           (8'd1),
     .default_coreid_y           (8'd2),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd65)
+    .flat_tileid                (32'd65)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[65]   )
@@ -43652,7 +43652,7 @@ tile97 (
     .default_coreid_x           (8'd1),
     .default_coreid_y           (8'd3),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd97)
+    .flat_tileid                (32'd97)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[97]   )
@@ -43761,7 +43761,7 @@ tile129 (
     .default_coreid_x           (8'd1),
     .default_coreid_y           (8'd4),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd129)
+    .flat_tileid                (32'd129)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[129]   )
@@ -43870,7 +43870,7 @@ tile161 (
     .default_coreid_x           (8'd1),
     .default_coreid_y           (8'd5),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd161)
+    .flat_tileid                (32'd161)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[161]   )
@@ -43979,7 +43979,7 @@ tile193 (
     .default_coreid_x           (8'd1),
     .default_coreid_y           (8'd6),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd193)
+    .flat_tileid                (32'd193)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[193]   )
@@ -44088,7 +44088,7 @@ tile225 (
     .default_coreid_x           (8'd1),
     .default_coreid_y           (8'd7),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd225)
+    .flat_tileid                (32'd225)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[225]   )
@@ -44197,7 +44197,7 @@ tile257 (
     .default_coreid_x           (8'd1),
     .default_coreid_y           (8'd8),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd257)
+    .flat_tileid                (32'd257)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[257]   )
@@ -44306,7 +44306,7 @@ tile289 (
     .default_coreid_x           (8'd1),
     .default_coreid_y           (8'd9),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd289)
+    .flat_tileid                (32'd289)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[289]   )
@@ -44415,7 +44415,7 @@ tile321 (
     .default_coreid_x           (8'd1),
     .default_coreid_y           (8'd10),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd321)
+    .flat_tileid                (32'd321)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[321]   )
@@ -44524,7 +44524,7 @@ tile353 (
     .default_coreid_x           (8'd1),
     .default_coreid_y           (8'd11),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd353)
+    .flat_tileid                (32'd353)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[353]   )
@@ -44633,7 +44633,7 @@ tile385 (
     .default_coreid_x           (8'd1),
     .default_coreid_y           (8'd12),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd385)
+    .flat_tileid                (32'd385)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[385]   )
@@ -44742,7 +44742,7 @@ tile417 (
     .default_coreid_x           (8'd1),
     .default_coreid_y           (8'd13),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd417)
+    .flat_tileid                (32'd417)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[417]   )
@@ -44851,7 +44851,7 @@ tile449 (
     .default_coreid_x           (8'd1),
     .default_coreid_y           (8'd14),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd449)
+    .flat_tileid                (32'd449)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[449]   )
@@ -44960,7 +44960,7 @@ tile481 (
     .default_coreid_x           (8'd1),
     .default_coreid_y           (8'd15),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd481)
+    .flat_tileid                (32'd481)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[481]   )
@@ -45069,7 +45069,7 @@ tile513 (
     .default_coreid_x           (8'd1),
     .default_coreid_y           (8'd16),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd513)
+    .flat_tileid                (32'd513)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[513]   )
@@ -45178,7 +45178,7 @@ tile545 (
     .default_coreid_x           (8'd1),
     .default_coreid_y           (8'd17),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd545)
+    .flat_tileid                (32'd545)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[545]   )
@@ -45287,7 +45287,7 @@ tile577 (
     .default_coreid_x           (8'd1),
     .default_coreid_y           (8'd18),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd577)
+    .flat_tileid                (32'd577)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[577]   )
@@ -45396,7 +45396,7 @@ tile609 (
     .default_coreid_x           (8'd1),
     .default_coreid_y           (8'd19),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd609)
+    .flat_tileid                (32'd609)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[609]   )
@@ -45505,7 +45505,7 @@ tile641 (
     .default_coreid_x           (8'd1),
     .default_coreid_y           (8'd20),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd641)
+    .flat_tileid                (32'd641)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[641]   )
@@ -45614,7 +45614,7 @@ tile673 (
     .default_coreid_x           (8'd1),
     .default_coreid_y           (8'd21),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd673)
+    .flat_tileid                (32'd673)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[673]   )
@@ -45723,7 +45723,7 @@ tile705 (
     .default_coreid_x           (8'd1),
     .default_coreid_y           (8'd22),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd705)
+    .flat_tileid                (32'd705)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[705]   )
@@ -45832,7 +45832,7 @@ tile737 (
     .default_coreid_x           (8'd1),
     .default_coreid_y           (8'd23),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd737)
+    .flat_tileid                (32'd737)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[737]   )
@@ -45941,7 +45941,7 @@ tile769 (
     .default_coreid_x           (8'd1),
     .default_coreid_y           (8'd24),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd769)
+    .flat_tileid                (32'd769)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[769]   )
@@ -46050,7 +46050,7 @@ tile801 (
     .default_coreid_x           (8'd1),
     .default_coreid_y           (8'd25),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd801)
+    .flat_tileid                (32'd801)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[801]   )
@@ -46159,7 +46159,7 @@ tile833 (
     .default_coreid_x           (8'd1),
     .default_coreid_y           (8'd26),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd833)
+    .flat_tileid                (32'd833)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[833]   )
@@ -46268,7 +46268,7 @@ tile865 (
     .default_coreid_x           (8'd1),
     .default_coreid_y           (8'd27),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd865)
+    .flat_tileid                (32'd865)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[865]   )
@@ -46377,7 +46377,7 @@ tile897 (
     .default_coreid_x           (8'd1),
     .default_coreid_y           (8'd28),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd897)
+    .flat_tileid                (32'd897)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[897]   )
@@ -46486,7 +46486,7 @@ tile929 (
     .default_coreid_x           (8'd1),
     .default_coreid_y           (8'd29),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd929)
+    .flat_tileid                (32'd929)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[929]   )
@@ -46595,7 +46595,7 @@ tile961 (
     .default_coreid_x           (8'd1),
     .default_coreid_y           (8'd30),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd961)
+    .flat_tileid                (32'd961)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[961]   )
@@ -46704,7 +46704,7 @@ tile993 (
     .default_coreid_x           (8'd1),
     .default_coreid_y           (8'd31),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd993)
+    .flat_tileid                (32'd993)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[993]   )
@@ -46813,7 +46813,7 @@ tile2 (
     .default_coreid_x           (8'd2),
     .default_coreid_y           (8'd0),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd2)
+    .flat_tileid                (32'd2)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[2]   )
@@ -46922,7 +46922,7 @@ tile34 (
     .default_coreid_x           (8'd2),
     .default_coreid_y           (8'd1),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd34)
+    .flat_tileid                (32'd34)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[34]   )
@@ -47031,7 +47031,7 @@ tile66 (
     .default_coreid_x           (8'd2),
     .default_coreid_y           (8'd2),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd66)
+    .flat_tileid                (32'd66)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[66]   )
@@ -47140,7 +47140,7 @@ tile98 (
     .default_coreid_x           (8'd2),
     .default_coreid_y           (8'd3),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd98)
+    .flat_tileid                (32'd98)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[98]   )
@@ -47249,7 +47249,7 @@ tile130 (
     .default_coreid_x           (8'd2),
     .default_coreid_y           (8'd4),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd130)
+    .flat_tileid                (32'd130)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[130]   )
@@ -47358,7 +47358,7 @@ tile162 (
     .default_coreid_x           (8'd2),
     .default_coreid_y           (8'd5),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd162)
+    .flat_tileid                (32'd162)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[162]   )
@@ -47467,7 +47467,7 @@ tile194 (
     .default_coreid_x           (8'd2),
     .default_coreid_y           (8'd6),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd194)
+    .flat_tileid                (32'd194)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[194]   )
@@ -47576,7 +47576,7 @@ tile226 (
     .default_coreid_x           (8'd2),
     .default_coreid_y           (8'd7),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd226)
+    .flat_tileid                (32'd226)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[226]   )
@@ -47685,7 +47685,7 @@ tile258 (
     .default_coreid_x           (8'd2),
     .default_coreid_y           (8'd8),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd258)
+    .flat_tileid                (32'd258)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[258]   )
@@ -47794,7 +47794,7 @@ tile290 (
     .default_coreid_x           (8'd2),
     .default_coreid_y           (8'd9),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd290)
+    .flat_tileid                (32'd290)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[290]   )
@@ -47903,7 +47903,7 @@ tile322 (
     .default_coreid_x           (8'd2),
     .default_coreid_y           (8'd10),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd322)
+    .flat_tileid                (32'd322)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[322]   )
@@ -48012,7 +48012,7 @@ tile354 (
     .default_coreid_x           (8'd2),
     .default_coreid_y           (8'd11),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd354)
+    .flat_tileid                (32'd354)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[354]   )
@@ -48121,7 +48121,7 @@ tile386 (
     .default_coreid_x           (8'd2),
     .default_coreid_y           (8'd12),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd386)
+    .flat_tileid                (32'd386)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[386]   )
@@ -48230,7 +48230,7 @@ tile418 (
     .default_coreid_x           (8'd2),
     .default_coreid_y           (8'd13),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd418)
+    .flat_tileid                (32'd418)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[418]   )
@@ -48339,7 +48339,7 @@ tile450 (
     .default_coreid_x           (8'd2),
     .default_coreid_y           (8'd14),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd450)
+    .flat_tileid                (32'd450)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[450]   )
@@ -48448,7 +48448,7 @@ tile482 (
     .default_coreid_x           (8'd2),
     .default_coreid_y           (8'd15),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd482)
+    .flat_tileid                (32'd482)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[482]   )
@@ -48557,7 +48557,7 @@ tile514 (
     .default_coreid_x           (8'd2),
     .default_coreid_y           (8'd16),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd514)
+    .flat_tileid                (32'd514)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[514]   )
@@ -48666,7 +48666,7 @@ tile546 (
     .default_coreid_x           (8'd2),
     .default_coreid_y           (8'd17),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd546)
+    .flat_tileid                (32'd546)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[546]   )
@@ -48775,7 +48775,7 @@ tile578 (
     .default_coreid_x           (8'd2),
     .default_coreid_y           (8'd18),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd578)
+    .flat_tileid                (32'd578)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[578]   )
@@ -48884,7 +48884,7 @@ tile610 (
     .default_coreid_x           (8'd2),
     .default_coreid_y           (8'd19),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd610)
+    .flat_tileid                (32'd610)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[610]   )
@@ -48993,7 +48993,7 @@ tile642 (
     .default_coreid_x           (8'd2),
     .default_coreid_y           (8'd20),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd642)
+    .flat_tileid                (32'd642)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[642]   )
@@ -49102,7 +49102,7 @@ tile674 (
     .default_coreid_x           (8'd2),
     .default_coreid_y           (8'd21),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd674)
+    .flat_tileid                (32'd674)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[674]   )
@@ -49211,7 +49211,7 @@ tile706 (
     .default_coreid_x           (8'd2),
     .default_coreid_y           (8'd22),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd706)
+    .flat_tileid                (32'd706)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[706]   )
@@ -49320,7 +49320,7 @@ tile738 (
     .default_coreid_x           (8'd2),
     .default_coreid_y           (8'd23),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd738)
+    .flat_tileid                (32'd738)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[738]   )
@@ -49429,7 +49429,7 @@ tile770 (
     .default_coreid_x           (8'd2),
     .default_coreid_y           (8'd24),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd770)
+    .flat_tileid                (32'd770)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[770]   )
@@ -49538,7 +49538,7 @@ tile802 (
     .default_coreid_x           (8'd2),
     .default_coreid_y           (8'd25),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd802)
+    .flat_tileid                (32'd802)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[802]   )
@@ -49647,7 +49647,7 @@ tile834 (
     .default_coreid_x           (8'd2),
     .default_coreid_y           (8'd26),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd834)
+    .flat_tileid                (32'd834)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[834]   )
@@ -49756,7 +49756,7 @@ tile866 (
     .default_coreid_x           (8'd2),
     .default_coreid_y           (8'd27),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd866)
+    .flat_tileid                (32'd866)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[866]   )
@@ -49865,7 +49865,7 @@ tile898 (
     .default_coreid_x           (8'd2),
     .default_coreid_y           (8'd28),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd898)
+    .flat_tileid                (32'd898)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[898]   )
@@ -49974,7 +49974,7 @@ tile930 (
     .default_coreid_x           (8'd2),
     .default_coreid_y           (8'd29),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd930)
+    .flat_tileid                (32'd930)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[930]   )
@@ -50083,7 +50083,7 @@ tile962 (
     .default_coreid_x           (8'd2),
     .default_coreid_y           (8'd30),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd962)
+    .flat_tileid                (32'd962)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[962]   )
@@ -50192,7 +50192,7 @@ tile994 (
     .default_coreid_x           (8'd2),
     .default_coreid_y           (8'd31),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd994)
+    .flat_tileid                (32'd994)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[994]   )
@@ -50301,7 +50301,7 @@ tile3 (
     .default_coreid_x           (8'd3),
     .default_coreid_y           (8'd0),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd3)
+    .flat_tileid                (32'd3)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[3]   )
@@ -50410,7 +50410,7 @@ tile35 (
     .default_coreid_x           (8'd3),
     .default_coreid_y           (8'd1),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd35)
+    .flat_tileid                (32'd35)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[35]   )
@@ -50519,7 +50519,7 @@ tile67 (
     .default_coreid_x           (8'd3),
     .default_coreid_y           (8'd2),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd67)
+    .flat_tileid                (32'd67)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[67]   )
@@ -50628,7 +50628,7 @@ tile99 (
     .default_coreid_x           (8'd3),
     .default_coreid_y           (8'd3),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd99)
+    .flat_tileid                (32'd99)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[99]   )
@@ -50737,7 +50737,7 @@ tile131 (
     .default_coreid_x           (8'd3),
     .default_coreid_y           (8'd4),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd131)
+    .flat_tileid                (32'd131)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[131]   )
@@ -50846,7 +50846,7 @@ tile163 (
     .default_coreid_x           (8'd3),
     .default_coreid_y           (8'd5),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd163)
+    .flat_tileid                (32'd163)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[163]   )
@@ -50955,7 +50955,7 @@ tile195 (
     .default_coreid_x           (8'd3),
     .default_coreid_y           (8'd6),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd195)
+    .flat_tileid                (32'd195)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[195]   )
@@ -51064,7 +51064,7 @@ tile227 (
     .default_coreid_x           (8'd3),
     .default_coreid_y           (8'd7),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd227)
+    .flat_tileid                (32'd227)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[227]   )
@@ -51173,7 +51173,7 @@ tile259 (
     .default_coreid_x           (8'd3),
     .default_coreid_y           (8'd8),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd259)
+    .flat_tileid                (32'd259)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[259]   )
@@ -51282,7 +51282,7 @@ tile291 (
     .default_coreid_x           (8'd3),
     .default_coreid_y           (8'd9),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd291)
+    .flat_tileid                (32'd291)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[291]   )
@@ -51391,7 +51391,7 @@ tile323 (
     .default_coreid_x           (8'd3),
     .default_coreid_y           (8'd10),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd323)
+    .flat_tileid                (32'd323)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[323]   )
@@ -51500,7 +51500,7 @@ tile355 (
     .default_coreid_x           (8'd3),
     .default_coreid_y           (8'd11),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd355)
+    .flat_tileid                (32'd355)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[355]   )
@@ -51609,7 +51609,7 @@ tile387 (
     .default_coreid_x           (8'd3),
     .default_coreid_y           (8'd12),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd387)
+    .flat_tileid                (32'd387)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[387]   )
@@ -51718,7 +51718,7 @@ tile419 (
     .default_coreid_x           (8'd3),
     .default_coreid_y           (8'd13),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd419)
+    .flat_tileid                (32'd419)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[419]   )
@@ -51827,7 +51827,7 @@ tile451 (
     .default_coreid_x           (8'd3),
     .default_coreid_y           (8'd14),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd451)
+    .flat_tileid                (32'd451)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[451]   )
@@ -51936,7 +51936,7 @@ tile483 (
     .default_coreid_x           (8'd3),
     .default_coreid_y           (8'd15),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd483)
+    .flat_tileid                (32'd483)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[483]   )
@@ -52045,7 +52045,7 @@ tile515 (
     .default_coreid_x           (8'd3),
     .default_coreid_y           (8'd16),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd515)
+    .flat_tileid                (32'd515)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[515]   )
@@ -52154,7 +52154,7 @@ tile547 (
     .default_coreid_x           (8'd3),
     .default_coreid_y           (8'd17),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd547)
+    .flat_tileid                (32'd547)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[547]   )
@@ -52263,7 +52263,7 @@ tile579 (
     .default_coreid_x           (8'd3),
     .default_coreid_y           (8'd18),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd579)
+    .flat_tileid                (32'd579)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[579]   )
@@ -52372,7 +52372,7 @@ tile611 (
     .default_coreid_x           (8'd3),
     .default_coreid_y           (8'd19),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd611)
+    .flat_tileid                (32'd611)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[611]   )
@@ -52481,7 +52481,7 @@ tile643 (
     .default_coreid_x           (8'd3),
     .default_coreid_y           (8'd20),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd643)
+    .flat_tileid                (32'd643)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[643]   )
@@ -52590,7 +52590,7 @@ tile675 (
     .default_coreid_x           (8'd3),
     .default_coreid_y           (8'd21),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd675)
+    .flat_tileid                (32'd675)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[675]   )
@@ -52699,7 +52699,7 @@ tile707 (
     .default_coreid_x           (8'd3),
     .default_coreid_y           (8'd22),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd707)
+    .flat_tileid                (32'd707)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[707]   )
@@ -52808,7 +52808,7 @@ tile739 (
     .default_coreid_x           (8'd3),
     .default_coreid_y           (8'd23),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd739)
+    .flat_tileid                (32'd739)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[739]   )
@@ -52917,7 +52917,7 @@ tile771 (
     .default_coreid_x           (8'd3),
     .default_coreid_y           (8'd24),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd771)
+    .flat_tileid                (32'd771)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[771]   )
@@ -53026,7 +53026,7 @@ tile803 (
     .default_coreid_x           (8'd3),
     .default_coreid_y           (8'd25),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd803)
+    .flat_tileid                (32'd803)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[803]   )
@@ -53135,7 +53135,7 @@ tile835 (
     .default_coreid_x           (8'd3),
     .default_coreid_y           (8'd26),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd835)
+    .flat_tileid                (32'd835)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[835]   )
@@ -53244,7 +53244,7 @@ tile867 (
     .default_coreid_x           (8'd3),
     .default_coreid_y           (8'd27),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd867)
+    .flat_tileid                (32'd867)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[867]   )
@@ -53353,7 +53353,7 @@ tile899 (
     .default_coreid_x           (8'd3),
     .default_coreid_y           (8'd28),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd899)
+    .flat_tileid                (32'd899)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[899]   )
@@ -53462,7 +53462,7 @@ tile931 (
     .default_coreid_x           (8'd3),
     .default_coreid_y           (8'd29),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd931)
+    .flat_tileid                (32'd931)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[931]   )
@@ -53571,7 +53571,7 @@ tile963 (
     .default_coreid_x           (8'd3),
     .default_coreid_y           (8'd30),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd963)
+    .flat_tileid                (32'd963)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[963]   )
@@ -53680,7 +53680,7 @@ tile995 (
     .default_coreid_x           (8'd3),
     .default_coreid_y           (8'd31),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd995)
+    .flat_tileid                (32'd995)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[995]   )
@@ -53789,7 +53789,7 @@ tile4 (
     .default_coreid_x           (8'd4),
     .default_coreid_y           (8'd0),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd4)
+    .flat_tileid                (32'd4)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[4]   )
@@ -53898,7 +53898,7 @@ tile36 (
     .default_coreid_x           (8'd4),
     .default_coreid_y           (8'd1),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd36)
+    .flat_tileid                (32'd36)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[36]   )
@@ -54007,7 +54007,7 @@ tile68 (
     .default_coreid_x           (8'd4),
     .default_coreid_y           (8'd2),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd68)
+    .flat_tileid                (32'd68)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[68]   )
@@ -54116,7 +54116,7 @@ tile100 (
     .default_coreid_x           (8'd4),
     .default_coreid_y           (8'd3),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd100)
+    .flat_tileid                (32'd100)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[100]   )
@@ -54225,7 +54225,7 @@ tile132 (
     .default_coreid_x           (8'd4),
     .default_coreid_y           (8'd4),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd132)
+    .flat_tileid                (32'd132)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[132]   )
@@ -54334,7 +54334,7 @@ tile164 (
     .default_coreid_x           (8'd4),
     .default_coreid_y           (8'd5),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd164)
+    .flat_tileid                (32'd164)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[164]   )
@@ -54443,7 +54443,7 @@ tile196 (
     .default_coreid_x           (8'd4),
     .default_coreid_y           (8'd6),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd196)
+    .flat_tileid                (32'd196)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[196]   )
@@ -54552,7 +54552,7 @@ tile228 (
     .default_coreid_x           (8'd4),
     .default_coreid_y           (8'd7),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd228)
+    .flat_tileid                (32'd228)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[228]   )
@@ -54661,7 +54661,7 @@ tile260 (
     .default_coreid_x           (8'd4),
     .default_coreid_y           (8'd8),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd260)
+    .flat_tileid                (32'd260)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[260]   )
@@ -54770,7 +54770,7 @@ tile292 (
     .default_coreid_x           (8'd4),
     .default_coreid_y           (8'd9),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd292)
+    .flat_tileid                (32'd292)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[292]   )
@@ -54879,7 +54879,7 @@ tile324 (
     .default_coreid_x           (8'd4),
     .default_coreid_y           (8'd10),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd324)
+    .flat_tileid                (32'd324)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[324]   )
@@ -54988,7 +54988,7 @@ tile356 (
     .default_coreid_x           (8'd4),
     .default_coreid_y           (8'd11),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd356)
+    .flat_tileid                (32'd356)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[356]   )
@@ -55097,7 +55097,7 @@ tile388 (
     .default_coreid_x           (8'd4),
     .default_coreid_y           (8'd12),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd388)
+    .flat_tileid                (32'd388)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[388]   )
@@ -55206,7 +55206,7 @@ tile420 (
     .default_coreid_x           (8'd4),
     .default_coreid_y           (8'd13),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd420)
+    .flat_tileid                (32'd420)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[420]   )
@@ -55315,7 +55315,7 @@ tile452 (
     .default_coreid_x           (8'd4),
     .default_coreid_y           (8'd14),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd452)
+    .flat_tileid                (32'd452)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[452]   )
@@ -55424,7 +55424,7 @@ tile484 (
     .default_coreid_x           (8'd4),
     .default_coreid_y           (8'd15),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd484)
+    .flat_tileid                (32'd484)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[484]   )
@@ -55533,7 +55533,7 @@ tile516 (
     .default_coreid_x           (8'd4),
     .default_coreid_y           (8'd16),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd516)
+    .flat_tileid                (32'd516)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[516]   )
@@ -55642,7 +55642,7 @@ tile548 (
     .default_coreid_x           (8'd4),
     .default_coreid_y           (8'd17),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd548)
+    .flat_tileid                (32'd548)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[548]   )
@@ -55751,7 +55751,7 @@ tile580 (
     .default_coreid_x           (8'd4),
     .default_coreid_y           (8'd18),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd580)
+    .flat_tileid                (32'd580)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[580]   )
@@ -55860,7 +55860,7 @@ tile612 (
     .default_coreid_x           (8'd4),
     .default_coreid_y           (8'd19),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd612)
+    .flat_tileid                (32'd612)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[612]   )
@@ -55969,7 +55969,7 @@ tile644 (
     .default_coreid_x           (8'd4),
     .default_coreid_y           (8'd20),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd644)
+    .flat_tileid                (32'd644)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[644]   )
@@ -56078,7 +56078,7 @@ tile676 (
     .default_coreid_x           (8'd4),
     .default_coreid_y           (8'd21),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd676)
+    .flat_tileid                (32'd676)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[676]   )
@@ -56187,7 +56187,7 @@ tile708 (
     .default_coreid_x           (8'd4),
     .default_coreid_y           (8'd22),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd708)
+    .flat_tileid                (32'd708)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[708]   )
@@ -56296,7 +56296,7 @@ tile740 (
     .default_coreid_x           (8'd4),
     .default_coreid_y           (8'd23),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd740)
+    .flat_tileid                (32'd740)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[740]   )
@@ -56405,7 +56405,7 @@ tile772 (
     .default_coreid_x           (8'd4),
     .default_coreid_y           (8'd24),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd772)
+    .flat_tileid                (32'd772)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[772]   )
@@ -56514,7 +56514,7 @@ tile804 (
     .default_coreid_x           (8'd4),
     .default_coreid_y           (8'd25),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd804)
+    .flat_tileid                (32'd804)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[804]   )
@@ -56623,7 +56623,7 @@ tile836 (
     .default_coreid_x           (8'd4),
     .default_coreid_y           (8'd26),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd836)
+    .flat_tileid                (32'd836)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[836]   )
@@ -56732,7 +56732,7 @@ tile868 (
     .default_coreid_x           (8'd4),
     .default_coreid_y           (8'd27),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd868)
+    .flat_tileid                (32'd868)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[868]   )
@@ -56841,7 +56841,7 @@ tile900 (
     .default_coreid_x           (8'd4),
     .default_coreid_y           (8'd28),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd900)
+    .flat_tileid                (32'd900)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[900]   )
@@ -56950,7 +56950,7 @@ tile932 (
     .default_coreid_x           (8'd4),
     .default_coreid_y           (8'd29),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd932)
+    .flat_tileid                (32'd932)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[932]   )
@@ -57059,7 +57059,7 @@ tile964 (
     .default_coreid_x           (8'd4),
     .default_coreid_y           (8'd30),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd964)
+    .flat_tileid                (32'd964)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[964]   )
@@ -57168,7 +57168,7 @@ tile996 (
     .default_coreid_x           (8'd4),
     .default_coreid_y           (8'd31),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd996)
+    .flat_tileid                (32'd996)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[996]   )
@@ -57277,7 +57277,7 @@ tile5 (
     .default_coreid_x           (8'd5),
     .default_coreid_y           (8'd0),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd5)
+    .flat_tileid                (32'd5)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[5]   )
@@ -57386,7 +57386,7 @@ tile37 (
     .default_coreid_x           (8'd5),
     .default_coreid_y           (8'd1),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd37)
+    .flat_tileid                (32'd37)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[37]   )
@@ -57495,7 +57495,7 @@ tile69 (
     .default_coreid_x           (8'd5),
     .default_coreid_y           (8'd2),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd69)
+    .flat_tileid                (32'd69)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[69]   )
@@ -57604,7 +57604,7 @@ tile101 (
     .default_coreid_x           (8'd5),
     .default_coreid_y           (8'd3),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd101)
+    .flat_tileid                (32'd101)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[101]   )
@@ -57713,7 +57713,7 @@ tile133 (
     .default_coreid_x           (8'd5),
     .default_coreid_y           (8'd4),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd133)
+    .flat_tileid                (32'd133)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[133]   )
@@ -57822,7 +57822,7 @@ tile165 (
     .default_coreid_x           (8'd5),
     .default_coreid_y           (8'd5),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd165)
+    .flat_tileid                (32'd165)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[165]   )
@@ -57931,7 +57931,7 @@ tile197 (
     .default_coreid_x           (8'd5),
     .default_coreid_y           (8'd6),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd197)
+    .flat_tileid                (32'd197)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[197]   )
@@ -58040,7 +58040,7 @@ tile229 (
     .default_coreid_x           (8'd5),
     .default_coreid_y           (8'd7),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd229)
+    .flat_tileid                (32'd229)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[229]   )
@@ -58149,7 +58149,7 @@ tile261 (
     .default_coreid_x           (8'd5),
     .default_coreid_y           (8'd8),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd261)
+    .flat_tileid                (32'd261)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[261]   )
@@ -58258,7 +58258,7 @@ tile293 (
     .default_coreid_x           (8'd5),
     .default_coreid_y           (8'd9),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd293)
+    .flat_tileid                (32'd293)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[293]   )
@@ -58367,7 +58367,7 @@ tile325 (
     .default_coreid_x           (8'd5),
     .default_coreid_y           (8'd10),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd325)
+    .flat_tileid                (32'd325)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[325]   )
@@ -58476,7 +58476,7 @@ tile357 (
     .default_coreid_x           (8'd5),
     .default_coreid_y           (8'd11),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd357)
+    .flat_tileid                (32'd357)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[357]   )
@@ -58585,7 +58585,7 @@ tile389 (
     .default_coreid_x           (8'd5),
     .default_coreid_y           (8'd12),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd389)
+    .flat_tileid                (32'd389)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[389]   )
@@ -58694,7 +58694,7 @@ tile421 (
     .default_coreid_x           (8'd5),
     .default_coreid_y           (8'd13),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd421)
+    .flat_tileid                (32'd421)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[421]   )
@@ -58803,7 +58803,7 @@ tile453 (
     .default_coreid_x           (8'd5),
     .default_coreid_y           (8'd14),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd453)
+    .flat_tileid                (32'd453)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[453]   )
@@ -58912,7 +58912,7 @@ tile485 (
     .default_coreid_x           (8'd5),
     .default_coreid_y           (8'd15),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd485)
+    .flat_tileid                (32'd485)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[485]   )
@@ -59021,7 +59021,7 @@ tile517 (
     .default_coreid_x           (8'd5),
     .default_coreid_y           (8'd16),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd517)
+    .flat_tileid                (32'd517)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[517]   )
@@ -59130,7 +59130,7 @@ tile549 (
     .default_coreid_x           (8'd5),
     .default_coreid_y           (8'd17),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd549)
+    .flat_tileid                (32'd549)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[549]   )
@@ -59239,7 +59239,7 @@ tile581 (
     .default_coreid_x           (8'd5),
     .default_coreid_y           (8'd18),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd581)
+    .flat_tileid                (32'd581)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[581]   )
@@ -59348,7 +59348,7 @@ tile613 (
     .default_coreid_x           (8'd5),
     .default_coreid_y           (8'd19),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd613)
+    .flat_tileid                (32'd613)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[613]   )
@@ -59457,7 +59457,7 @@ tile645 (
     .default_coreid_x           (8'd5),
     .default_coreid_y           (8'd20),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd645)
+    .flat_tileid                (32'd645)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[645]   )
@@ -59566,7 +59566,7 @@ tile677 (
     .default_coreid_x           (8'd5),
     .default_coreid_y           (8'd21),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd677)
+    .flat_tileid                (32'd677)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[677]   )
@@ -59675,7 +59675,7 @@ tile709 (
     .default_coreid_x           (8'd5),
     .default_coreid_y           (8'd22),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd709)
+    .flat_tileid                (32'd709)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[709]   )
@@ -59784,7 +59784,7 @@ tile741 (
     .default_coreid_x           (8'd5),
     .default_coreid_y           (8'd23),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd741)
+    .flat_tileid                (32'd741)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[741]   )
@@ -59893,7 +59893,7 @@ tile773 (
     .default_coreid_x           (8'd5),
     .default_coreid_y           (8'd24),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd773)
+    .flat_tileid                (32'd773)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[773]   )
@@ -60002,7 +60002,7 @@ tile805 (
     .default_coreid_x           (8'd5),
     .default_coreid_y           (8'd25),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd805)
+    .flat_tileid                (32'd805)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[805]   )
@@ -60111,7 +60111,7 @@ tile837 (
     .default_coreid_x           (8'd5),
     .default_coreid_y           (8'd26),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd837)
+    .flat_tileid                (32'd837)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[837]   )
@@ -60220,7 +60220,7 @@ tile869 (
     .default_coreid_x           (8'd5),
     .default_coreid_y           (8'd27),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd869)
+    .flat_tileid                (32'd869)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[869]   )
@@ -60329,7 +60329,7 @@ tile901 (
     .default_coreid_x           (8'd5),
     .default_coreid_y           (8'd28),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd901)
+    .flat_tileid                (32'd901)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[901]   )
@@ -60438,7 +60438,7 @@ tile933 (
     .default_coreid_x           (8'd5),
     .default_coreid_y           (8'd29),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd933)
+    .flat_tileid                (32'd933)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[933]   )
@@ -60547,7 +60547,7 @@ tile965 (
     .default_coreid_x           (8'd5),
     .default_coreid_y           (8'd30),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd965)
+    .flat_tileid                (32'd965)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[965]   )
@@ -60656,7 +60656,7 @@ tile997 (
     .default_coreid_x           (8'd5),
     .default_coreid_y           (8'd31),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd997)
+    .flat_tileid                (32'd997)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[997]   )
@@ -60765,7 +60765,7 @@ tile6 (
     .default_coreid_x           (8'd6),
     .default_coreid_y           (8'd0),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd6)
+    .flat_tileid                (32'd6)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[6]   )
@@ -60874,7 +60874,7 @@ tile38 (
     .default_coreid_x           (8'd6),
     .default_coreid_y           (8'd1),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd38)
+    .flat_tileid                (32'd38)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[38]   )
@@ -60983,7 +60983,7 @@ tile70 (
     .default_coreid_x           (8'd6),
     .default_coreid_y           (8'd2),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd70)
+    .flat_tileid                (32'd70)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[70]   )
@@ -61092,7 +61092,7 @@ tile102 (
     .default_coreid_x           (8'd6),
     .default_coreid_y           (8'd3),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd102)
+    .flat_tileid                (32'd102)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[102]   )
@@ -61201,7 +61201,7 @@ tile134 (
     .default_coreid_x           (8'd6),
     .default_coreid_y           (8'd4),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd134)
+    .flat_tileid                (32'd134)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[134]   )
@@ -61310,7 +61310,7 @@ tile166 (
     .default_coreid_x           (8'd6),
     .default_coreid_y           (8'd5),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd166)
+    .flat_tileid                (32'd166)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[166]   )
@@ -61419,7 +61419,7 @@ tile198 (
     .default_coreid_x           (8'd6),
     .default_coreid_y           (8'd6),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd198)
+    .flat_tileid                (32'd198)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[198]   )
@@ -61528,7 +61528,7 @@ tile230 (
     .default_coreid_x           (8'd6),
     .default_coreid_y           (8'd7),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd230)
+    .flat_tileid                (32'd230)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[230]   )
@@ -61637,7 +61637,7 @@ tile262 (
     .default_coreid_x           (8'd6),
     .default_coreid_y           (8'd8),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd262)
+    .flat_tileid                (32'd262)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[262]   )
@@ -61746,7 +61746,7 @@ tile294 (
     .default_coreid_x           (8'd6),
     .default_coreid_y           (8'd9),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd294)
+    .flat_tileid                (32'd294)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[294]   )
@@ -61855,7 +61855,7 @@ tile326 (
     .default_coreid_x           (8'd6),
     .default_coreid_y           (8'd10),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd326)
+    .flat_tileid                (32'd326)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[326]   )
@@ -61964,7 +61964,7 @@ tile358 (
     .default_coreid_x           (8'd6),
     .default_coreid_y           (8'd11),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd358)
+    .flat_tileid                (32'd358)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[358]   )
@@ -62073,7 +62073,7 @@ tile390 (
     .default_coreid_x           (8'd6),
     .default_coreid_y           (8'd12),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd390)
+    .flat_tileid                (32'd390)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[390]   )
@@ -62182,7 +62182,7 @@ tile422 (
     .default_coreid_x           (8'd6),
     .default_coreid_y           (8'd13),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd422)
+    .flat_tileid                (32'd422)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[422]   )
@@ -62291,7 +62291,7 @@ tile454 (
     .default_coreid_x           (8'd6),
     .default_coreid_y           (8'd14),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd454)
+    .flat_tileid                (32'd454)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[454]   )
@@ -62400,7 +62400,7 @@ tile486 (
     .default_coreid_x           (8'd6),
     .default_coreid_y           (8'd15),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd486)
+    .flat_tileid                (32'd486)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[486]   )
@@ -62509,7 +62509,7 @@ tile518 (
     .default_coreid_x           (8'd6),
     .default_coreid_y           (8'd16),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd518)
+    .flat_tileid                (32'd518)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[518]   )
@@ -62618,7 +62618,7 @@ tile550 (
     .default_coreid_x           (8'd6),
     .default_coreid_y           (8'd17),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd550)
+    .flat_tileid                (32'd550)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[550]   )
@@ -62727,7 +62727,7 @@ tile582 (
     .default_coreid_x           (8'd6),
     .default_coreid_y           (8'd18),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd582)
+    .flat_tileid                (32'd582)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[582]   )
@@ -62836,7 +62836,7 @@ tile614 (
     .default_coreid_x           (8'd6),
     .default_coreid_y           (8'd19),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd614)
+    .flat_tileid                (32'd614)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[614]   )
@@ -62945,7 +62945,7 @@ tile646 (
     .default_coreid_x           (8'd6),
     .default_coreid_y           (8'd20),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd646)
+    .flat_tileid                (32'd646)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[646]   )
@@ -63054,7 +63054,7 @@ tile678 (
     .default_coreid_x           (8'd6),
     .default_coreid_y           (8'd21),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd678)
+    .flat_tileid                (32'd678)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[678]   )
@@ -63163,7 +63163,7 @@ tile710 (
     .default_coreid_x           (8'd6),
     .default_coreid_y           (8'd22),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd710)
+    .flat_tileid                (32'd710)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[710]   )
@@ -63272,7 +63272,7 @@ tile742 (
     .default_coreid_x           (8'd6),
     .default_coreid_y           (8'd23),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd742)
+    .flat_tileid                (32'd742)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[742]   )
@@ -63381,7 +63381,7 @@ tile774 (
     .default_coreid_x           (8'd6),
     .default_coreid_y           (8'd24),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd774)
+    .flat_tileid                (32'd774)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[774]   )
@@ -63490,7 +63490,7 @@ tile806 (
     .default_coreid_x           (8'd6),
     .default_coreid_y           (8'd25),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd806)
+    .flat_tileid                (32'd806)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[806]   )
@@ -63599,7 +63599,7 @@ tile838 (
     .default_coreid_x           (8'd6),
     .default_coreid_y           (8'd26),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd838)
+    .flat_tileid                (32'd838)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[838]   )
@@ -63708,7 +63708,7 @@ tile870 (
     .default_coreid_x           (8'd6),
     .default_coreid_y           (8'd27),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd870)
+    .flat_tileid                (32'd870)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[870]   )
@@ -63817,7 +63817,7 @@ tile902 (
     .default_coreid_x           (8'd6),
     .default_coreid_y           (8'd28),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd902)
+    .flat_tileid                (32'd902)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[902]   )
@@ -63926,7 +63926,7 @@ tile934 (
     .default_coreid_x           (8'd6),
     .default_coreid_y           (8'd29),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd934)
+    .flat_tileid                (32'd934)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[934]   )
@@ -64035,7 +64035,7 @@ tile966 (
     .default_coreid_x           (8'd6),
     .default_coreid_y           (8'd30),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd966)
+    .flat_tileid                (32'd966)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[966]   )
@@ -64144,7 +64144,7 @@ tile998 (
     .default_coreid_x           (8'd6),
     .default_coreid_y           (8'd31),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd998)
+    .flat_tileid                (32'd998)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[998]   )
@@ -64253,7 +64253,7 @@ tile7 (
     .default_coreid_x           (8'd7),
     .default_coreid_y           (8'd0),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd7)
+    .flat_tileid                (32'd7)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[7]   )
@@ -64362,7 +64362,7 @@ tile39 (
     .default_coreid_x           (8'd7),
     .default_coreid_y           (8'd1),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd39)
+    .flat_tileid                (32'd39)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[39]   )
@@ -64471,7 +64471,7 @@ tile71 (
     .default_coreid_x           (8'd7),
     .default_coreid_y           (8'd2),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd71)
+    .flat_tileid                (32'd71)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[71]   )
@@ -64580,7 +64580,7 @@ tile103 (
     .default_coreid_x           (8'd7),
     .default_coreid_y           (8'd3),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd103)
+    .flat_tileid                (32'd103)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[103]   )
@@ -64689,7 +64689,7 @@ tile135 (
     .default_coreid_x           (8'd7),
     .default_coreid_y           (8'd4),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd135)
+    .flat_tileid                (32'd135)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[135]   )
@@ -64798,7 +64798,7 @@ tile167 (
     .default_coreid_x           (8'd7),
     .default_coreid_y           (8'd5),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd167)
+    .flat_tileid                (32'd167)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[167]   )
@@ -64907,7 +64907,7 @@ tile199 (
     .default_coreid_x           (8'd7),
     .default_coreid_y           (8'd6),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd199)
+    .flat_tileid                (32'd199)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[199]   )
@@ -65016,7 +65016,7 @@ tile231 (
     .default_coreid_x           (8'd7),
     .default_coreid_y           (8'd7),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd231)
+    .flat_tileid                (32'd231)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[231]   )
@@ -65125,7 +65125,7 @@ tile263 (
     .default_coreid_x           (8'd7),
     .default_coreid_y           (8'd8),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd263)
+    .flat_tileid                (32'd263)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[263]   )
@@ -65234,7 +65234,7 @@ tile295 (
     .default_coreid_x           (8'd7),
     .default_coreid_y           (8'd9),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd295)
+    .flat_tileid                (32'd295)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[295]   )
@@ -65343,7 +65343,7 @@ tile327 (
     .default_coreid_x           (8'd7),
     .default_coreid_y           (8'd10),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd327)
+    .flat_tileid                (32'd327)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[327]   )
@@ -65452,7 +65452,7 @@ tile359 (
     .default_coreid_x           (8'd7),
     .default_coreid_y           (8'd11),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd359)
+    .flat_tileid                (32'd359)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[359]   )
@@ -65561,7 +65561,7 @@ tile391 (
     .default_coreid_x           (8'd7),
     .default_coreid_y           (8'd12),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd391)
+    .flat_tileid                (32'd391)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[391]   )
@@ -65670,7 +65670,7 @@ tile423 (
     .default_coreid_x           (8'd7),
     .default_coreid_y           (8'd13),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd423)
+    .flat_tileid                (32'd423)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[423]   )
@@ -65779,7 +65779,7 @@ tile455 (
     .default_coreid_x           (8'd7),
     .default_coreid_y           (8'd14),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd455)
+    .flat_tileid                (32'd455)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[455]   )
@@ -65888,7 +65888,7 @@ tile487 (
     .default_coreid_x           (8'd7),
     .default_coreid_y           (8'd15),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd487)
+    .flat_tileid                (32'd487)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[487]   )
@@ -65997,7 +65997,7 @@ tile519 (
     .default_coreid_x           (8'd7),
     .default_coreid_y           (8'd16),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd519)
+    .flat_tileid                (32'd519)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[519]   )
@@ -66106,7 +66106,7 @@ tile551 (
     .default_coreid_x           (8'd7),
     .default_coreid_y           (8'd17),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd551)
+    .flat_tileid                (32'd551)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[551]   )
@@ -66215,7 +66215,7 @@ tile583 (
     .default_coreid_x           (8'd7),
     .default_coreid_y           (8'd18),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd583)
+    .flat_tileid                (32'd583)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[583]   )
@@ -66324,7 +66324,7 @@ tile615 (
     .default_coreid_x           (8'd7),
     .default_coreid_y           (8'd19),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd615)
+    .flat_tileid                (32'd615)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[615]   )
@@ -66433,7 +66433,7 @@ tile647 (
     .default_coreid_x           (8'd7),
     .default_coreid_y           (8'd20),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd647)
+    .flat_tileid                (32'd647)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[647]   )
@@ -66542,7 +66542,7 @@ tile679 (
     .default_coreid_x           (8'd7),
     .default_coreid_y           (8'd21),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd679)
+    .flat_tileid                (32'd679)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[679]   )
@@ -66651,7 +66651,7 @@ tile711 (
     .default_coreid_x           (8'd7),
     .default_coreid_y           (8'd22),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd711)
+    .flat_tileid                (32'd711)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[711]   )
@@ -66760,7 +66760,7 @@ tile743 (
     .default_coreid_x           (8'd7),
     .default_coreid_y           (8'd23),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd743)
+    .flat_tileid                (32'd743)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[743]   )
@@ -66869,7 +66869,7 @@ tile775 (
     .default_coreid_x           (8'd7),
     .default_coreid_y           (8'd24),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd775)
+    .flat_tileid                (32'd775)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[775]   )
@@ -66978,7 +66978,7 @@ tile807 (
     .default_coreid_x           (8'd7),
     .default_coreid_y           (8'd25),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd807)
+    .flat_tileid                (32'd807)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[807]   )
@@ -67087,7 +67087,7 @@ tile839 (
     .default_coreid_x           (8'd7),
     .default_coreid_y           (8'd26),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd839)
+    .flat_tileid                (32'd839)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[839]   )
@@ -67196,7 +67196,7 @@ tile871 (
     .default_coreid_x           (8'd7),
     .default_coreid_y           (8'd27),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd871)
+    .flat_tileid                (32'd871)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[871]   )
@@ -67305,7 +67305,7 @@ tile903 (
     .default_coreid_x           (8'd7),
     .default_coreid_y           (8'd28),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd903)
+    .flat_tileid                (32'd903)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[903]   )
@@ -67414,7 +67414,7 @@ tile935 (
     .default_coreid_x           (8'd7),
     .default_coreid_y           (8'd29),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd935)
+    .flat_tileid                (32'd935)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[935]   )
@@ -67523,7 +67523,7 @@ tile967 (
     .default_coreid_x           (8'd7),
     .default_coreid_y           (8'd30),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd967)
+    .flat_tileid                (32'd967)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[967]   )
@@ -67632,7 +67632,7 @@ tile999 (
     .default_coreid_x           (8'd7),
     .default_coreid_y           (8'd31),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd999)
+    .flat_tileid                (32'd999)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[999]   )
@@ -67741,7 +67741,7 @@ tile8 (
     .default_coreid_x           (8'd8),
     .default_coreid_y           (8'd0),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd8)
+    .flat_tileid                (32'd8)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[8]   )
@@ -67850,7 +67850,7 @@ tile40 (
     .default_coreid_x           (8'd8),
     .default_coreid_y           (8'd1),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd40)
+    .flat_tileid                (32'd40)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[40]   )
@@ -67959,7 +67959,7 @@ tile72 (
     .default_coreid_x           (8'd8),
     .default_coreid_y           (8'd2),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd72)
+    .flat_tileid                (32'd72)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[72]   )
@@ -68068,7 +68068,7 @@ tile104 (
     .default_coreid_x           (8'd8),
     .default_coreid_y           (8'd3),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd104)
+    .flat_tileid                (32'd104)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[104]   )
@@ -68177,7 +68177,7 @@ tile136 (
     .default_coreid_x           (8'd8),
     .default_coreid_y           (8'd4),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd136)
+    .flat_tileid                (32'd136)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[136]   )
@@ -68286,7 +68286,7 @@ tile168 (
     .default_coreid_x           (8'd8),
     .default_coreid_y           (8'd5),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd168)
+    .flat_tileid                (32'd168)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[168]   )
@@ -68395,7 +68395,7 @@ tile200 (
     .default_coreid_x           (8'd8),
     .default_coreid_y           (8'd6),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd200)
+    .flat_tileid                (32'd200)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[200]   )
@@ -68504,7 +68504,7 @@ tile232 (
     .default_coreid_x           (8'd8),
     .default_coreid_y           (8'd7),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd232)
+    .flat_tileid                (32'd232)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[232]   )
@@ -68613,7 +68613,7 @@ tile264 (
     .default_coreid_x           (8'd8),
     .default_coreid_y           (8'd8),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd264)
+    .flat_tileid                (32'd264)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[264]   )
@@ -68722,7 +68722,7 @@ tile296 (
     .default_coreid_x           (8'd8),
     .default_coreid_y           (8'd9),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd296)
+    .flat_tileid                (32'd296)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[296]   )
@@ -68831,7 +68831,7 @@ tile328 (
     .default_coreid_x           (8'd8),
     .default_coreid_y           (8'd10),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd328)
+    .flat_tileid                (32'd328)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[328]   )
@@ -68940,7 +68940,7 @@ tile360 (
     .default_coreid_x           (8'd8),
     .default_coreid_y           (8'd11),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd360)
+    .flat_tileid                (32'd360)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[360]   )
@@ -69049,7 +69049,7 @@ tile392 (
     .default_coreid_x           (8'd8),
     .default_coreid_y           (8'd12),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd392)
+    .flat_tileid                (32'd392)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[392]   )
@@ -69158,7 +69158,7 @@ tile424 (
     .default_coreid_x           (8'd8),
     .default_coreid_y           (8'd13),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd424)
+    .flat_tileid                (32'd424)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[424]   )
@@ -69267,7 +69267,7 @@ tile456 (
     .default_coreid_x           (8'd8),
     .default_coreid_y           (8'd14),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd456)
+    .flat_tileid                (32'd456)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[456]   )
@@ -69376,7 +69376,7 @@ tile488 (
     .default_coreid_x           (8'd8),
     .default_coreid_y           (8'd15),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd488)
+    .flat_tileid                (32'd488)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[488]   )
@@ -69485,7 +69485,7 @@ tile520 (
     .default_coreid_x           (8'd8),
     .default_coreid_y           (8'd16),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd520)
+    .flat_tileid                (32'd520)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[520]   )
@@ -69594,7 +69594,7 @@ tile552 (
     .default_coreid_x           (8'd8),
     .default_coreid_y           (8'd17),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd552)
+    .flat_tileid                (32'd552)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[552]   )
@@ -69703,7 +69703,7 @@ tile584 (
     .default_coreid_x           (8'd8),
     .default_coreid_y           (8'd18),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd584)
+    .flat_tileid                (32'd584)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[584]   )
@@ -69812,7 +69812,7 @@ tile616 (
     .default_coreid_x           (8'd8),
     .default_coreid_y           (8'd19),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd616)
+    .flat_tileid                (32'd616)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[616]   )
@@ -69921,7 +69921,7 @@ tile648 (
     .default_coreid_x           (8'd8),
     .default_coreid_y           (8'd20),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd648)
+    .flat_tileid                (32'd648)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[648]   )
@@ -70030,7 +70030,7 @@ tile680 (
     .default_coreid_x           (8'd8),
     .default_coreid_y           (8'd21),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd680)
+    .flat_tileid                (32'd680)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[680]   )
@@ -70139,7 +70139,7 @@ tile712 (
     .default_coreid_x           (8'd8),
     .default_coreid_y           (8'd22),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd712)
+    .flat_tileid                (32'd712)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[712]   )
@@ -70248,7 +70248,7 @@ tile744 (
     .default_coreid_x           (8'd8),
     .default_coreid_y           (8'd23),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd744)
+    .flat_tileid                (32'd744)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[744]   )
@@ -70357,7 +70357,7 @@ tile776 (
     .default_coreid_x           (8'd8),
     .default_coreid_y           (8'd24),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd776)
+    .flat_tileid                (32'd776)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[776]   )
@@ -70466,7 +70466,7 @@ tile808 (
     .default_coreid_x           (8'd8),
     .default_coreid_y           (8'd25),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd808)
+    .flat_tileid                (32'd808)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[808]   )
@@ -70575,7 +70575,7 @@ tile840 (
     .default_coreid_x           (8'd8),
     .default_coreid_y           (8'd26),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd840)
+    .flat_tileid                (32'd840)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[840]   )
@@ -70684,7 +70684,7 @@ tile872 (
     .default_coreid_x           (8'd8),
     .default_coreid_y           (8'd27),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd872)
+    .flat_tileid                (32'd872)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[872]   )
@@ -70793,7 +70793,7 @@ tile904 (
     .default_coreid_x           (8'd8),
     .default_coreid_y           (8'd28),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd904)
+    .flat_tileid                (32'd904)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[904]   )
@@ -70902,7 +70902,7 @@ tile936 (
     .default_coreid_x           (8'd8),
     .default_coreid_y           (8'd29),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd936)
+    .flat_tileid                (32'd936)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[936]   )
@@ -71011,7 +71011,7 @@ tile968 (
     .default_coreid_x           (8'd8),
     .default_coreid_y           (8'd30),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd968)
+    .flat_tileid                (32'd968)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[968]   )
@@ -71120,7 +71120,7 @@ tile1000 (
     .default_coreid_x           (8'd8),
     .default_coreid_y           (8'd31),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd1000)
+    .flat_tileid                (32'd1000)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[1000]   )
@@ -71229,7 +71229,7 @@ tile9 (
     .default_coreid_x           (8'd9),
     .default_coreid_y           (8'd0),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd9)
+    .flat_tileid                (32'd9)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[9]   )
@@ -71338,7 +71338,7 @@ tile41 (
     .default_coreid_x           (8'd9),
     .default_coreid_y           (8'd1),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd41)
+    .flat_tileid                (32'd41)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[41]   )
@@ -71447,7 +71447,7 @@ tile73 (
     .default_coreid_x           (8'd9),
     .default_coreid_y           (8'd2),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd73)
+    .flat_tileid                (32'd73)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[73]   )
@@ -71556,7 +71556,7 @@ tile105 (
     .default_coreid_x           (8'd9),
     .default_coreid_y           (8'd3),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd105)
+    .flat_tileid                (32'd105)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[105]   )
@@ -71665,7 +71665,7 @@ tile137 (
     .default_coreid_x           (8'd9),
     .default_coreid_y           (8'd4),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd137)
+    .flat_tileid                (32'd137)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[137]   )
@@ -71774,7 +71774,7 @@ tile169 (
     .default_coreid_x           (8'd9),
     .default_coreid_y           (8'd5),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd169)
+    .flat_tileid                (32'd169)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[169]   )
@@ -71883,7 +71883,7 @@ tile201 (
     .default_coreid_x           (8'd9),
     .default_coreid_y           (8'd6),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd201)
+    .flat_tileid                (32'd201)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[201]   )
@@ -71992,7 +71992,7 @@ tile233 (
     .default_coreid_x           (8'd9),
     .default_coreid_y           (8'd7),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd233)
+    .flat_tileid                (32'd233)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[233]   )
@@ -72101,7 +72101,7 @@ tile265 (
     .default_coreid_x           (8'd9),
     .default_coreid_y           (8'd8),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd265)
+    .flat_tileid                (32'd265)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[265]   )
@@ -72210,7 +72210,7 @@ tile297 (
     .default_coreid_x           (8'd9),
     .default_coreid_y           (8'd9),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd297)
+    .flat_tileid                (32'd297)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[297]   )
@@ -72319,7 +72319,7 @@ tile329 (
     .default_coreid_x           (8'd9),
     .default_coreid_y           (8'd10),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd329)
+    .flat_tileid                (32'd329)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[329]   )
@@ -72428,7 +72428,7 @@ tile361 (
     .default_coreid_x           (8'd9),
     .default_coreid_y           (8'd11),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd361)
+    .flat_tileid                (32'd361)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[361]   )
@@ -72537,7 +72537,7 @@ tile393 (
     .default_coreid_x           (8'd9),
     .default_coreid_y           (8'd12),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd393)
+    .flat_tileid                (32'd393)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[393]   )
@@ -72646,7 +72646,7 @@ tile425 (
     .default_coreid_x           (8'd9),
     .default_coreid_y           (8'd13),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd425)
+    .flat_tileid                (32'd425)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[425]   )
@@ -72755,7 +72755,7 @@ tile457 (
     .default_coreid_x           (8'd9),
     .default_coreid_y           (8'd14),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd457)
+    .flat_tileid                (32'd457)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[457]   )
@@ -72864,7 +72864,7 @@ tile489 (
     .default_coreid_x           (8'd9),
     .default_coreid_y           (8'd15),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd489)
+    .flat_tileid                (32'd489)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[489]   )
@@ -72973,7 +72973,7 @@ tile521 (
     .default_coreid_x           (8'd9),
     .default_coreid_y           (8'd16),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd521)
+    .flat_tileid                (32'd521)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[521]   )
@@ -73082,7 +73082,7 @@ tile553 (
     .default_coreid_x           (8'd9),
     .default_coreid_y           (8'd17),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd553)
+    .flat_tileid                (32'd553)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[553]   )
@@ -73191,7 +73191,7 @@ tile585 (
     .default_coreid_x           (8'd9),
     .default_coreid_y           (8'd18),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd585)
+    .flat_tileid                (32'd585)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[585]   )
@@ -73300,7 +73300,7 @@ tile617 (
     .default_coreid_x           (8'd9),
     .default_coreid_y           (8'd19),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd617)
+    .flat_tileid                (32'd617)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[617]   )
@@ -73409,7 +73409,7 @@ tile649 (
     .default_coreid_x           (8'd9),
     .default_coreid_y           (8'd20),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd649)
+    .flat_tileid                (32'd649)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[649]   )
@@ -73518,7 +73518,7 @@ tile681 (
     .default_coreid_x           (8'd9),
     .default_coreid_y           (8'd21),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd681)
+    .flat_tileid                (32'd681)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[681]   )
@@ -73627,7 +73627,7 @@ tile713 (
     .default_coreid_x           (8'd9),
     .default_coreid_y           (8'd22),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd713)
+    .flat_tileid                (32'd713)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[713]   )
@@ -73736,7 +73736,7 @@ tile745 (
     .default_coreid_x           (8'd9),
     .default_coreid_y           (8'd23),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd745)
+    .flat_tileid                (32'd745)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[745]   )
@@ -73845,7 +73845,7 @@ tile777 (
     .default_coreid_x           (8'd9),
     .default_coreid_y           (8'd24),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd777)
+    .flat_tileid                (32'd777)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[777]   )
@@ -73954,7 +73954,7 @@ tile809 (
     .default_coreid_x           (8'd9),
     .default_coreid_y           (8'd25),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd809)
+    .flat_tileid                (32'd809)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[809]   )
@@ -74063,7 +74063,7 @@ tile841 (
     .default_coreid_x           (8'd9),
     .default_coreid_y           (8'd26),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd841)
+    .flat_tileid                (32'd841)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[841]   )
@@ -74172,7 +74172,7 @@ tile873 (
     .default_coreid_x           (8'd9),
     .default_coreid_y           (8'd27),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd873)
+    .flat_tileid                (32'd873)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[873]   )
@@ -74281,7 +74281,7 @@ tile905 (
     .default_coreid_x           (8'd9),
     .default_coreid_y           (8'd28),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd905)
+    .flat_tileid                (32'd905)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[905]   )
@@ -74390,7 +74390,7 @@ tile937 (
     .default_coreid_x           (8'd9),
     .default_coreid_y           (8'd29),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd937)
+    .flat_tileid                (32'd937)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[937]   )
@@ -74499,7 +74499,7 @@ tile969 (
     .default_coreid_x           (8'd9),
     .default_coreid_y           (8'd30),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd969)
+    .flat_tileid                (32'd969)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[969]   )
@@ -74608,7 +74608,7 @@ tile1001 (
     .default_coreid_x           (8'd9),
     .default_coreid_y           (8'd31),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd1001)
+    .flat_tileid                (32'd1001)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[1001]   )
@@ -74717,7 +74717,7 @@ tile10 (
     .default_coreid_x           (8'd10),
     .default_coreid_y           (8'd0),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd10)
+    .flat_tileid                (32'd10)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[10]   )
@@ -74826,7 +74826,7 @@ tile42 (
     .default_coreid_x           (8'd10),
     .default_coreid_y           (8'd1),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd42)
+    .flat_tileid                (32'd42)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[42]   )
@@ -74935,7 +74935,7 @@ tile74 (
     .default_coreid_x           (8'd10),
     .default_coreid_y           (8'd2),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd74)
+    .flat_tileid                (32'd74)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[74]   )
@@ -75044,7 +75044,7 @@ tile106 (
     .default_coreid_x           (8'd10),
     .default_coreid_y           (8'd3),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd106)
+    .flat_tileid                (32'd106)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[106]   )
@@ -75153,7 +75153,7 @@ tile138 (
     .default_coreid_x           (8'd10),
     .default_coreid_y           (8'd4),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd138)
+    .flat_tileid                (32'd138)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[138]   )
@@ -75262,7 +75262,7 @@ tile170 (
     .default_coreid_x           (8'd10),
     .default_coreid_y           (8'd5),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd170)
+    .flat_tileid                (32'd170)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[170]   )
@@ -75371,7 +75371,7 @@ tile202 (
     .default_coreid_x           (8'd10),
     .default_coreid_y           (8'd6),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd202)
+    .flat_tileid                (32'd202)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[202]   )
@@ -75480,7 +75480,7 @@ tile234 (
     .default_coreid_x           (8'd10),
     .default_coreid_y           (8'd7),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd234)
+    .flat_tileid                (32'd234)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[234]   )
@@ -75589,7 +75589,7 @@ tile266 (
     .default_coreid_x           (8'd10),
     .default_coreid_y           (8'd8),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd266)
+    .flat_tileid                (32'd266)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[266]   )
@@ -75698,7 +75698,7 @@ tile298 (
     .default_coreid_x           (8'd10),
     .default_coreid_y           (8'd9),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd298)
+    .flat_tileid                (32'd298)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[298]   )
@@ -75807,7 +75807,7 @@ tile330 (
     .default_coreid_x           (8'd10),
     .default_coreid_y           (8'd10),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd330)
+    .flat_tileid                (32'd330)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[330]   )
@@ -75916,7 +75916,7 @@ tile362 (
     .default_coreid_x           (8'd10),
     .default_coreid_y           (8'd11),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd362)
+    .flat_tileid                (32'd362)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[362]   )
@@ -76025,7 +76025,7 @@ tile394 (
     .default_coreid_x           (8'd10),
     .default_coreid_y           (8'd12),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd394)
+    .flat_tileid                (32'd394)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[394]   )
@@ -76134,7 +76134,7 @@ tile426 (
     .default_coreid_x           (8'd10),
     .default_coreid_y           (8'd13),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd426)
+    .flat_tileid                (32'd426)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[426]   )
@@ -76243,7 +76243,7 @@ tile458 (
     .default_coreid_x           (8'd10),
     .default_coreid_y           (8'd14),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd458)
+    .flat_tileid                (32'd458)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[458]   )
@@ -76352,7 +76352,7 @@ tile490 (
     .default_coreid_x           (8'd10),
     .default_coreid_y           (8'd15),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd490)
+    .flat_tileid                (32'd490)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[490]   )
@@ -76461,7 +76461,7 @@ tile522 (
     .default_coreid_x           (8'd10),
     .default_coreid_y           (8'd16),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd522)
+    .flat_tileid                (32'd522)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[522]   )
@@ -76570,7 +76570,7 @@ tile554 (
     .default_coreid_x           (8'd10),
     .default_coreid_y           (8'd17),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd554)
+    .flat_tileid                (32'd554)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[554]   )
@@ -76679,7 +76679,7 @@ tile586 (
     .default_coreid_x           (8'd10),
     .default_coreid_y           (8'd18),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd586)
+    .flat_tileid                (32'd586)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[586]   )
@@ -76788,7 +76788,7 @@ tile618 (
     .default_coreid_x           (8'd10),
     .default_coreid_y           (8'd19),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd618)
+    .flat_tileid                (32'd618)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[618]   )
@@ -76897,7 +76897,7 @@ tile650 (
     .default_coreid_x           (8'd10),
     .default_coreid_y           (8'd20),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd650)
+    .flat_tileid                (32'd650)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[650]   )
@@ -77006,7 +77006,7 @@ tile682 (
     .default_coreid_x           (8'd10),
     .default_coreid_y           (8'd21),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd682)
+    .flat_tileid                (32'd682)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[682]   )
@@ -77115,7 +77115,7 @@ tile714 (
     .default_coreid_x           (8'd10),
     .default_coreid_y           (8'd22),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd714)
+    .flat_tileid                (32'd714)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[714]   )
@@ -77224,7 +77224,7 @@ tile746 (
     .default_coreid_x           (8'd10),
     .default_coreid_y           (8'd23),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd746)
+    .flat_tileid                (32'd746)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[746]   )
@@ -77333,7 +77333,7 @@ tile778 (
     .default_coreid_x           (8'd10),
     .default_coreid_y           (8'd24),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd778)
+    .flat_tileid                (32'd778)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[778]   )
@@ -77442,7 +77442,7 @@ tile810 (
     .default_coreid_x           (8'd10),
     .default_coreid_y           (8'd25),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd810)
+    .flat_tileid                (32'd810)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[810]   )
@@ -77551,7 +77551,7 @@ tile842 (
     .default_coreid_x           (8'd10),
     .default_coreid_y           (8'd26),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd842)
+    .flat_tileid                (32'd842)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[842]   )
@@ -77660,7 +77660,7 @@ tile874 (
     .default_coreid_x           (8'd10),
     .default_coreid_y           (8'd27),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd874)
+    .flat_tileid                (32'd874)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[874]   )
@@ -77769,7 +77769,7 @@ tile906 (
     .default_coreid_x           (8'd10),
     .default_coreid_y           (8'd28),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd906)
+    .flat_tileid                (32'd906)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[906]   )
@@ -77878,7 +77878,7 @@ tile938 (
     .default_coreid_x           (8'd10),
     .default_coreid_y           (8'd29),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd938)
+    .flat_tileid                (32'd938)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[938]   )
@@ -77987,7 +77987,7 @@ tile970 (
     .default_coreid_x           (8'd10),
     .default_coreid_y           (8'd30),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd970)
+    .flat_tileid                (32'd970)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[970]   )
@@ -78096,7 +78096,7 @@ tile1002 (
     .default_coreid_x           (8'd10),
     .default_coreid_y           (8'd31),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd1002)
+    .flat_tileid                (32'd1002)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[1002]   )
@@ -78205,7 +78205,7 @@ tile11 (
     .default_coreid_x           (8'd11),
     .default_coreid_y           (8'd0),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd11)
+    .flat_tileid                (32'd11)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[11]   )
@@ -78314,7 +78314,7 @@ tile43 (
     .default_coreid_x           (8'd11),
     .default_coreid_y           (8'd1),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd43)
+    .flat_tileid                (32'd43)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[43]   )
@@ -78423,7 +78423,7 @@ tile75 (
     .default_coreid_x           (8'd11),
     .default_coreid_y           (8'd2),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd75)
+    .flat_tileid                (32'd75)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[75]   )
@@ -78532,7 +78532,7 @@ tile107 (
     .default_coreid_x           (8'd11),
     .default_coreid_y           (8'd3),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd107)
+    .flat_tileid                (32'd107)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[107]   )
@@ -78641,7 +78641,7 @@ tile139 (
     .default_coreid_x           (8'd11),
     .default_coreid_y           (8'd4),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd139)
+    .flat_tileid                (32'd139)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[139]   )
@@ -78750,7 +78750,7 @@ tile171 (
     .default_coreid_x           (8'd11),
     .default_coreid_y           (8'd5),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd171)
+    .flat_tileid                (32'd171)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[171]   )
@@ -78859,7 +78859,7 @@ tile203 (
     .default_coreid_x           (8'd11),
     .default_coreid_y           (8'd6),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd203)
+    .flat_tileid                (32'd203)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[203]   )
@@ -78968,7 +78968,7 @@ tile235 (
     .default_coreid_x           (8'd11),
     .default_coreid_y           (8'd7),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd235)
+    .flat_tileid                (32'd235)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[235]   )
@@ -79077,7 +79077,7 @@ tile267 (
     .default_coreid_x           (8'd11),
     .default_coreid_y           (8'd8),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd267)
+    .flat_tileid                (32'd267)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[267]   )
@@ -79186,7 +79186,7 @@ tile299 (
     .default_coreid_x           (8'd11),
     .default_coreid_y           (8'd9),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd299)
+    .flat_tileid                (32'd299)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[299]   )
@@ -79295,7 +79295,7 @@ tile331 (
     .default_coreid_x           (8'd11),
     .default_coreid_y           (8'd10),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd331)
+    .flat_tileid                (32'd331)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[331]   )
@@ -79404,7 +79404,7 @@ tile363 (
     .default_coreid_x           (8'd11),
     .default_coreid_y           (8'd11),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd363)
+    .flat_tileid                (32'd363)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[363]   )
@@ -79513,7 +79513,7 @@ tile395 (
     .default_coreid_x           (8'd11),
     .default_coreid_y           (8'd12),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd395)
+    .flat_tileid                (32'd395)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[395]   )
@@ -79622,7 +79622,7 @@ tile427 (
     .default_coreid_x           (8'd11),
     .default_coreid_y           (8'd13),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd427)
+    .flat_tileid                (32'd427)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[427]   )
@@ -79731,7 +79731,7 @@ tile459 (
     .default_coreid_x           (8'd11),
     .default_coreid_y           (8'd14),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd459)
+    .flat_tileid                (32'd459)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[459]   )
@@ -79840,7 +79840,7 @@ tile491 (
     .default_coreid_x           (8'd11),
     .default_coreid_y           (8'd15),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd491)
+    .flat_tileid                (32'd491)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[491]   )
@@ -79949,7 +79949,7 @@ tile523 (
     .default_coreid_x           (8'd11),
     .default_coreid_y           (8'd16),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd523)
+    .flat_tileid                (32'd523)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[523]   )
@@ -80058,7 +80058,7 @@ tile555 (
     .default_coreid_x           (8'd11),
     .default_coreid_y           (8'd17),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd555)
+    .flat_tileid                (32'd555)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[555]   )
@@ -80167,7 +80167,7 @@ tile587 (
     .default_coreid_x           (8'd11),
     .default_coreid_y           (8'd18),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd587)
+    .flat_tileid                (32'd587)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[587]   )
@@ -80276,7 +80276,7 @@ tile619 (
     .default_coreid_x           (8'd11),
     .default_coreid_y           (8'd19),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd619)
+    .flat_tileid                (32'd619)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[619]   )
@@ -80385,7 +80385,7 @@ tile651 (
     .default_coreid_x           (8'd11),
     .default_coreid_y           (8'd20),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd651)
+    .flat_tileid                (32'd651)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[651]   )
@@ -80494,7 +80494,7 @@ tile683 (
     .default_coreid_x           (8'd11),
     .default_coreid_y           (8'd21),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd683)
+    .flat_tileid                (32'd683)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[683]   )
@@ -80603,7 +80603,7 @@ tile715 (
     .default_coreid_x           (8'd11),
     .default_coreid_y           (8'd22),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd715)
+    .flat_tileid                (32'd715)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[715]   )
@@ -80712,7 +80712,7 @@ tile747 (
     .default_coreid_x           (8'd11),
     .default_coreid_y           (8'd23),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd747)
+    .flat_tileid                (32'd747)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[747]   )
@@ -80821,7 +80821,7 @@ tile779 (
     .default_coreid_x           (8'd11),
     .default_coreid_y           (8'd24),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd779)
+    .flat_tileid                (32'd779)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[779]   )
@@ -80930,7 +80930,7 @@ tile811 (
     .default_coreid_x           (8'd11),
     .default_coreid_y           (8'd25),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd811)
+    .flat_tileid                (32'd811)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[811]   )
@@ -81039,7 +81039,7 @@ tile843 (
     .default_coreid_x           (8'd11),
     .default_coreid_y           (8'd26),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd843)
+    .flat_tileid                (32'd843)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[843]   )
@@ -81148,7 +81148,7 @@ tile875 (
     .default_coreid_x           (8'd11),
     .default_coreid_y           (8'd27),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd875)
+    .flat_tileid                (32'd875)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[875]   )
@@ -81257,7 +81257,7 @@ tile907 (
     .default_coreid_x           (8'd11),
     .default_coreid_y           (8'd28),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd907)
+    .flat_tileid                (32'd907)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[907]   )
@@ -81366,7 +81366,7 @@ tile939 (
     .default_coreid_x           (8'd11),
     .default_coreid_y           (8'd29),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd939)
+    .flat_tileid                (32'd939)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[939]   )
@@ -81475,7 +81475,7 @@ tile971 (
     .default_coreid_x           (8'd11),
     .default_coreid_y           (8'd30),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd971)
+    .flat_tileid                (32'd971)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[971]   )
@@ -81584,7 +81584,7 @@ tile1003 (
     .default_coreid_x           (8'd11),
     .default_coreid_y           (8'd31),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd1003)
+    .flat_tileid                (32'd1003)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[1003]   )
@@ -81693,7 +81693,7 @@ tile12 (
     .default_coreid_x           (8'd12),
     .default_coreid_y           (8'd0),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd12)
+    .flat_tileid                (32'd12)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[12]   )
@@ -81802,7 +81802,7 @@ tile44 (
     .default_coreid_x           (8'd12),
     .default_coreid_y           (8'd1),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd44)
+    .flat_tileid                (32'd44)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[44]   )
@@ -81911,7 +81911,7 @@ tile76 (
     .default_coreid_x           (8'd12),
     .default_coreid_y           (8'd2),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd76)
+    .flat_tileid                (32'd76)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[76]   )
@@ -82020,7 +82020,7 @@ tile108 (
     .default_coreid_x           (8'd12),
     .default_coreid_y           (8'd3),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd108)
+    .flat_tileid                (32'd108)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[108]   )
@@ -82129,7 +82129,7 @@ tile140 (
     .default_coreid_x           (8'd12),
     .default_coreid_y           (8'd4),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd140)
+    .flat_tileid                (32'd140)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[140]   )
@@ -82238,7 +82238,7 @@ tile172 (
     .default_coreid_x           (8'd12),
     .default_coreid_y           (8'd5),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd172)
+    .flat_tileid                (32'd172)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[172]   )
@@ -82347,7 +82347,7 @@ tile204 (
     .default_coreid_x           (8'd12),
     .default_coreid_y           (8'd6),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd204)
+    .flat_tileid                (32'd204)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[204]   )
@@ -82456,7 +82456,7 @@ tile236 (
     .default_coreid_x           (8'd12),
     .default_coreid_y           (8'd7),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd236)
+    .flat_tileid                (32'd236)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[236]   )
@@ -82565,7 +82565,7 @@ tile268 (
     .default_coreid_x           (8'd12),
     .default_coreid_y           (8'd8),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd268)
+    .flat_tileid                (32'd268)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[268]   )
@@ -82674,7 +82674,7 @@ tile300 (
     .default_coreid_x           (8'd12),
     .default_coreid_y           (8'd9),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd300)
+    .flat_tileid                (32'd300)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[300]   )
@@ -82783,7 +82783,7 @@ tile332 (
     .default_coreid_x           (8'd12),
     .default_coreid_y           (8'd10),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd332)
+    .flat_tileid                (32'd332)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[332]   )
@@ -82892,7 +82892,7 @@ tile364 (
     .default_coreid_x           (8'd12),
     .default_coreid_y           (8'd11),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd364)
+    .flat_tileid                (32'd364)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[364]   )
@@ -83001,7 +83001,7 @@ tile396 (
     .default_coreid_x           (8'd12),
     .default_coreid_y           (8'd12),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd396)
+    .flat_tileid                (32'd396)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[396]   )
@@ -83110,7 +83110,7 @@ tile428 (
     .default_coreid_x           (8'd12),
     .default_coreid_y           (8'd13),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd428)
+    .flat_tileid                (32'd428)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[428]   )
@@ -83219,7 +83219,7 @@ tile460 (
     .default_coreid_x           (8'd12),
     .default_coreid_y           (8'd14),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd460)
+    .flat_tileid                (32'd460)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[460]   )
@@ -83328,7 +83328,7 @@ tile492 (
     .default_coreid_x           (8'd12),
     .default_coreid_y           (8'd15),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd492)
+    .flat_tileid                (32'd492)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[492]   )
@@ -83437,7 +83437,7 @@ tile524 (
     .default_coreid_x           (8'd12),
     .default_coreid_y           (8'd16),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd524)
+    .flat_tileid                (32'd524)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[524]   )
@@ -83546,7 +83546,7 @@ tile556 (
     .default_coreid_x           (8'd12),
     .default_coreid_y           (8'd17),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd556)
+    .flat_tileid                (32'd556)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[556]   )
@@ -83655,7 +83655,7 @@ tile588 (
     .default_coreid_x           (8'd12),
     .default_coreid_y           (8'd18),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd588)
+    .flat_tileid                (32'd588)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[588]   )
@@ -83764,7 +83764,7 @@ tile620 (
     .default_coreid_x           (8'd12),
     .default_coreid_y           (8'd19),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd620)
+    .flat_tileid                (32'd620)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[620]   )
@@ -83873,7 +83873,7 @@ tile652 (
     .default_coreid_x           (8'd12),
     .default_coreid_y           (8'd20),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd652)
+    .flat_tileid                (32'd652)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[652]   )
@@ -83982,7 +83982,7 @@ tile684 (
     .default_coreid_x           (8'd12),
     .default_coreid_y           (8'd21),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd684)
+    .flat_tileid                (32'd684)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[684]   )
@@ -84091,7 +84091,7 @@ tile716 (
     .default_coreid_x           (8'd12),
     .default_coreid_y           (8'd22),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd716)
+    .flat_tileid                (32'd716)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[716]   )
@@ -84200,7 +84200,7 @@ tile748 (
     .default_coreid_x           (8'd12),
     .default_coreid_y           (8'd23),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd748)
+    .flat_tileid                (32'd748)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[748]   )
@@ -84309,7 +84309,7 @@ tile780 (
     .default_coreid_x           (8'd12),
     .default_coreid_y           (8'd24),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd780)
+    .flat_tileid                (32'd780)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[780]   )
@@ -84418,7 +84418,7 @@ tile812 (
     .default_coreid_x           (8'd12),
     .default_coreid_y           (8'd25),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd812)
+    .flat_tileid                (32'd812)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[812]   )
@@ -84527,7 +84527,7 @@ tile844 (
     .default_coreid_x           (8'd12),
     .default_coreid_y           (8'd26),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd844)
+    .flat_tileid                (32'd844)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[844]   )
@@ -84636,7 +84636,7 @@ tile876 (
     .default_coreid_x           (8'd12),
     .default_coreid_y           (8'd27),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd876)
+    .flat_tileid                (32'd876)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[876]   )
@@ -84745,7 +84745,7 @@ tile908 (
     .default_coreid_x           (8'd12),
     .default_coreid_y           (8'd28),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd908)
+    .flat_tileid                (32'd908)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[908]   )
@@ -84854,7 +84854,7 @@ tile940 (
     .default_coreid_x           (8'd12),
     .default_coreid_y           (8'd29),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd940)
+    .flat_tileid                (32'd940)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[940]   )
@@ -84963,7 +84963,7 @@ tile972 (
     .default_coreid_x           (8'd12),
     .default_coreid_y           (8'd30),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd972)
+    .flat_tileid                (32'd972)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[972]   )
@@ -85072,7 +85072,7 @@ tile1004 (
     .default_coreid_x           (8'd12),
     .default_coreid_y           (8'd31),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd1004)
+    .flat_tileid                (32'd1004)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[1004]   )
@@ -85181,7 +85181,7 @@ tile13 (
     .default_coreid_x           (8'd13),
     .default_coreid_y           (8'd0),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd13)
+    .flat_tileid                (32'd13)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[13]   )
@@ -85290,7 +85290,7 @@ tile45 (
     .default_coreid_x           (8'd13),
     .default_coreid_y           (8'd1),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd45)
+    .flat_tileid                (32'd45)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[45]   )
@@ -85399,7 +85399,7 @@ tile77 (
     .default_coreid_x           (8'd13),
     .default_coreid_y           (8'd2),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd77)
+    .flat_tileid                (32'd77)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[77]   )
@@ -85508,7 +85508,7 @@ tile109 (
     .default_coreid_x           (8'd13),
     .default_coreid_y           (8'd3),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd109)
+    .flat_tileid                (32'd109)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[109]   )
@@ -85617,7 +85617,7 @@ tile141 (
     .default_coreid_x           (8'd13),
     .default_coreid_y           (8'd4),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd141)
+    .flat_tileid                (32'd141)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[141]   )
@@ -85726,7 +85726,7 @@ tile173 (
     .default_coreid_x           (8'd13),
     .default_coreid_y           (8'd5),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd173)
+    .flat_tileid                (32'd173)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[173]   )
@@ -85835,7 +85835,7 @@ tile205 (
     .default_coreid_x           (8'd13),
     .default_coreid_y           (8'd6),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd205)
+    .flat_tileid                (32'd205)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[205]   )
@@ -85944,7 +85944,7 @@ tile237 (
     .default_coreid_x           (8'd13),
     .default_coreid_y           (8'd7),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd237)
+    .flat_tileid                (32'd237)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[237]   )
@@ -86053,7 +86053,7 @@ tile269 (
     .default_coreid_x           (8'd13),
     .default_coreid_y           (8'd8),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd269)
+    .flat_tileid                (32'd269)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[269]   )
@@ -86162,7 +86162,7 @@ tile301 (
     .default_coreid_x           (8'd13),
     .default_coreid_y           (8'd9),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd301)
+    .flat_tileid                (32'd301)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[301]   )
@@ -86271,7 +86271,7 @@ tile333 (
     .default_coreid_x           (8'd13),
     .default_coreid_y           (8'd10),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd333)
+    .flat_tileid                (32'd333)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[333]   )
@@ -86380,7 +86380,7 @@ tile365 (
     .default_coreid_x           (8'd13),
     .default_coreid_y           (8'd11),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd365)
+    .flat_tileid                (32'd365)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[365]   )
@@ -86489,7 +86489,7 @@ tile397 (
     .default_coreid_x           (8'd13),
     .default_coreid_y           (8'd12),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd397)
+    .flat_tileid                (32'd397)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[397]   )
@@ -86598,7 +86598,7 @@ tile429 (
     .default_coreid_x           (8'd13),
     .default_coreid_y           (8'd13),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd429)
+    .flat_tileid                (32'd429)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[429]   )
@@ -86707,7 +86707,7 @@ tile461 (
     .default_coreid_x           (8'd13),
     .default_coreid_y           (8'd14),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd461)
+    .flat_tileid                (32'd461)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[461]   )
@@ -86816,7 +86816,7 @@ tile493 (
     .default_coreid_x           (8'd13),
     .default_coreid_y           (8'd15),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd493)
+    .flat_tileid                (32'd493)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[493]   )
@@ -86925,7 +86925,7 @@ tile525 (
     .default_coreid_x           (8'd13),
     .default_coreid_y           (8'd16),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd525)
+    .flat_tileid                (32'd525)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[525]   )
@@ -87034,7 +87034,7 @@ tile557 (
     .default_coreid_x           (8'd13),
     .default_coreid_y           (8'd17),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd557)
+    .flat_tileid                (32'd557)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[557]   )
@@ -87143,7 +87143,7 @@ tile589 (
     .default_coreid_x           (8'd13),
     .default_coreid_y           (8'd18),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd589)
+    .flat_tileid                (32'd589)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[589]   )
@@ -87252,7 +87252,7 @@ tile621 (
     .default_coreid_x           (8'd13),
     .default_coreid_y           (8'd19),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd621)
+    .flat_tileid                (32'd621)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[621]   )
@@ -87361,7 +87361,7 @@ tile653 (
     .default_coreid_x           (8'd13),
     .default_coreid_y           (8'd20),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd653)
+    .flat_tileid                (32'd653)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[653]   )
@@ -87470,7 +87470,7 @@ tile685 (
     .default_coreid_x           (8'd13),
     .default_coreid_y           (8'd21),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd685)
+    .flat_tileid                (32'd685)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[685]   )
@@ -87579,7 +87579,7 @@ tile717 (
     .default_coreid_x           (8'd13),
     .default_coreid_y           (8'd22),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd717)
+    .flat_tileid                (32'd717)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[717]   )
@@ -87688,7 +87688,7 @@ tile749 (
     .default_coreid_x           (8'd13),
     .default_coreid_y           (8'd23),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd749)
+    .flat_tileid                (32'd749)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[749]   )
@@ -87797,7 +87797,7 @@ tile781 (
     .default_coreid_x           (8'd13),
     .default_coreid_y           (8'd24),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd781)
+    .flat_tileid                (32'd781)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[781]   )
@@ -87906,7 +87906,7 @@ tile813 (
     .default_coreid_x           (8'd13),
     .default_coreid_y           (8'd25),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd813)
+    .flat_tileid                (32'd813)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[813]   )
@@ -88015,7 +88015,7 @@ tile845 (
     .default_coreid_x           (8'd13),
     .default_coreid_y           (8'd26),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd845)
+    .flat_tileid                (32'd845)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[845]   )
@@ -88124,7 +88124,7 @@ tile877 (
     .default_coreid_x           (8'd13),
     .default_coreid_y           (8'd27),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd877)
+    .flat_tileid                (32'd877)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[877]   )
@@ -88233,7 +88233,7 @@ tile909 (
     .default_coreid_x           (8'd13),
     .default_coreid_y           (8'd28),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd909)
+    .flat_tileid                (32'd909)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[909]   )
@@ -88342,7 +88342,7 @@ tile941 (
     .default_coreid_x           (8'd13),
     .default_coreid_y           (8'd29),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd941)
+    .flat_tileid                (32'd941)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[941]   )
@@ -88451,7 +88451,7 @@ tile973 (
     .default_coreid_x           (8'd13),
     .default_coreid_y           (8'd30),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd973)
+    .flat_tileid                (32'd973)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[973]   )
@@ -88560,7 +88560,7 @@ tile1005 (
     .default_coreid_x           (8'd13),
     .default_coreid_y           (8'd31),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd1005)
+    .flat_tileid                (32'd1005)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[1005]   )
@@ -88669,7 +88669,7 @@ tile14 (
     .default_coreid_x           (8'd14),
     .default_coreid_y           (8'd0),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd14)
+    .flat_tileid                (32'd14)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[14]   )
@@ -88778,7 +88778,7 @@ tile46 (
     .default_coreid_x           (8'd14),
     .default_coreid_y           (8'd1),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd46)
+    .flat_tileid                (32'd46)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[46]   )
@@ -88887,7 +88887,7 @@ tile78 (
     .default_coreid_x           (8'd14),
     .default_coreid_y           (8'd2),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd78)
+    .flat_tileid                (32'd78)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[78]   )
@@ -88996,7 +88996,7 @@ tile110 (
     .default_coreid_x           (8'd14),
     .default_coreid_y           (8'd3),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd110)
+    .flat_tileid                (32'd110)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[110]   )
@@ -89105,7 +89105,7 @@ tile142 (
     .default_coreid_x           (8'd14),
     .default_coreid_y           (8'd4),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd142)
+    .flat_tileid                (32'd142)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[142]   )
@@ -89214,7 +89214,7 @@ tile174 (
     .default_coreid_x           (8'd14),
     .default_coreid_y           (8'd5),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd174)
+    .flat_tileid                (32'd174)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[174]   )
@@ -89323,7 +89323,7 @@ tile206 (
     .default_coreid_x           (8'd14),
     .default_coreid_y           (8'd6),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd206)
+    .flat_tileid                (32'd206)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[206]   )
@@ -89432,7 +89432,7 @@ tile238 (
     .default_coreid_x           (8'd14),
     .default_coreid_y           (8'd7),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd238)
+    .flat_tileid                (32'd238)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[238]   )
@@ -89541,7 +89541,7 @@ tile270 (
     .default_coreid_x           (8'd14),
     .default_coreid_y           (8'd8),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd270)
+    .flat_tileid                (32'd270)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[270]   )
@@ -89650,7 +89650,7 @@ tile302 (
     .default_coreid_x           (8'd14),
     .default_coreid_y           (8'd9),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd302)
+    .flat_tileid                (32'd302)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[302]   )
@@ -89759,7 +89759,7 @@ tile334 (
     .default_coreid_x           (8'd14),
     .default_coreid_y           (8'd10),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd334)
+    .flat_tileid                (32'd334)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[334]   )
@@ -89868,7 +89868,7 @@ tile366 (
     .default_coreid_x           (8'd14),
     .default_coreid_y           (8'd11),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd366)
+    .flat_tileid                (32'd366)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[366]   )
@@ -89977,7 +89977,7 @@ tile398 (
     .default_coreid_x           (8'd14),
     .default_coreid_y           (8'd12),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd398)
+    .flat_tileid                (32'd398)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[398]   )
@@ -90086,7 +90086,7 @@ tile430 (
     .default_coreid_x           (8'd14),
     .default_coreid_y           (8'd13),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd430)
+    .flat_tileid                (32'd430)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[430]   )
@@ -90195,7 +90195,7 @@ tile462 (
     .default_coreid_x           (8'd14),
     .default_coreid_y           (8'd14),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd462)
+    .flat_tileid                (32'd462)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[462]   )
@@ -90304,7 +90304,7 @@ tile494 (
     .default_coreid_x           (8'd14),
     .default_coreid_y           (8'd15),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd494)
+    .flat_tileid                (32'd494)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[494]   )
@@ -90413,7 +90413,7 @@ tile526 (
     .default_coreid_x           (8'd14),
     .default_coreid_y           (8'd16),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd526)
+    .flat_tileid                (32'd526)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[526]   )
@@ -90522,7 +90522,7 @@ tile558 (
     .default_coreid_x           (8'd14),
     .default_coreid_y           (8'd17),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd558)
+    .flat_tileid                (32'd558)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[558]   )
@@ -90631,7 +90631,7 @@ tile590 (
     .default_coreid_x           (8'd14),
     .default_coreid_y           (8'd18),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd590)
+    .flat_tileid                (32'd590)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[590]   )
@@ -90740,7 +90740,7 @@ tile622 (
     .default_coreid_x           (8'd14),
     .default_coreid_y           (8'd19),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd622)
+    .flat_tileid                (32'd622)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[622]   )
@@ -90849,7 +90849,7 @@ tile654 (
     .default_coreid_x           (8'd14),
     .default_coreid_y           (8'd20),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd654)
+    .flat_tileid                (32'd654)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[654]   )
@@ -90958,7 +90958,7 @@ tile686 (
     .default_coreid_x           (8'd14),
     .default_coreid_y           (8'd21),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd686)
+    .flat_tileid                (32'd686)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[686]   )
@@ -91067,7 +91067,7 @@ tile718 (
     .default_coreid_x           (8'd14),
     .default_coreid_y           (8'd22),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd718)
+    .flat_tileid                (32'd718)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[718]   )
@@ -91176,7 +91176,7 @@ tile750 (
     .default_coreid_x           (8'd14),
     .default_coreid_y           (8'd23),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd750)
+    .flat_tileid                (32'd750)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[750]   )
@@ -91285,7 +91285,7 @@ tile782 (
     .default_coreid_x           (8'd14),
     .default_coreid_y           (8'd24),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd782)
+    .flat_tileid                (32'd782)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[782]   )
@@ -91394,7 +91394,7 @@ tile814 (
     .default_coreid_x           (8'd14),
     .default_coreid_y           (8'd25),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd814)
+    .flat_tileid                (32'd814)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[814]   )
@@ -91503,7 +91503,7 @@ tile846 (
     .default_coreid_x           (8'd14),
     .default_coreid_y           (8'd26),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd846)
+    .flat_tileid                (32'd846)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[846]   )
@@ -91612,7 +91612,7 @@ tile878 (
     .default_coreid_x           (8'd14),
     .default_coreid_y           (8'd27),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd878)
+    .flat_tileid                (32'd878)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[878]   )
@@ -91721,7 +91721,7 @@ tile910 (
     .default_coreid_x           (8'd14),
     .default_coreid_y           (8'd28),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd910)
+    .flat_tileid                (32'd910)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[910]   )
@@ -91830,7 +91830,7 @@ tile942 (
     .default_coreid_x           (8'd14),
     .default_coreid_y           (8'd29),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd942)
+    .flat_tileid                (32'd942)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[942]   )
@@ -91939,7 +91939,7 @@ tile974 (
     .default_coreid_x           (8'd14),
     .default_coreid_y           (8'd30),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd974)
+    .flat_tileid                (32'd974)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[974]   )
@@ -92048,7 +92048,7 @@ tile1006 (
     .default_coreid_x           (8'd14),
     .default_coreid_y           (8'd31),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd1006)
+    .flat_tileid                (32'd1006)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[1006]   )
@@ -92157,7 +92157,7 @@ tile15 (
     .default_coreid_x           (8'd15),
     .default_coreid_y           (8'd0),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd15)
+    .flat_tileid                (32'd15)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[15]   )
@@ -92266,7 +92266,7 @@ tile47 (
     .default_coreid_x           (8'd15),
     .default_coreid_y           (8'd1),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd47)
+    .flat_tileid                (32'd47)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[47]   )
@@ -92375,7 +92375,7 @@ tile79 (
     .default_coreid_x           (8'd15),
     .default_coreid_y           (8'd2),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd79)
+    .flat_tileid                (32'd79)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[79]   )
@@ -92484,7 +92484,7 @@ tile111 (
     .default_coreid_x           (8'd15),
     .default_coreid_y           (8'd3),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd111)
+    .flat_tileid                (32'd111)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[111]   )
@@ -92593,7 +92593,7 @@ tile143 (
     .default_coreid_x           (8'd15),
     .default_coreid_y           (8'd4),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd143)
+    .flat_tileid                (32'd143)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[143]   )
@@ -92702,7 +92702,7 @@ tile175 (
     .default_coreid_x           (8'd15),
     .default_coreid_y           (8'd5),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd175)
+    .flat_tileid                (32'd175)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[175]   )
@@ -92811,7 +92811,7 @@ tile207 (
     .default_coreid_x           (8'd15),
     .default_coreid_y           (8'd6),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd207)
+    .flat_tileid                (32'd207)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[207]   )
@@ -92920,7 +92920,7 @@ tile239 (
     .default_coreid_x           (8'd15),
     .default_coreid_y           (8'd7),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd239)
+    .flat_tileid                (32'd239)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[239]   )
@@ -93029,7 +93029,7 @@ tile271 (
     .default_coreid_x           (8'd15),
     .default_coreid_y           (8'd8),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd271)
+    .flat_tileid                (32'd271)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[271]   )
@@ -93138,7 +93138,7 @@ tile303 (
     .default_coreid_x           (8'd15),
     .default_coreid_y           (8'd9),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd303)
+    .flat_tileid                (32'd303)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[303]   )
@@ -93247,7 +93247,7 @@ tile335 (
     .default_coreid_x           (8'd15),
     .default_coreid_y           (8'd10),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd335)
+    .flat_tileid                (32'd335)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[335]   )
@@ -93356,7 +93356,7 @@ tile367 (
     .default_coreid_x           (8'd15),
     .default_coreid_y           (8'd11),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd367)
+    .flat_tileid                (32'd367)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[367]   )
@@ -93465,7 +93465,7 @@ tile399 (
     .default_coreid_x           (8'd15),
     .default_coreid_y           (8'd12),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd399)
+    .flat_tileid                (32'd399)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[399]   )
@@ -93574,7 +93574,7 @@ tile431 (
     .default_coreid_x           (8'd15),
     .default_coreid_y           (8'd13),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd431)
+    .flat_tileid                (32'd431)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[431]   )
@@ -93683,7 +93683,7 @@ tile463 (
     .default_coreid_x           (8'd15),
     .default_coreid_y           (8'd14),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd463)
+    .flat_tileid                (32'd463)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[463]   )
@@ -93792,7 +93792,7 @@ tile495 (
     .default_coreid_x           (8'd15),
     .default_coreid_y           (8'd15),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd495)
+    .flat_tileid                (32'd495)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[495]   )
@@ -93901,7 +93901,7 @@ tile527 (
     .default_coreid_x           (8'd15),
     .default_coreid_y           (8'd16),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd527)
+    .flat_tileid                (32'd527)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[527]   )
@@ -94010,7 +94010,7 @@ tile559 (
     .default_coreid_x           (8'd15),
     .default_coreid_y           (8'd17),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd559)
+    .flat_tileid                (32'd559)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[559]   )
@@ -94119,7 +94119,7 @@ tile591 (
     .default_coreid_x           (8'd15),
     .default_coreid_y           (8'd18),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd591)
+    .flat_tileid                (32'd591)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[591]   )
@@ -94228,7 +94228,7 @@ tile623 (
     .default_coreid_x           (8'd15),
     .default_coreid_y           (8'd19),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd623)
+    .flat_tileid                (32'd623)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[623]   )
@@ -94337,7 +94337,7 @@ tile655 (
     .default_coreid_x           (8'd15),
     .default_coreid_y           (8'd20),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd655)
+    .flat_tileid                (32'd655)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[655]   )
@@ -94446,7 +94446,7 @@ tile687 (
     .default_coreid_x           (8'd15),
     .default_coreid_y           (8'd21),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd687)
+    .flat_tileid                (32'd687)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[687]   )
@@ -94555,7 +94555,7 @@ tile719 (
     .default_coreid_x           (8'd15),
     .default_coreid_y           (8'd22),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd719)
+    .flat_tileid                (32'd719)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[719]   )
@@ -94664,7 +94664,7 @@ tile751 (
     .default_coreid_x           (8'd15),
     .default_coreid_y           (8'd23),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd751)
+    .flat_tileid                (32'd751)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[751]   )
@@ -94773,7 +94773,7 @@ tile783 (
     .default_coreid_x           (8'd15),
     .default_coreid_y           (8'd24),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd783)
+    .flat_tileid                (32'd783)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[783]   )
@@ -94882,7 +94882,7 @@ tile815 (
     .default_coreid_x           (8'd15),
     .default_coreid_y           (8'd25),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd815)
+    .flat_tileid                (32'd815)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[815]   )
@@ -94991,7 +94991,7 @@ tile847 (
     .default_coreid_x           (8'd15),
     .default_coreid_y           (8'd26),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd847)
+    .flat_tileid                (32'd847)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[847]   )
@@ -95100,7 +95100,7 @@ tile879 (
     .default_coreid_x           (8'd15),
     .default_coreid_y           (8'd27),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd879)
+    .flat_tileid                (32'd879)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[879]   )
@@ -95209,7 +95209,7 @@ tile911 (
     .default_coreid_x           (8'd15),
     .default_coreid_y           (8'd28),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd911)
+    .flat_tileid                (32'd911)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[911]   )
@@ -95318,7 +95318,7 @@ tile943 (
     .default_coreid_x           (8'd15),
     .default_coreid_y           (8'd29),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd943)
+    .flat_tileid                (32'd943)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[943]   )
@@ -95427,7 +95427,7 @@ tile975 (
     .default_coreid_x           (8'd15),
     .default_coreid_y           (8'd30),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd975)
+    .flat_tileid                (32'd975)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[975]   )
@@ -95536,7 +95536,7 @@ tile1007 (
     .default_coreid_x           (8'd15),
     .default_coreid_y           (8'd31),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd1007)
+    .flat_tileid                (32'd1007)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[1007]   )
@@ -95645,7 +95645,7 @@ tile16 (
     .default_coreid_x           (8'd16),
     .default_coreid_y           (8'd0),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd16)
+    .flat_tileid                (32'd16)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[16]   )
@@ -95754,7 +95754,7 @@ tile48 (
     .default_coreid_x           (8'd16),
     .default_coreid_y           (8'd1),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd48)
+    .flat_tileid                (32'd48)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[48]   )
@@ -95863,7 +95863,7 @@ tile80 (
     .default_coreid_x           (8'd16),
     .default_coreid_y           (8'd2),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd80)
+    .flat_tileid                (32'd80)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[80]   )
@@ -95972,7 +95972,7 @@ tile112 (
     .default_coreid_x           (8'd16),
     .default_coreid_y           (8'd3),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd112)
+    .flat_tileid                (32'd112)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[112]   )
@@ -96081,7 +96081,7 @@ tile144 (
     .default_coreid_x           (8'd16),
     .default_coreid_y           (8'd4),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd144)
+    .flat_tileid                (32'd144)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[144]   )
@@ -96190,7 +96190,7 @@ tile176 (
     .default_coreid_x           (8'd16),
     .default_coreid_y           (8'd5),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd176)
+    .flat_tileid                (32'd176)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[176]   )
@@ -96299,7 +96299,7 @@ tile208 (
     .default_coreid_x           (8'd16),
     .default_coreid_y           (8'd6),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd208)
+    .flat_tileid                (32'd208)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[208]   )
@@ -96408,7 +96408,7 @@ tile240 (
     .default_coreid_x           (8'd16),
     .default_coreid_y           (8'd7),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd240)
+    .flat_tileid                (32'd240)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[240]   )
@@ -96517,7 +96517,7 @@ tile272 (
     .default_coreid_x           (8'd16),
     .default_coreid_y           (8'd8),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd272)
+    .flat_tileid                (32'd272)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[272]   )
@@ -96626,7 +96626,7 @@ tile304 (
     .default_coreid_x           (8'd16),
     .default_coreid_y           (8'd9),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd304)
+    .flat_tileid                (32'd304)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[304]   )
@@ -96735,7 +96735,7 @@ tile336 (
     .default_coreid_x           (8'd16),
     .default_coreid_y           (8'd10),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd336)
+    .flat_tileid                (32'd336)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[336]   )
@@ -96844,7 +96844,7 @@ tile368 (
     .default_coreid_x           (8'd16),
     .default_coreid_y           (8'd11),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd368)
+    .flat_tileid                (32'd368)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[368]   )
@@ -96953,7 +96953,7 @@ tile400 (
     .default_coreid_x           (8'd16),
     .default_coreid_y           (8'd12),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd400)
+    .flat_tileid                (32'd400)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[400]   )
@@ -97062,7 +97062,7 @@ tile432 (
     .default_coreid_x           (8'd16),
     .default_coreid_y           (8'd13),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd432)
+    .flat_tileid                (32'd432)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[432]   )
@@ -97171,7 +97171,7 @@ tile464 (
     .default_coreid_x           (8'd16),
     .default_coreid_y           (8'd14),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd464)
+    .flat_tileid                (32'd464)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[464]   )
@@ -97280,7 +97280,7 @@ tile496 (
     .default_coreid_x           (8'd16),
     .default_coreid_y           (8'd15),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd496)
+    .flat_tileid                (32'd496)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[496]   )
@@ -97389,7 +97389,7 @@ tile528 (
     .default_coreid_x           (8'd16),
     .default_coreid_y           (8'd16),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd528)
+    .flat_tileid                (32'd528)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[528]   )
@@ -97498,7 +97498,7 @@ tile560 (
     .default_coreid_x           (8'd16),
     .default_coreid_y           (8'd17),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd560)
+    .flat_tileid                (32'd560)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[560]   )
@@ -97607,7 +97607,7 @@ tile592 (
     .default_coreid_x           (8'd16),
     .default_coreid_y           (8'd18),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd592)
+    .flat_tileid                (32'd592)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[592]   )
@@ -97716,7 +97716,7 @@ tile624 (
     .default_coreid_x           (8'd16),
     .default_coreid_y           (8'd19),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd624)
+    .flat_tileid                (32'd624)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[624]   )
@@ -97825,7 +97825,7 @@ tile656 (
     .default_coreid_x           (8'd16),
     .default_coreid_y           (8'd20),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd656)
+    .flat_tileid                (32'd656)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[656]   )
@@ -97934,7 +97934,7 @@ tile688 (
     .default_coreid_x           (8'd16),
     .default_coreid_y           (8'd21),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd688)
+    .flat_tileid                (32'd688)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[688]   )
@@ -98043,7 +98043,7 @@ tile720 (
     .default_coreid_x           (8'd16),
     .default_coreid_y           (8'd22),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd720)
+    .flat_tileid                (32'd720)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[720]   )
@@ -98152,7 +98152,7 @@ tile752 (
     .default_coreid_x           (8'd16),
     .default_coreid_y           (8'd23),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd752)
+    .flat_tileid                (32'd752)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[752]   )
@@ -98261,7 +98261,7 @@ tile784 (
     .default_coreid_x           (8'd16),
     .default_coreid_y           (8'd24),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd784)
+    .flat_tileid                (32'd784)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[784]   )
@@ -98370,7 +98370,7 @@ tile816 (
     .default_coreid_x           (8'd16),
     .default_coreid_y           (8'd25),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd816)
+    .flat_tileid                (32'd816)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[816]   )
@@ -98479,7 +98479,7 @@ tile848 (
     .default_coreid_x           (8'd16),
     .default_coreid_y           (8'd26),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd848)
+    .flat_tileid                (32'd848)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[848]   )
@@ -98588,7 +98588,7 @@ tile880 (
     .default_coreid_x           (8'd16),
     .default_coreid_y           (8'd27),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd880)
+    .flat_tileid                (32'd880)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[880]   )
@@ -98697,7 +98697,7 @@ tile912 (
     .default_coreid_x           (8'd16),
     .default_coreid_y           (8'd28),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd912)
+    .flat_tileid                (32'd912)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[912]   )
@@ -98806,7 +98806,7 @@ tile944 (
     .default_coreid_x           (8'd16),
     .default_coreid_y           (8'd29),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd944)
+    .flat_tileid                (32'd944)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[944]   )
@@ -98915,7 +98915,7 @@ tile976 (
     .default_coreid_x           (8'd16),
     .default_coreid_y           (8'd30),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd976)
+    .flat_tileid                (32'd976)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[976]   )
@@ -99024,7 +99024,7 @@ tile1008 (
     .default_coreid_x           (8'd16),
     .default_coreid_y           (8'd31),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd1008)
+    .flat_tileid                (32'd1008)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[1008]   )
@@ -99133,7 +99133,7 @@ tile17 (
     .default_coreid_x           (8'd17),
     .default_coreid_y           (8'd0),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd17)
+    .flat_tileid                (32'd17)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[17]   )
@@ -99242,7 +99242,7 @@ tile49 (
     .default_coreid_x           (8'd17),
     .default_coreid_y           (8'd1),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd49)
+    .flat_tileid                (32'd49)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[49]   )
@@ -99351,7 +99351,7 @@ tile81 (
     .default_coreid_x           (8'd17),
     .default_coreid_y           (8'd2),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd81)
+    .flat_tileid                (32'd81)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[81]   )
@@ -99460,7 +99460,7 @@ tile113 (
     .default_coreid_x           (8'd17),
     .default_coreid_y           (8'd3),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd113)
+    .flat_tileid                (32'd113)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[113]   )
@@ -99569,7 +99569,7 @@ tile145 (
     .default_coreid_x           (8'd17),
     .default_coreid_y           (8'd4),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd145)
+    .flat_tileid                (32'd145)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[145]   )
@@ -99678,7 +99678,7 @@ tile177 (
     .default_coreid_x           (8'd17),
     .default_coreid_y           (8'd5),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd177)
+    .flat_tileid                (32'd177)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[177]   )
@@ -99787,7 +99787,7 @@ tile209 (
     .default_coreid_x           (8'd17),
     .default_coreid_y           (8'd6),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd209)
+    .flat_tileid                (32'd209)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[209]   )
@@ -99896,7 +99896,7 @@ tile241 (
     .default_coreid_x           (8'd17),
     .default_coreid_y           (8'd7),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd241)
+    .flat_tileid                (32'd241)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[241]   )
@@ -100005,7 +100005,7 @@ tile273 (
     .default_coreid_x           (8'd17),
     .default_coreid_y           (8'd8),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd273)
+    .flat_tileid                (32'd273)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[273]   )
@@ -100114,7 +100114,7 @@ tile305 (
     .default_coreid_x           (8'd17),
     .default_coreid_y           (8'd9),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd305)
+    .flat_tileid                (32'd305)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[305]   )
@@ -100223,7 +100223,7 @@ tile337 (
     .default_coreid_x           (8'd17),
     .default_coreid_y           (8'd10),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd337)
+    .flat_tileid                (32'd337)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[337]   )
@@ -100332,7 +100332,7 @@ tile369 (
     .default_coreid_x           (8'd17),
     .default_coreid_y           (8'd11),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd369)
+    .flat_tileid                (32'd369)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[369]   )
@@ -100441,7 +100441,7 @@ tile401 (
     .default_coreid_x           (8'd17),
     .default_coreid_y           (8'd12),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd401)
+    .flat_tileid                (32'd401)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[401]   )
@@ -100550,7 +100550,7 @@ tile433 (
     .default_coreid_x           (8'd17),
     .default_coreid_y           (8'd13),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd433)
+    .flat_tileid                (32'd433)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[433]   )
@@ -100659,7 +100659,7 @@ tile465 (
     .default_coreid_x           (8'd17),
     .default_coreid_y           (8'd14),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd465)
+    .flat_tileid                (32'd465)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[465]   )
@@ -100768,7 +100768,7 @@ tile497 (
     .default_coreid_x           (8'd17),
     .default_coreid_y           (8'd15),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd497)
+    .flat_tileid                (32'd497)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[497]   )
@@ -100877,7 +100877,7 @@ tile529 (
     .default_coreid_x           (8'd17),
     .default_coreid_y           (8'd16),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd529)
+    .flat_tileid                (32'd529)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[529]   )
@@ -100986,7 +100986,7 @@ tile561 (
     .default_coreid_x           (8'd17),
     .default_coreid_y           (8'd17),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd561)
+    .flat_tileid                (32'd561)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[561]   )
@@ -101095,7 +101095,7 @@ tile593 (
     .default_coreid_x           (8'd17),
     .default_coreid_y           (8'd18),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd593)
+    .flat_tileid                (32'd593)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[593]   )
@@ -101204,7 +101204,7 @@ tile625 (
     .default_coreid_x           (8'd17),
     .default_coreid_y           (8'd19),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd625)
+    .flat_tileid                (32'd625)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[625]   )
@@ -101313,7 +101313,7 @@ tile657 (
     .default_coreid_x           (8'd17),
     .default_coreid_y           (8'd20),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd657)
+    .flat_tileid                (32'd657)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[657]   )
@@ -101422,7 +101422,7 @@ tile689 (
     .default_coreid_x           (8'd17),
     .default_coreid_y           (8'd21),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd689)
+    .flat_tileid                (32'd689)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[689]   )
@@ -101531,7 +101531,7 @@ tile721 (
     .default_coreid_x           (8'd17),
     .default_coreid_y           (8'd22),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd721)
+    .flat_tileid                (32'd721)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[721]   )
@@ -101640,7 +101640,7 @@ tile753 (
     .default_coreid_x           (8'd17),
     .default_coreid_y           (8'd23),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd753)
+    .flat_tileid                (32'd753)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[753]   )
@@ -101749,7 +101749,7 @@ tile785 (
     .default_coreid_x           (8'd17),
     .default_coreid_y           (8'd24),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd785)
+    .flat_tileid                (32'd785)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[785]   )
@@ -101858,7 +101858,7 @@ tile817 (
     .default_coreid_x           (8'd17),
     .default_coreid_y           (8'd25),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd817)
+    .flat_tileid                (32'd817)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[817]   )
@@ -101967,7 +101967,7 @@ tile849 (
     .default_coreid_x           (8'd17),
     .default_coreid_y           (8'd26),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd849)
+    .flat_tileid                (32'd849)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[849]   )
@@ -102076,7 +102076,7 @@ tile881 (
     .default_coreid_x           (8'd17),
     .default_coreid_y           (8'd27),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd881)
+    .flat_tileid                (32'd881)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[881]   )
@@ -102185,7 +102185,7 @@ tile913 (
     .default_coreid_x           (8'd17),
     .default_coreid_y           (8'd28),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd913)
+    .flat_tileid                (32'd913)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[913]   )
@@ -102294,7 +102294,7 @@ tile945 (
     .default_coreid_x           (8'd17),
     .default_coreid_y           (8'd29),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd945)
+    .flat_tileid                (32'd945)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[945]   )
@@ -102403,7 +102403,7 @@ tile977 (
     .default_coreid_x           (8'd17),
     .default_coreid_y           (8'd30),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd977)
+    .flat_tileid                (32'd977)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[977]   )
@@ -102512,7 +102512,7 @@ tile1009 (
     .default_coreid_x           (8'd17),
     .default_coreid_y           (8'd31),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd1009)
+    .flat_tileid                (32'd1009)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[1009]   )
@@ -102621,7 +102621,7 @@ tile18 (
     .default_coreid_x           (8'd18),
     .default_coreid_y           (8'd0),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd18)
+    .flat_tileid                (32'd18)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[18]   )
@@ -102730,7 +102730,7 @@ tile50 (
     .default_coreid_x           (8'd18),
     .default_coreid_y           (8'd1),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd50)
+    .flat_tileid                (32'd50)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[50]   )
@@ -102839,7 +102839,7 @@ tile82 (
     .default_coreid_x           (8'd18),
     .default_coreid_y           (8'd2),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd82)
+    .flat_tileid                (32'd82)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[82]   )
@@ -102948,7 +102948,7 @@ tile114 (
     .default_coreid_x           (8'd18),
     .default_coreid_y           (8'd3),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd114)
+    .flat_tileid                (32'd114)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[114]   )
@@ -103057,7 +103057,7 @@ tile146 (
     .default_coreid_x           (8'd18),
     .default_coreid_y           (8'd4),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd146)
+    .flat_tileid                (32'd146)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[146]   )
@@ -103166,7 +103166,7 @@ tile178 (
     .default_coreid_x           (8'd18),
     .default_coreid_y           (8'd5),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd178)
+    .flat_tileid                (32'd178)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[178]   )
@@ -103275,7 +103275,7 @@ tile210 (
     .default_coreid_x           (8'd18),
     .default_coreid_y           (8'd6),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd210)
+    .flat_tileid                (32'd210)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[210]   )
@@ -103384,7 +103384,7 @@ tile242 (
     .default_coreid_x           (8'd18),
     .default_coreid_y           (8'd7),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd242)
+    .flat_tileid                (32'd242)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[242]   )
@@ -103493,7 +103493,7 @@ tile274 (
     .default_coreid_x           (8'd18),
     .default_coreid_y           (8'd8),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd274)
+    .flat_tileid                (32'd274)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[274]   )
@@ -103602,7 +103602,7 @@ tile306 (
     .default_coreid_x           (8'd18),
     .default_coreid_y           (8'd9),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd306)
+    .flat_tileid                (32'd306)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[306]   )
@@ -103711,7 +103711,7 @@ tile338 (
     .default_coreid_x           (8'd18),
     .default_coreid_y           (8'd10),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd338)
+    .flat_tileid                (32'd338)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[338]   )
@@ -103820,7 +103820,7 @@ tile370 (
     .default_coreid_x           (8'd18),
     .default_coreid_y           (8'd11),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd370)
+    .flat_tileid                (32'd370)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[370]   )
@@ -103929,7 +103929,7 @@ tile402 (
     .default_coreid_x           (8'd18),
     .default_coreid_y           (8'd12),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd402)
+    .flat_tileid                (32'd402)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[402]   )
@@ -104038,7 +104038,7 @@ tile434 (
     .default_coreid_x           (8'd18),
     .default_coreid_y           (8'd13),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd434)
+    .flat_tileid                (32'd434)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[434]   )
@@ -104147,7 +104147,7 @@ tile466 (
     .default_coreid_x           (8'd18),
     .default_coreid_y           (8'd14),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd466)
+    .flat_tileid                (32'd466)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[466]   )
@@ -104256,7 +104256,7 @@ tile498 (
     .default_coreid_x           (8'd18),
     .default_coreid_y           (8'd15),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd498)
+    .flat_tileid                (32'd498)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[498]   )
@@ -104365,7 +104365,7 @@ tile530 (
     .default_coreid_x           (8'd18),
     .default_coreid_y           (8'd16),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd530)
+    .flat_tileid                (32'd530)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[530]   )
@@ -104474,7 +104474,7 @@ tile562 (
     .default_coreid_x           (8'd18),
     .default_coreid_y           (8'd17),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd562)
+    .flat_tileid                (32'd562)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[562]   )
@@ -104583,7 +104583,7 @@ tile594 (
     .default_coreid_x           (8'd18),
     .default_coreid_y           (8'd18),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd594)
+    .flat_tileid                (32'd594)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[594]   )
@@ -104692,7 +104692,7 @@ tile626 (
     .default_coreid_x           (8'd18),
     .default_coreid_y           (8'd19),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd626)
+    .flat_tileid                (32'd626)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[626]   )
@@ -104801,7 +104801,7 @@ tile658 (
     .default_coreid_x           (8'd18),
     .default_coreid_y           (8'd20),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd658)
+    .flat_tileid                (32'd658)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[658]   )
@@ -104910,7 +104910,7 @@ tile690 (
     .default_coreid_x           (8'd18),
     .default_coreid_y           (8'd21),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd690)
+    .flat_tileid                (32'd690)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[690]   )
@@ -105019,7 +105019,7 @@ tile722 (
     .default_coreid_x           (8'd18),
     .default_coreid_y           (8'd22),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd722)
+    .flat_tileid                (32'd722)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[722]   )
@@ -105128,7 +105128,7 @@ tile754 (
     .default_coreid_x           (8'd18),
     .default_coreid_y           (8'd23),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd754)
+    .flat_tileid                (32'd754)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[754]   )
@@ -105237,7 +105237,7 @@ tile786 (
     .default_coreid_x           (8'd18),
     .default_coreid_y           (8'd24),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd786)
+    .flat_tileid                (32'd786)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[786]   )
@@ -105346,7 +105346,7 @@ tile818 (
     .default_coreid_x           (8'd18),
     .default_coreid_y           (8'd25),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd818)
+    .flat_tileid                (32'd818)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[818]   )
@@ -105455,7 +105455,7 @@ tile850 (
     .default_coreid_x           (8'd18),
     .default_coreid_y           (8'd26),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd850)
+    .flat_tileid                (32'd850)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[850]   )
@@ -105564,7 +105564,7 @@ tile882 (
     .default_coreid_x           (8'd18),
     .default_coreid_y           (8'd27),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd882)
+    .flat_tileid                (32'd882)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[882]   )
@@ -105673,7 +105673,7 @@ tile914 (
     .default_coreid_x           (8'd18),
     .default_coreid_y           (8'd28),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd914)
+    .flat_tileid                (32'd914)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[914]   )
@@ -105782,7 +105782,7 @@ tile946 (
     .default_coreid_x           (8'd18),
     .default_coreid_y           (8'd29),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd946)
+    .flat_tileid                (32'd946)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[946]   )
@@ -105891,7 +105891,7 @@ tile978 (
     .default_coreid_x           (8'd18),
     .default_coreid_y           (8'd30),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd978)
+    .flat_tileid                (32'd978)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[978]   )
@@ -106000,7 +106000,7 @@ tile1010 (
     .default_coreid_x           (8'd18),
     .default_coreid_y           (8'd31),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd1010)
+    .flat_tileid                (32'd1010)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[1010]   )
@@ -106109,7 +106109,7 @@ tile19 (
     .default_coreid_x           (8'd19),
     .default_coreid_y           (8'd0),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd19)
+    .flat_tileid                (32'd19)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[19]   )
@@ -106218,7 +106218,7 @@ tile51 (
     .default_coreid_x           (8'd19),
     .default_coreid_y           (8'd1),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd51)
+    .flat_tileid                (32'd51)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[51]   )
@@ -106327,7 +106327,7 @@ tile83 (
     .default_coreid_x           (8'd19),
     .default_coreid_y           (8'd2),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd83)
+    .flat_tileid                (32'd83)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[83]   )
@@ -106436,7 +106436,7 @@ tile115 (
     .default_coreid_x           (8'd19),
     .default_coreid_y           (8'd3),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd115)
+    .flat_tileid                (32'd115)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[115]   )
@@ -106545,7 +106545,7 @@ tile147 (
     .default_coreid_x           (8'd19),
     .default_coreid_y           (8'd4),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd147)
+    .flat_tileid                (32'd147)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[147]   )
@@ -106654,7 +106654,7 @@ tile179 (
     .default_coreid_x           (8'd19),
     .default_coreid_y           (8'd5),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd179)
+    .flat_tileid                (32'd179)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[179]   )
@@ -106763,7 +106763,7 @@ tile211 (
     .default_coreid_x           (8'd19),
     .default_coreid_y           (8'd6),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd211)
+    .flat_tileid                (32'd211)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[211]   )
@@ -106872,7 +106872,7 @@ tile243 (
     .default_coreid_x           (8'd19),
     .default_coreid_y           (8'd7),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd243)
+    .flat_tileid                (32'd243)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[243]   )
@@ -106981,7 +106981,7 @@ tile275 (
     .default_coreid_x           (8'd19),
     .default_coreid_y           (8'd8),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd275)
+    .flat_tileid                (32'd275)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[275]   )
@@ -107090,7 +107090,7 @@ tile307 (
     .default_coreid_x           (8'd19),
     .default_coreid_y           (8'd9),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd307)
+    .flat_tileid                (32'd307)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[307]   )
@@ -107199,7 +107199,7 @@ tile339 (
     .default_coreid_x           (8'd19),
     .default_coreid_y           (8'd10),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd339)
+    .flat_tileid                (32'd339)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[339]   )
@@ -107308,7 +107308,7 @@ tile371 (
     .default_coreid_x           (8'd19),
     .default_coreid_y           (8'd11),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd371)
+    .flat_tileid                (32'd371)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[371]   )
@@ -107417,7 +107417,7 @@ tile403 (
     .default_coreid_x           (8'd19),
     .default_coreid_y           (8'd12),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd403)
+    .flat_tileid                (32'd403)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[403]   )
@@ -107526,7 +107526,7 @@ tile435 (
     .default_coreid_x           (8'd19),
     .default_coreid_y           (8'd13),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd435)
+    .flat_tileid                (32'd435)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[435]   )
@@ -107635,7 +107635,7 @@ tile467 (
     .default_coreid_x           (8'd19),
     .default_coreid_y           (8'd14),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd467)
+    .flat_tileid                (32'd467)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[467]   )
@@ -107744,7 +107744,7 @@ tile499 (
     .default_coreid_x           (8'd19),
     .default_coreid_y           (8'd15),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd499)
+    .flat_tileid                (32'd499)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[499]   )
@@ -107853,7 +107853,7 @@ tile531 (
     .default_coreid_x           (8'd19),
     .default_coreid_y           (8'd16),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd531)
+    .flat_tileid                (32'd531)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[531]   )
@@ -107962,7 +107962,7 @@ tile563 (
     .default_coreid_x           (8'd19),
     .default_coreid_y           (8'd17),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd563)
+    .flat_tileid                (32'd563)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[563]   )
@@ -108071,7 +108071,7 @@ tile595 (
     .default_coreid_x           (8'd19),
     .default_coreid_y           (8'd18),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd595)
+    .flat_tileid                (32'd595)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[595]   )
@@ -108180,7 +108180,7 @@ tile627 (
     .default_coreid_x           (8'd19),
     .default_coreid_y           (8'd19),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd627)
+    .flat_tileid                (32'd627)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[627]   )
@@ -108289,7 +108289,7 @@ tile659 (
     .default_coreid_x           (8'd19),
     .default_coreid_y           (8'd20),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd659)
+    .flat_tileid                (32'd659)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[659]   )
@@ -108398,7 +108398,7 @@ tile691 (
     .default_coreid_x           (8'd19),
     .default_coreid_y           (8'd21),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd691)
+    .flat_tileid                (32'd691)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[691]   )
@@ -108507,7 +108507,7 @@ tile723 (
     .default_coreid_x           (8'd19),
     .default_coreid_y           (8'd22),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd723)
+    .flat_tileid                (32'd723)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[723]   )
@@ -108616,7 +108616,7 @@ tile755 (
     .default_coreid_x           (8'd19),
     .default_coreid_y           (8'd23),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd755)
+    .flat_tileid                (32'd755)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[755]   )
@@ -108725,7 +108725,7 @@ tile787 (
     .default_coreid_x           (8'd19),
     .default_coreid_y           (8'd24),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd787)
+    .flat_tileid                (32'd787)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[787]   )
@@ -108834,7 +108834,7 @@ tile819 (
     .default_coreid_x           (8'd19),
     .default_coreid_y           (8'd25),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd819)
+    .flat_tileid                (32'd819)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[819]   )
@@ -108943,7 +108943,7 @@ tile851 (
     .default_coreid_x           (8'd19),
     .default_coreid_y           (8'd26),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd851)
+    .flat_tileid                (32'd851)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[851]   )
@@ -109052,7 +109052,7 @@ tile883 (
     .default_coreid_x           (8'd19),
     .default_coreid_y           (8'd27),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd883)
+    .flat_tileid                (32'd883)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[883]   )
@@ -109161,7 +109161,7 @@ tile915 (
     .default_coreid_x           (8'd19),
     .default_coreid_y           (8'd28),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd915)
+    .flat_tileid                (32'd915)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[915]   )
@@ -109270,7 +109270,7 @@ tile947 (
     .default_coreid_x           (8'd19),
     .default_coreid_y           (8'd29),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd947)
+    .flat_tileid                (32'd947)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[947]   )
@@ -109379,7 +109379,7 @@ tile979 (
     .default_coreid_x           (8'd19),
     .default_coreid_y           (8'd30),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd979)
+    .flat_tileid                (32'd979)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[979]   )
@@ -109488,7 +109488,7 @@ tile1011 (
     .default_coreid_x           (8'd19),
     .default_coreid_y           (8'd31),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd1011)
+    .flat_tileid                (32'd1011)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[1011]   )
@@ -109597,7 +109597,7 @@ tile20 (
     .default_coreid_x           (8'd20),
     .default_coreid_y           (8'd0),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd20)
+    .flat_tileid                (32'd20)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[20]   )
@@ -109706,7 +109706,7 @@ tile52 (
     .default_coreid_x           (8'd20),
     .default_coreid_y           (8'd1),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd52)
+    .flat_tileid                (32'd52)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[52]   )
@@ -109815,7 +109815,7 @@ tile84 (
     .default_coreid_x           (8'd20),
     .default_coreid_y           (8'd2),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd84)
+    .flat_tileid                (32'd84)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[84]   )
@@ -109924,7 +109924,7 @@ tile116 (
     .default_coreid_x           (8'd20),
     .default_coreid_y           (8'd3),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd116)
+    .flat_tileid                (32'd116)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[116]   )
@@ -110033,7 +110033,7 @@ tile148 (
     .default_coreid_x           (8'd20),
     .default_coreid_y           (8'd4),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd148)
+    .flat_tileid                (32'd148)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[148]   )
@@ -110142,7 +110142,7 @@ tile180 (
     .default_coreid_x           (8'd20),
     .default_coreid_y           (8'd5),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd180)
+    .flat_tileid                (32'd180)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[180]   )
@@ -110251,7 +110251,7 @@ tile212 (
     .default_coreid_x           (8'd20),
     .default_coreid_y           (8'd6),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd212)
+    .flat_tileid                (32'd212)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[212]   )
@@ -110360,7 +110360,7 @@ tile244 (
     .default_coreid_x           (8'd20),
     .default_coreid_y           (8'd7),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd244)
+    .flat_tileid                (32'd244)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[244]   )
@@ -110469,7 +110469,7 @@ tile276 (
     .default_coreid_x           (8'd20),
     .default_coreid_y           (8'd8),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd276)
+    .flat_tileid                (32'd276)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[276]   )
@@ -110578,7 +110578,7 @@ tile308 (
     .default_coreid_x           (8'd20),
     .default_coreid_y           (8'd9),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd308)
+    .flat_tileid                (32'd308)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[308]   )
@@ -110687,7 +110687,7 @@ tile340 (
     .default_coreid_x           (8'd20),
     .default_coreid_y           (8'd10),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd340)
+    .flat_tileid                (32'd340)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[340]   )
@@ -110796,7 +110796,7 @@ tile372 (
     .default_coreid_x           (8'd20),
     .default_coreid_y           (8'd11),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd372)
+    .flat_tileid                (32'd372)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[372]   )
@@ -110905,7 +110905,7 @@ tile404 (
     .default_coreid_x           (8'd20),
     .default_coreid_y           (8'd12),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd404)
+    .flat_tileid                (32'd404)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[404]   )
@@ -111014,7 +111014,7 @@ tile436 (
     .default_coreid_x           (8'd20),
     .default_coreid_y           (8'd13),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd436)
+    .flat_tileid                (32'd436)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[436]   )
@@ -111123,7 +111123,7 @@ tile468 (
     .default_coreid_x           (8'd20),
     .default_coreid_y           (8'd14),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd468)
+    .flat_tileid                (32'd468)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[468]   )
@@ -111232,7 +111232,7 @@ tile500 (
     .default_coreid_x           (8'd20),
     .default_coreid_y           (8'd15),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd500)
+    .flat_tileid                (32'd500)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[500]   )
@@ -111341,7 +111341,7 @@ tile532 (
     .default_coreid_x           (8'd20),
     .default_coreid_y           (8'd16),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd532)
+    .flat_tileid                (32'd532)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[532]   )
@@ -111450,7 +111450,7 @@ tile564 (
     .default_coreid_x           (8'd20),
     .default_coreid_y           (8'd17),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd564)
+    .flat_tileid                (32'd564)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[564]   )
@@ -111559,7 +111559,7 @@ tile596 (
     .default_coreid_x           (8'd20),
     .default_coreid_y           (8'd18),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd596)
+    .flat_tileid                (32'd596)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[596]   )
@@ -111668,7 +111668,7 @@ tile628 (
     .default_coreid_x           (8'd20),
     .default_coreid_y           (8'd19),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd628)
+    .flat_tileid                (32'd628)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[628]   )
@@ -111777,7 +111777,7 @@ tile660 (
     .default_coreid_x           (8'd20),
     .default_coreid_y           (8'd20),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd660)
+    .flat_tileid                (32'd660)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[660]   )
@@ -111886,7 +111886,7 @@ tile692 (
     .default_coreid_x           (8'd20),
     .default_coreid_y           (8'd21),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd692)
+    .flat_tileid                (32'd692)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[692]   )
@@ -111995,7 +111995,7 @@ tile724 (
     .default_coreid_x           (8'd20),
     .default_coreid_y           (8'd22),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd724)
+    .flat_tileid                (32'd724)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[724]   )
@@ -112104,7 +112104,7 @@ tile756 (
     .default_coreid_x           (8'd20),
     .default_coreid_y           (8'd23),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd756)
+    .flat_tileid                (32'd756)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[756]   )
@@ -112213,7 +112213,7 @@ tile788 (
     .default_coreid_x           (8'd20),
     .default_coreid_y           (8'd24),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd788)
+    .flat_tileid                (32'd788)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[788]   )
@@ -112322,7 +112322,7 @@ tile820 (
     .default_coreid_x           (8'd20),
     .default_coreid_y           (8'd25),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd820)
+    .flat_tileid                (32'd820)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[820]   )
@@ -112431,7 +112431,7 @@ tile852 (
     .default_coreid_x           (8'd20),
     .default_coreid_y           (8'd26),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd852)
+    .flat_tileid                (32'd852)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[852]   )
@@ -112540,7 +112540,7 @@ tile884 (
     .default_coreid_x           (8'd20),
     .default_coreid_y           (8'd27),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd884)
+    .flat_tileid                (32'd884)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[884]   )
@@ -112649,7 +112649,7 @@ tile916 (
     .default_coreid_x           (8'd20),
     .default_coreid_y           (8'd28),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd916)
+    .flat_tileid                (32'd916)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[916]   )
@@ -112758,7 +112758,7 @@ tile948 (
     .default_coreid_x           (8'd20),
     .default_coreid_y           (8'd29),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd948)
+    .flat_tileid                (32'd948)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[948]   )
@@ -112867,7 +112867,7 @@ tile980 (
     .default_coreid_x           (8'd20),
     .default_coreid_y           (8'd30),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd980)
+    .flat_tileid                (32'd980)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[980]   )
@@ -112976,7 +112976,7 @@ tile1012 (
     .default_coreid_x           (8'd20),
     .default_coreid_y           (8'd31),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd1012)
+    .flat_tileid                (32'd1012)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[1012]   )
@@ -113085,7 +113085,7 @@ tile21 (
     .default_coreid_x           (8'd21),
     .default_coreid_y           (8'd0),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd21)
+    .flat_tileid                (32'd21)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[21]   )
@@ -113194,7 +113194,7 @@ tile53 (
     .default_coreid_x           (8'd21),
     .default_coreid_y           (8'd1),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd53)
+    .flat_tileid                (32'd53)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[53]   )
@@ -113303,7 +113303,7 @@ tile85 (
     .default_coreid_x           (8'd21),
     .default_coreid_y           (8'd2),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd85)
+    .flat_tileid                (32'd85)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[85]   )
@@ -113412,7 +113412,7 @@ tile117 (
     .default_coreid_x           (8'd21),
     .default_coreid_y           (8'd3),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd117)
+    .flat_tileid                (32'd117)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[117]   )
@@ -113521,7 +113521,7 @@ tile149 (
     .default_coreid_x           (8'd21),
     .default_coreid_y           (8'd4),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd149)
+    .flat_tileid                (32'd149)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[149]   )
@@ -113630,7 +113630,7 @@ tile181 (
     .default_coreid_x           (8'd21),
     .default_coreid_y           (8'd5),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd181)
+    .flat_tileid                (32'd181)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[181]   )
@@ -113739,7 +113739,7 @@ tile213 (
     .default_coreid_x           (8'd21),
     .default_coreid_y           (8'd6),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd213)
+    .flat_tileid                (32'd213)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[213]   )
@@ -113848,7 +113848,7 @@ tile245 (
     .default_coreid_x           (8'd21),
     .default_coreid_y           (8'd7),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd245)
+    .flat_tileid                (32'd245)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[245]   )
@@ -113957,7 +113957,7 @@ tile277 (
     .default_coreid_x           (8'd21),
     .default_coreid_y           (8'd8),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd277)
+    .flat_tileid                (32'd277)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[277]   )
@@ -114066,7 +114066,7 @@ tile309 (
     .default_coreid_x           (8'd21),
     .default_coreid_y           (8'd9),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd309)
+    .flat_tileid                (32'd309)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[309]   )
@@ -114175,7 +114175,7 @@ tile341 (
     .default_coreid_x           (8'd21),
     .default_coreid_y           (8'd10),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd341)
+    .flat_tileid                (32'd341)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[341]   )
@@ -114284,7 +114284,7 @@ tile373 (
     .default_coreid_x           (8'd21),
     .default_coreid_y           (8'd11),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd373)
+    .flat_tileid                (32'd373)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[373]   )
@@ -114393,7 +114393,7 @@ tile405 (
     .default_coreid_x           (8'd21),
     .default_coreid_y           (8'd12),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd405)
+    .flat_tileid                (32'd405)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[405]   )
@@ -114502,7 +114502,7 @@ tile437 (
     .default_coreid_x           (8'd21),
     .default_coreid_y           (8'd13),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd437)
+    .flat_tileid                (32'd437)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[437]   )
@@ -114611,7 +114611,7 @@ tile469 (
     .default_coreid_x           (8'd21),
     .default_coreid_y           (8'd14),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd469)
+    .flat_tileid                (32'd469)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[469]   )
@@ -114720,7 +114720,7 @@ tile501 (
     .default_coreid_x           (8'd21),
     .default_coreid_y           (8'd15),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd501)
+    .flat_tileid                (32'd501)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[501]   )
@@ -114829,7 +114829,7 @@ tile533 (
     .default_coreid_x           (8'd21),
     .default_coreid_y           (8'd16),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd533)
+    .flat_tileid                (32'd533)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[533]   )
@@ -114938,7 +114938,7 @@ tile565 (
     .default_coreid_x           (8'd21),
     .default_coreid_y           (8'd17),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd565)
+    .flat_tileid                (32'd565)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[565]   )
@@ -115047,7 +115047,7 @@ tile597 (
     .default_coreid_x           (8'd21),
     .default_coreid_y           (8'd18),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd597)
+    .flat_tileid                (32'd597)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[597]   )
@@ -115156,7 +115156,7 @@ tile629 (
     .default_coreid_x           (8'd21),
     .default_coreid_y           (8'd19),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd629)
+    .flat_tileid                (32'd629)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[629]   )
@@ -115265,7 +115265,7 @@ tile661 (
     .default_coreid_x           (8'd21),
     .default_coreid_y           (8'd20),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd661)
+    .flat_tileid                (32'd661)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[661]   )
@@ -115374,7 +115374,7 @@ tile693 (
     .default_coreid_x           (8'd21),
     .default_coreid_y           (8'd21),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd693)
+    .flat_tileid                (32'd693)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[693]   )
@@ -115483,7 +115483,7 @@ tile725 (
     .default_coreid_x           (8'd21),
     .default_coreid_y           (8'd22),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd725)
+    .flat_tileid                (32'd725)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[725]   )
@@ -115592,7 +115592,7 @@ tile757 (
     .default_coreid_x           (8'd21),
     .default_coreid_y           (8'd23),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd757)
+    .flat_tileid                (32'd757)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[757]   )
@@ -115701,7 +115701,7 @@ tile789 (
     .default_coreid_x           (8'd21),
     .default_coreid_y           (8'd24),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd789)
+    .flat_tileid                (32'd789)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[789]   )
@@ -115810,7 +115810,7 @@ tile821 (
     .default_coreid_x           (8'd21),
     .default_coreid_y           (8'd25),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd821)
+    .flat_tileid                (32'd821)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[821]   )
@@ -115919,7 +115919,7 @@ tile853 (
     .default_coreid_x           (8'd21),
     .default_coreid_y           (8'd26),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd853)
+    .flat_tileid                (32'd853)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[853]   )
@@ -116028,7 +116028,7 @@ tile885 (
     .default_coreid_x           (8'd21),
     .default_coreid_y           (8'd27),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd885)
+    .flat_tileid                (32'd885)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[885]   )
@@ -116137,7 +116137,7 @@ tile917 (
     .default_coreid_x           (8'd21),
     .default_coreid_y           (8'd28),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd917)
+    .flat_tileid                (32'd917)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[917]   )
@@ -116246,7 +116246,7 @@ tile949 (
     .default_coreid_x           (8'd21),
     .default_coreid_y           (8'd29),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd949)
+    .flat_tileid                (32'd949)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[949]   )
@@ -116355,7 +116355,7 @@ tile981 (
     .default_coreid_x           (8'd21),
     .default_coreid_y           (8'd30),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd981)
+    .flat_tileid                (32'd981)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[981]   )
@@ -116464,7 +116464,7 @@ tile1013 (
     .default_coreid_x           (8'd21),
     .default_coreid_y           (8'd31),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd1013)
+    .flat_tileid                (32'd1013)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[1013]   )
@@ -116573,7 +116573,7 @@ tile22 (
     .default_coreid_x           (8'd22),
     .default_coreid_y           (8'd0),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd22)
+    .flat_tileid                (32'd22)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[22]   )
@@ -116682,7 +116682,7 @@ tile54 (
     .default_coreid_x           (8'd22),
     .default_coreid_y           (8'd1),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd54)
+    .flat_tileid                (32'd54)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[54]   )
@@ -116791,7 +116791,7 @@ tile86 (
     .default_coreid_x           (8'd22),
     .default_coreid_y           (8'd2),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd86)
+    .flat_tileid                (32'd86)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[86]   )
@@ -116900,7 +116900,7 @@ tile118 (
     .default_coreid_x           (8'd22),
     .default_coreid_y           (8'd3),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd118)
+    .flat_tileid                (32'd118)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[118]   )
@@ -117009,7 +117009,7 @@ tile150 (
     .default_coreid_x           (8'd22),
     .default_coreid_y           (8'd4),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd150)
+    .flat_tileid                (32'd150)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[150]   )
@@ -117118,7 +117118,7 @@ tile182 (
     .default_coreid_x           (8'd22),
     .default_coreid_y           (8'd5),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd182)
+    .flat_tileid                (32'd182)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[182]   )
@@ -117227,7 +117227,7 @@ tile214 (
     .default_coreid_x           (8'd22),
     .default_coreid_y           (8'd6),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd214)
+    .flat_tileid                (32'd214)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[214]   )
@@ -117336,7 +117336,7 @@ tile246 (
     .default_coreid_x           (8'd22),
     .default_coreid_y           (8'd7),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd246)
+    .flat_tileid                (32'd246)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[246]   )
@@ -117445,7 +117445,7 @@ tile278 (
     .default_coreid_x           (8'd22),
     .default_coreid_y           (8'd8),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd278)
+    .flat_tileid                (32'd278)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[278]   )
@@ -117554,7 +117554,7 @@ tile310 (
     .default_coreid_x           (8'd22),
     .default_coreid_y           (8'd9),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd310)
+    .flat_tileid                (32'd310)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[310]   )
@@ -117663,7 +117663,7 @@ tile342 (
     .default_coreid_x           (8'd22),
     .default_coreid_y           (8'd10),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd342)
+    .flat_tileid                (32'd342)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[342]   )
@@ -117772,7 +117772,7 @@ tile374 (
     .default_coreid_x           (8'd22),
     .default_coreid_y           (8'd11),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd374)
+    .flat_tileid                (32'd374)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[374]   )
@@ -117881,7 +117881,7 @@ tile406 (
     .default_coreid_x           (8'd22),
     .default_coreid_y           (8'd12),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd406)
+    .flat_tileid                (32'd406)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[406]   )
@@ -117990,7 +117990,7 @@ tile438 (
     .default_coreid_x           (8'd22),
     .default_coreid_y           (8'd13),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd438)
+    .flat_tileid                (32'd438)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[438]   )
@@ -118099,7 +118099,7 @@ tile470 (
     .default_coreid_x           (8'd22),
     .default_coreid_y           (8'd14),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd470)
+    .flat_tileid                (32'd470)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[470]   )
@@ -118208,7 +118208,7 @@ tile502 (
     .default_coreid_x           (8'd22),
     .default_coreid_y           (8'd15),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd502)
+    .flat_tileid                (32'd502)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[502]   )
@@ -118317,7 +118317,7 @@ tile534 (
     .default_coreid_x           (8'd22),
     .default_coreid_y           (8'd16),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd534)
+    .flat_tileid                (32'd534)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[534]   )
@@ -118426,7 +118426,7 @@ tile566 (
     .default_coreid_x           (8'd22),
     .default_coreid_y           (8'd17),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd566)
+    .flat_tileid                (32'd566)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[566]   )
@@ -118535,7 +118535,7 @@ tile598 (
     .default_coreid_x           (8'd22),
     .default_coreid_y           (8'd18),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd598)
+    .flat_tileid                (32'd598)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[598]   )
@@ -118644,7 +118644,7 @@ tile630 (
     .default_coreid_x           (8'd22),
     .default_coreid_y           (8'd19),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd630)
+    .flat_tileid                (32'd630)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[630]   )
@@ -118753,7 +118753,7 @@ tile662 (
     .default_coreid_x           (8'd22),
     .default_coreid_y           (8'd20),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd662)
+    .flat_tileid                (32'd662)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[662]   )
@@ -118862,7 +118862,7 @@ tile694 (
     .default_coreid_x           (8'd22),
     .default_coreid_y           (8'd21),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd694)
+    .flat_tileid                (32'd694)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[694]   )
@@ -118971,7 +118971,7 @@ tile726 (
     .default_coreid_x           (8'd22),
     .default_coreid_y           (8'd22),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd726)
+    .flat_tileid                (32'd726)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[726]   )
@@ -119080,7 +119080,7 @@ tile758 (
     .default_coreid_x           (8'd22),
     .default_coreid_y           (8'd23),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd758)
+    .flat_tileid                (32'd758)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[758]   )
@@ -119189,7 +119189,7 @@ tile790 (
     .default_coreid_x           (8'd22),
     .default_coreid_y           (8'd24),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd790)
+    .flat_tileid                (32'd790)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[790]   )
@@ -119298,7 +119298,7 @@ tile822 (
     .default_coreid_x           (8'd22),
     .default_coreid_y           (8'd25),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd822)
+    .flat_tileid                (32'd822)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[822]   )
@@ -119407,7 +119407,7 @@ tile854 (
     .default_coreid_x           (8'd22),
     .default_coreid_y           (8'd26),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd854)
+    .flat_tileid                (32'd854)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[854]   )
@@ -119516,7 +119516,7 @@ tile886 (
     .default_coreid_x           (8'd22),
     .default_coreid_y           (8'd27),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd886)
+    .flat_tileid                (32'd886)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[886]   )
@@ -119625,7 +119625,7 @@ tile918 (
     .default_coreid_x           (8'd22),
     .default_coreid_y           (8'd28),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd918)
+    .flat_tileid                (32'd918)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[918]   )
@@ -119734,7 +119734,7 @@ tile950 (
     .default_coreid_x           (8'd22),
     .default_coreid_y           (8'd29),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd950)
+    .flat_tileid                (32'd950)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[950]   )
@@ -119843,7 +119843,7 @@ tile982 (
     .default_coreid_x           (8'd22),
     .default_coreid_y           (8'd30),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd982)
+    .flat_tileid                (32'd982)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[982]   )
@@ -119952,7 +119952,7 @@ tile1014 (
     .default_coreid_x           (8'd22),
     .default_coreid_y           (8'd31),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd1014)
+    .flat_tileid                (32'd1014)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[1014]   )
@@ -120061,7 +120061,7 @@ tile23 (
     .default_coreid_x           (8'd23),
     .default_coreid_y           (8'd0),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd23)
+    .flat_tileid                (32'd23)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[23]   )
@@ -120170,7 +120170,7 @@ tile55 (
     .default_coreid_x           (8'd23),
     .default_coreid_y           (8'd1),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd55)
+    .flat_tileid                (32'd55)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[55]   )
@@ -120279,7 +120279,7 @@ tile87 (
     .default_coreid_x           (8'd23),
     .default_coreid_y           (8'd2),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd87)
+    .flat_tileid                (32'd87)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[87]   )
@@ -120388,7 +120388,7 @@ tile119 (
     .default_coreid_x           (8'd23),
     .default_coreid_y           (8'd3),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd119)
+    .flat_tileid                (32'd119)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[119]   )
@@ -120497,7 +120497,7 @@ tile151 (
     .default_coreid_x           (8'd23),
     .default_coreid_y           (8'd4),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd151)
+    .flat_tileid                (32'd151)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[151]   )
@@ -120606,7 +120606,7 @@ tile183 (
     .default_coreid_x           (8'd23),
     .default_coreid_y           (8'd5),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd183)
+    .flat_tileid                (32'd183)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[183]   )
@@ -120715,7 +120715,7 @@ tile215 (
     .default_coreid_x           (8'd23),
     .default_coreid_y           (8'd6),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd215)
+    .flat_tileid                (32'd215)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[215]   )
@@ -120824,7 +120824,7 @@ tile247 (
     .default_coreid_x           (8'd23),
     .default_coreid_y           (8'd7),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd247)
+    .flat_tileid                (32'd247)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[247]   )
@@ -120933,7 +120933,7 @@ tile279 (
     .default_coreid_x           (8'd23),
     .default_coreid_y           (8'd8),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd279)
+    .flat_tileid                (32'd279)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[279]   )
@@ -121042,7 +121042,7 @@ tile311 (
     .default_coreid_x           (8'd23),
     .default_coreid_y           (8'd9),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd311)
+    .flat_tileid                (32'd311)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[311]   )
@@ -121151,7 +121151,7 @@ tile343 (
     .default_coreid_x           (8'd23),
     .default_coreid_y           (8'd10),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd343)
+    .flat_tileid                (32'd343)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[343]   )
@@ -121260,7 +121260,7 @@ tile375 (
     .default_coreid_x           (8'd23),
     .default_coreid_y           (8'd11),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd375)
+    .flat_tileid                (32'd375)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[375]   )
@@ -121369,7 +121369,7 @@ tile407 (
     .default_coreid_x           (8'd23),
     .default_coreid_y           (8'd12),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd407)
+    .flat_tileid                (32'd407)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[407]   )
@@ -121478,7 +121478,7 @@ tile439 (
     .default_coreid_x           (8'd23),
     .default_coreid_y           (8'd13),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd439)
+    .flat_tileid                (32'd439)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[439]   )
@@ -121587,7 +121587,7 @@ tile471 (
     .default_coreid_x           (8'd23),
     .default_coreid_y           (8'd14),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd471)
+    .flat_tileid                (32'd471)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[471]   )
@@ -121696,7 +121696,7 @@ tile503 (
     .default_coreid_x           (8'd23),
     .default_coreid_y           (8'd15),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd503)
+    .flat_tileid                (32'd503)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[503]   )
@@ -121805,7 +121805,7 @@ tile535 (
     .default_coreid_x           (8'd23),
     .default_coreid_y           (8'd16),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd535)
+    .flat_tileid                (32'd535)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[535]   )
@@ -121914,7 +121914,7 @@ tile567 (
     .default_coreid_x           (8'd23),
     .default_coreid_y           (8'd17),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd567)
+    .flat_tileid                (32'd567)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[567]   )
@@ -122023,7 +122023,7 @@ tile599 (
     .default_coreid_x           (8'd23),
     .default_coreid_y           (8'd18),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd599)
+    .flat_tileid                (32'd599)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[599]   )
@@ -122132,7 +122132,7 @@ tile631 (
     .default_coreid_x           (8'd23),
     .default_coreid_y           (8'd19),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd631)
+    .flat_tileid                (32'd631)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[631]   )
@@ -122241,7 +122241,7 @@ tile663 (
     .default_coreid_x           (8'd23),
     .default_coreid_y           (8'd20),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd663)
+    .flat_tileid                (32'd663)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[663]   )
@@ -122350,7 +122350,7 @@ tile695 (
     .default_coreid_x           (8'd23),
     .default_coreid_y           (8'd21),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd695)
+    .flat_tileid                (32'd695)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[695]   )
@@ -122459,7 +122459,7 @@ tile727 (
     .default_coreid_x           (8'd23),
     .default_coreid_y           (8'd22),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd727)
+    .flat_tileid                (32'd727)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[727]   )
@@ -122568,7 +122568,7 @@ tile759 (
     .default_coreid_x           (8'd23),
     .default_coreid_y           (8'd23),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd759)
+    .flat_tileid                (32'd759)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[759]   )
@@ -122677,7 +122677,7 @@ tile791 (
     .default_coreid_x           (8'd23),
     .default_coreid_y           (8'd24),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd791)
+    .flat_tileid                (32'd791)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[791]   )
@@ -122786,7 +122786,7 @@ tile823 (
     .default_coreid_x           (8'd23),
     .default_coreid_y           (8'd25),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd823)
+    .flat_tileid                (32'd823)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[823]   )
@@ -122895,7 +122895,7 @@ tile855 (
     .default_coreid_x           (8'd23),
     .default_coreid_y           (8'd26),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd855)
+    .flat_tileid                (32'd855)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[855]   )
@@ -123004,7 +123004,7 @@ tile887 (
     .default_coreid_x           (8'd23),
     .default_coreid_y           (8'd27),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd887)
+    .flat_tileid                (32'd887)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[887]   )
@@ -123113,7 +123113,7 @@ tile919 (
     .default_coreid_x           (8'd23),
     .default_coreid_y           (8'd28),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd919)
+    .flat_tileid                (32'd919)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[919]   )
@@ -123222,7 +123222,7 @@ tile951 (
     .default_coreid_x           (8'd23),
     .default_coreid_y           (8'd29),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd951)
+    .flat_tileid                (32'd951)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[951]   )
@@ -123331,7 +123331,7 @@ tile983 (
     .default_coreid_x           (8'd23),
     .default_coreid_y           (8'd30),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd983)
+    .flat_tileid                (32'd983)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[983]   )
@@ -123440,7 +123440,7 @@ tile1015 (
     .default_coreid_x           (8'd23),
     .default_coreid_y           (8'd31),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd1015)
+    .flat_tileid                (32'd1015)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[1015]   )
@@ -123549,7 +123549,7 @@ tile24 (
     .default_coreid_x           (8'd24),
     .default_coreid_y           (8'd0),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd24)
+    .flat_tileid                (32'd24)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[24]   )
@@ -123658,7 +123658,7 @@ tile56 (
     .default_coreid_x           (8'd24),
     .default_coreid_y           (8'd1),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd56)
+    .flat_tileid                (32'd56)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[56]   )
@@ -123767,7 +123767,7 @@ tile88 (
     .default_coreid_x           (8'd24),
     .default_coreid_y           (8'd2),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd88)
+    .flat_tileid                (32'd88)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[88]   )
@@ -123876,7 +123876,7 @@ tile120 (
     .default_coreid_x           (8'd24),
     .default_coreid_y           (8'd3),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd120)
+    .flat_tileid                (32'd120)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[120]   )
@@ -123985,7 +123985,7 @@ tile152 (
     .default_coreid_x           (8'd24),
     .default_coreid_y           (8'd4),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd152)
+    .flat_tileid                (32'd152)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[152]   )
@@ -124094,7 +124094,7 @@ tile184 (
     .default_coreid_x           (8'd24),
     .default_coreid_y           (8'd5),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd184)
+    .flat_tileid                (32'd184)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[184]   )
@@ -124203,7 +124203,7 @@ tile216 (
     .default_coreid_x           (8'd24),
     .default_coreid_y           (8'd6),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd216)
+    .flat_tileid                (32'd216)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[216]   )
@@ -124312,7 +124312,7 @@ tile248 (
     .default_coreid_x           (8'd24),
     .default_coreid_y           (8'd7),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd248)
+    .flat_tileid                (32'd248)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[248]   )
@@ -124421,7 +124421,7 @@ tile280 (
     .default_coreid_x           (8'd24),
     .default_coreid_y           (8'd8),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd280)
+    .flat_tileid                (32'd280)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[280]   )
@@ -124530,7 +124530,7 @@ tile312 (
     .default_coreid_x           (8'd24),
     .default_coreid_y           (8'd9),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd312)
+    .flat_tileid                (32'd312)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[312]   )
@@ -124639,7 +124639,7 @@ tile344 (
     .default_coreid_x           (8'd24),
     .default_coreid_y           (8'd10),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd344)
+    .flat_tileid                (32'd344)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[344]   )
@@ -124748,7 +124748,7 @@ tile376 (
     .default_coreid_x           (8'd24),
     .default_coreid_y           (8'd11),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd376)
+    .flat_tileid                (32'd376)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[376]   )
@@ -124857,7 +124857,7 @@ tile408 (
     .default_coreid_x           (8'd24),
     .default_coreid_y           (8'd12),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd408)
+    .flat_tileid                (32'd408)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[408]   )
@@ -124966,7 +124966,7 @@ tile440 (
     .default_coreid_x           (8'd24),
     .default_coreid_y           (8'd13),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd440)
+    .flat_tileid                (32'd440)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[440]   )
@@ -125075,7 +125075,7 @@ tile472 (
     .default_coreid_x           (8'd24),
     .default_coreid_y           (8'd14),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd472)
+    .flat_tileid                (32'd472)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[472]   )
@@ -125184,7 +125184,7 @@ tile504 (
     .default_coreid_x           (8'd24),
     .default_coreid_y           (8'd15),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd504)
+    .flat_tileid                (32'd504)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[504]   )
@@ -125293,7 +125293,7 @@ tile536 (
     .default_coreid_x           (8'd24),
     .default_coreid_y           (8'd16),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd536)
+    .flat_tileid                (32'd536)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[536]   )
@@ -125402,7 +125402,7 @@ tile568 (
     .default_coreid_x           (8'd24),
     .default_coreid_y           (8'd17),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd568)
+    .flat_tileid                (32'd568)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[568]   )
@@ -125511,7 +125511,7 @@ tile600 (
     .default_coreid_x           (8'd24),
     .default_coreid_y           (8'd18),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd600)
+    .flat_tileid                (32'd600)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[600]   )
@@ -125620,7 +125620,7 @@ tile632 (
     .default_coreid_x           (8'd24),
     .default_coreid_y           (8'd19),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd632)
+    .flat_tileid                (32'd632)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[632]   )
@@ -125729,7 +125729,7 @@ tile664 (
     .default_coreid_x           (8'd24),
     .default_coreid_y           (8'd20),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd664)
+    .flat_tileid                (32'd664)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[664]   )
@@ -125838,7 +125838,7 @@ tile696 (
     .default_coreid_x           (8'd24),
     .default_coreid_y           (8'd21),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd696)
+    .flat_tileid                (32'd696)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[696]   )
@@ -125947,7 +125947,7 @@ tile728 (
     .default_coreid_x           (8'd24),
     .default_coreid_y           (8'd22),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd728)
+    .flat_tileid                (32'd728)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[728]   )
@@ -126056,7 +126056,7 @@ tile760 (
     .default_coreid_x           (8'd24),
     .default_coreid_y           (8'd23),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd760)
+    .flat_tileid                (32'd760)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[760]   )
@@ -126165,7 +126165,7 @@ tile792 (
     .default_coreid_x           (8'd24),
     .default_coreid_y           (8'd24),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd792)
+    .flat_tileid                (32'd792)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[792]   )
@@ -126274,7 +126274,7 @@ tile824 (
     .default_coreid_x           (8'd24),
     .default_coreid_y           (8'd25),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd824)
+    .flat_tileid                (32'd824)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[824]   )
@@ -126383,7 +126383,7 @@ tile856 (
     .default_coreid_x           (8'd24),
     .default_coreid_y           (8'd26),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd856)
+    .flat_tileid                (32'd856)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[856]   )
@@ -126492,7 +126492,7 @@ tile888 (
     .default_coreid_x           (8'd24),
     .default_coreid_y           (8'd27),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd888)
+    .flat_tileid                (32'd888)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[888]   )
@@ -126601,7 +126601,7 @@ tile920 (
     .default_coreid_x           (8'd24),
     .default_coreid_y           (8'd28),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd920)
+    .flat_tileid                (32'd920)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[920]   )
@@ -126710,7 +126710,7 @@ tile952 (
     .default_coreid_x           (8'd24),
     .default_coreid_y           (8'd29),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd952)
+    .flat_tileid                (32'd952)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[952]   )
@@ -126819,7 +126819,7 @@ tile984 (
     .default_coreid_x           (8'd24),
     .default_coreid_y           (8'd30),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd984)
+    .flat_tileid                (32'd984)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[984]   )
@@ -126928,7 +126928,7 @@ tile1016 (
     .default_coreid_x           (8'd24),
     .default_coreid_y           (8'd31),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd1016)
+    .flat_tileid                (32'd1016)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[1016]   )
@@ -127037,7 +127037,7 @@ tile25 (
     .default_coreid_x           (8'd25),
     .default_coreid_y           (8'd0),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd25)
+    .flat_tileid                (32'd25)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[25]   )
@@ -127146,7 +127146,7 @@ tile57 (
     .default_coreid_x           (8'd25),
     .default_coreid_y           (8'd1),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd57)
+    .flat_tileid                (32'd57)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[57]   )
@@ -127255,7 +127255,7 @@ tile89 (
     .default_coreid_x           (8'd25),
     .default_coreid_y           (8'd2),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd89)
+    .flat_tileid                (32'd89)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[89]   )
@@ -127364,7 +127364,7 @@ tile121 (
     .default_coreid_x           (8'd25),
     .default_coreid_y           (8'd3),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd121)
+    .flat_tileid                (32'd121)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[121]   )
@@ -127473,7 +127473,7 @@ tile153 (
     .default_coreid_x           (8'd25),
     .default_coreid_y           (8'd4),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd153)
+    .flat_tileid                (32'd153)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[153]   )
@@ -127582,7 +127582,7 @@ tile185 (
     .default_coreid_x           (8'd25),
     .default_coreid_y           (8'd5),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd185)
+    .flat_tileid                (32'd185)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[185]   )
@@ -127691,7 +127691,7 @@ tile217 (
     .default_coreid_x           (8'd25),
     .default_coreid_y           (8'd6),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd217)
+    .flat_tileid                (32'd217)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[217]   )
@@ -127800,7 +127800,7 @@ tile249 (
     .default_coreid_x           (8'd25),
     .default_coreid_y           (8'd7),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd249)
+    .flat_tileid                (32'd249)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[249]   )
@@ -127909,7 +127909,7 @@ tile281 (
     .default_coreid_x           (8'd25),
     .default_coreid_y           (8'd8),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd281)
+    .flat_tileid                (32'd281)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[281]   )
@@ -128018,7 +128018,7 @@ tile313 (
     .default_coreid_x           (8'd25),
     .default_coreid_y           (8'd9),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd313)
+    .flat_tileid                (32'd313)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[313]   )
@@ -128127,7 +128127,7 @@ tile345 (
     .default_coreid_x           (8'd25),
     .default_coreid_y           (8'd10),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd345)
+    .flat_tileid                (32'd345)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[345]   )
@@ -128236,7 +128236,7 @@ tile377 (
     .default_coreid_x           (8'd25),
     .default_coreid_y           (8'd11),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd377)
+    .flat_tileid                (32'd377)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[377]   )
@@ -128345,7 +128345,7 @@ tile409 (
     .default_coreid_x           (8'd25),
     .default_coreid_y           (8'd12),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd409)
+    .flat_tileid                (32'd409)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[409]   )
@@ -128454,7 +128454,7 @@ tile441 (
     .default_coreid_x           (8'd25),
     .default_coreid_y           (8'd13),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd441)
+    .flat_tileid                (32'd441)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[441]   )
@@ -128563,7 +128563,7 @@ tile473 (
     .default_coreid_x           (8'd25),
     .default_coreid_y           (8'd14),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd473)
+    .flat_tileid                (32'd473)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[473]   )
@@ -128672,7 +128672,7 @@ tile505 (
     .default_coreid_x           (8'd25),
     .default_coreid_y           (8'd15),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd505)
+    .flat_tileid                (32'd505)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[505]   )
@@ -128781,7 +128781,7 @@ tile537 (
     .default_coreid_x           (8'd25),
     .default_coreid_y           (8'd16),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd537)
+    .flat_tileid                (32'd537)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[537]   )
@@ -128890,7 +128890,7 @@ tile569 (
     .default_coreid_x           (8'd25),
     .default_coreid_y           (8'd17),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd569)
+    .flat_tileid                (32'd569)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[569]   )
@@ -128999,7 +128999,7 @@ tile601 (
     .default_coreid_x           (8'd25),
     .default_coreid_y           (8'd18),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd601)
+    .flat_tileid                (32'd601)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[601]   )
@@ -129108,7 +129108,7 @@ tile633 (
     .default_coreid_x           (8'd25),
     .default_coreid_y           (8'd19),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd633)
+    .flat_tileid                (32'd633)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[633]   )
@@ -129217,7 +129217,7 @@ tile665 (
     .default_coreid_x           (8'd25),
     .default_coreid_y           (8'd20),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd665)
+    .flat_tileid                (32'd665)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[665]   )
@@ -129326,7 +129326,7 @@ tile697 (
     .default_coreid_x           (8'd25),
     .default_coreid_y           (8'd21),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd697)
+    .flat_tileid                (32'd697)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[697]   )
@@ -129435,7 +129435,7 @@ tile729 (
     .default_coreid_x           (8'd25),
     .default_coreid_y           (8'd22),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd729)
+    .flat_tileid                (32'd729)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[729]   )
@@ -129544,7 +129544,7 @@ tile761 (
     .default_coreid_x           (8'd25),
     .default_coreid_y           (8'd23),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd761)
+    .flat_tileid                (32'd761)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[761]   )
@@ -129653,7 +129653,7 @@ tile793 (
     .default_coreid_x           (8'd25),
     .default_coreid_y           (8'd24),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd793)
+    .flat_tileid                (32'd793)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[793]   )
@@ -129762,7 +129762,7 @@ tile825 (
     .default_coreid_x           (8'd25),
     .default_coreid_y           (8'd25),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd825)
+    .flat_tileid                (32'd825)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[825]   )
@@ -129871,7 +129871,7 @@ tile857 (
     .default_coreid_x           (8'd25),
     .default_coreid_y           (8'd26),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd857)
+    .flat_tileid                (32'd857)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[857]   )
@@ -129980,7 +129980,7 @@ tile889 (
     .default_coreid_x           (8'd25),
     .default_coreid_y           (8'd27),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd889)
+    .flat_tileid                (32'd889)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[889]   )
@@ -130089,7 +130089,7 @@ tile921 (
     .default_coreid_x           (8'd25),
     .default_coreid_y           (8'd28),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd921)
+    .flat_tileid                (32'd921)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[921]   )
@@ -130198,7 +130198,7 @@ tile953 (
     .default_coreid_x           (8'd25),
     .default_coreid_y           (8'd29),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd953)
+    .flat_tileid                (32'd953)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[953]   )
@@ -130307,7 +130307,7 @@ tile985 (
     .default_coreid_x           (8'd25),
     .default_coreid_y           (8'd30),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd985)
+    .flat_tileid                (32'd985)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[985]   )
@@ -130416,7 +130416,7 @@ tile1017 (
     .default_coreid_x           (8'd25),
     .default_coreid_y           (8'd31),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd1017)
+    .flat_tileid                (32'd1017)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[1017]   )
@@ -130525,7 +130525,7 @@ tile26 (
     .default_coreid_x           (8'd26),
     .default_coreid_y           (8'd0),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd26)
+    .flat_tileid                (32'd26)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[26]   )
@@ -130634,7 +130634,7 @@ tile58 (
     .default_coreid_x           (8'd26),
     .default_coreid_y           (8'd1),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd58)
+    .flat_tileid                (32'd58)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[58]   )
@@ -130743,7 +130743,7 @@ tile90 (
     .default_coreid_x           (8'd26),
     .default_coreid_y           (8'd2),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd90)
+    .flat_tileid                (32'd90)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[90]   )
@@ -130852,7 +130852,7 @@ tile122 (
     .default_coreid_x           (8'd26),
     .default_coreid_y           (8'd3),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd122)
+    .flat_tileid                (32'd122)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[122]   )
@@ -130961,7 +130961,7 @@ tile154 (
     .default_coreid_x           (8'd26),
     .default_coreid_y           (8'd4),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd154)
+    .flat_tileid                (32'd154)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[154]   )
@@ -131070,7 +131070,7 @@ tile186 (
     .default_coreid_x           (8'd26),
     .default_coreid_y           (8'd5),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd186)
+    .flat_tileid                (32'd186)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[186]   )
@@ -131179,7 +131179,7 @@ tile218 (
     .default_coreid_x           (8'd26),
     .default_coreid_y           (8'd6),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd218)
+    .flat_tileid                (32'd218)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[218]   )
@@ -131288,7 +131288,7 @@ tile250 (
     .default_coreid_x           (8'd26),
     .default_coreid_y           (8'd7),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd250)
+    .flat_tileid                (32'd250)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[250]   )
@@ -131397,7 +131397,7 @@ tile282 (
     .default_coreid_x           (8'd26),
     .default_coreid_y           (8'd8),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd282)
+    .flat_tileid                (32'd282)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[282]   )
@@ -131506,7 +131506,7 @@ tile314 (
     .default_coreid_x           (8'd26),
     .default_coreid_y           (8'd9),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd314)
+    .flat_tileid                (32'd314)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[314]   )
@@ -131615,7 +131615,7 @@ tile346 (
     .default_coreid_x           (8'd26),
     .default_coreid_y           (8'd10),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd346)
+    .flat_tileid                (32'd346)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[346]   )
@@ -131724,7 +131724,7 @@ tile378 (
     .default_coreid_x           (8'd26),
     .default_coreid_y           (8'd11),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd378)
+    .flat_tileid                (32'd378)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[378]   )
@@ -131833,7 +131833,7 @@ tile410 (
     .default_coreid_x           (8'd26),
     .default_coreid_y           (8'd12),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd410)
+    .flat_tileid                (32'd410)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[410]   )
@@ -131942,7 +131942,7 @@ tile442 (
     .default_coreid_x           (8'd26),
     .default_coreid_y           (8'd13),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd442)
+    .flat_tileid                (32'd442)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[442]   )
@@ -132051,7 +132051,7 @@ tile474 (
     .default_coreid_x           (8'd26),
     .default_coreid_y           (8'd14),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd474)
+    .flat_tileid                (32'd474)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[474]   )
@@ -132160,7 +132160,7 @@ tile506 (
     .default_coreid_x           (8'd26),
     .default_coreid_y           (8'd15),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd506)
+    .flat_tileid                (32'd506)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[506]   )
@@ -132269,7 +132269,7 @@ tile538 (
     .default_coreid_x           (8'd26),
     .default_coreid_y           (8'd16),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd538)
+    .flat_tileid                (32'd538)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[538]   )
@@ -132378,7 +132378,7 @@ tile570 (
     .default_coreid_x           (8'd26),
     .default_coreid_y           (8'd17),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd570)
+    .flat_tileid                (32'd570)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[570]   )
@@ -132487,7 +132487,7 @@ tile602 (
     .default_coreid_x           (8'd26),
     .default_coreid_y           (8'd18),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd602)
+    .flat_tileid                (32'd602)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[602]   )
@@ -132596,7 +132596,7 @@ tile634 (
     .default_coreid_x           (8'd26),
     .default_coreid_y           (8'd19),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd634)
+    .flat_tileid                (32'd634)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[634]   )
@@ -132705,7 +132705,7 @@ tile666 (
     .default_coreid_x           (8'd26),
     .default_coreid_y           (8'd20),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd666)
+    .flat_tileid                (32'd666)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[666]   )
@@ -132814,7 +132814,7 @@ tile698 (
     .default_coreid_x           (8'd26),
     .default_coreid_y           (8'd21),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd698)
+    .flat_tileid                (32'd698)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[698]   )
@@ -132923,7 +132923,7 @@ tile730 (
     .default_coreid_x           (8'd26),
     .default_coreid_y           (8'd22),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd730)
+    .flat_tileid                (32'd730)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[730]   )
@@ -133032,7 +133032,7 @@ tile762 (
     .default_coreid_x           (8'd26),
     .default_coreid_y           (8'd23),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd762)
+    .flat_tileid                (32'd762)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[762]   )
@@ -133141,7 +133141,7 @@ tile794 (
     .default_coreid_x           (8'd26),
     .default_coreid_y           (8'd24),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd794)
+    .flat_tileid                (32'd794)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[794]   )
@@ -133250,7 +133250,7 @@ tile826 (
     .default_coreid_x           (8'd26),
     .default_coreid_y           (8'd25),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd826)
+    .flat_tileid                (32'd826)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[826]   )
@@ -133359,7 +133359,7 @@ tile858 (
     .default_coreid_x           (8'd26),
     .default_coreid_y           (8'd26),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd858)
+    .flat_tileid                (32'd858)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[858]   )
@@ -133468,7 +133468,7 @@ tile890 (
     .default_coreid_x           (8'd26),
     .default_coreid_y           (8'd27),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd890)
+    .flat_tileid                (32'd890)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[890]   )
@@ -133577,7 +133577,7 @@ tile922 (
     .default_coreid_x           (8'd26),
     .default_coreid_y           (8'd28),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd922)
+    .flat_tileid                (32'd922)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[922]   )
@@ -133686,7 +133686,7 @@ tile954 (
     .default_coreid_x           (8'd26),
     .default_coreid_y           (8'd29),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd954)
+    .flat_tileid                (32'd954)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[954]   )
@@ -133795,7 +133795,7 @@ tile986 (
     .default_coreid_x           (8'd26),
     .default_coreid_y           (8'd30),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd986)
+    .flat_tileid                (32'd986)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[986]   )
@@ -133904,7 +133904,7 @@ tile1018 (
     .default_coreid_x           (8'd26),
     .default_coreid_y           (8'd31),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd1018)
+    .flat_tileid                (32'd1018)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[1018]   )
@@ -134013,7 +134013,7 @@ tile27 (
     .default_coreid_x           (8'd27),
     .default_coreid_y           (8'd0),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd27)
+    .flat_tileid                (32'd27)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[27]   )
@@ -134122,7 +134122,7 @@ tile59 (
     .default_coreid_x           (8'd27),
     .default_coreid_y           (8'd1),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd59)
+    .flat_tileid                (32'd59)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[59]   )
@@ -134231,7 +134231,7 @@ tile91 (
     .default_coreid_x           (8'd27),
     .default_coreid_y           (8'd2),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd91)
+    .flat_tileid                (32'd91)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[91]   )
@@ -134340,7 +134340,7 @@ tile123 (
     .default_coreid_x           (8'd27),
     .default_coreid_y           (8'd3),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd123)
+    .flat_tileid                (32'd123)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[123]   )
@@ -134449,7 +134449,7 @@ tile155 (
     .default_coreid_x           (8'd27),
     .default_coreid_y           (8'd4),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd155)
+    .flat_tileid                (32'd155)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[155]   )
@@ -134558,7 +134558,7 @@ tile187 (
     .default_coreid_x           (8'd27),
     .default_coreid_y           (8'd5),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd187)
+    .flat_tileid                (32'd187)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[187]   )
@@ -134667,7 +134667,7 @@ tile219 (
     .default_coreid_x           (8'd27),
     .default_coreid_y           (8'd6),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd219)
+    .flat_tileid                (32'd219)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[219]   )
@@ -134776,7 +134776,7 @@ tile251 (
     .default_coreid_x           (8'd27),
     .default_coreid_y           (8'd7),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd251)
+    .flat_tileid                (32'd251)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[251]   )
@@ -134885,7 +134885,7 @@ tile283 (
     .default_coreid_x           (8'd27),
     .default_coreid_y           (8'd8),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd283)
+    .flat_tileid                (32'd283)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[283]   )
@@ -134994,7 +134994,7 @@ tile315 (
     .default_coreid_x           (8'd27),
     .default_coreid_y           (8'd9),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd315)
+    .flat_tileid                (32'd315)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[315]   )
@@ -135103,7 +135103,7 @@ tile347 (
     .default_coreid_x           (8'd27),
     .default_coreid_y           (8'd10),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd347)
+    .flat_tileid                (32'd347)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[347]   )
@@ -135212,7 +135212,7 @@ tile379 (
     .default_coreid_x           (8'd27),
     .default_coreid_y           (8'd11),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd379)
+    .flat_tileid                (32'd379)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[379]   )
@@ -135321,7 +135321,7 @@ tile411 (
     .default_coreid_x           (8'd27),
     .default_coreid_y           (8'd12),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd411)
+    .flat_tileid                (32'd411)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[411]   )
@@ -135430,7 +135430,7 @@ tile443 (
     .default_coreid_x           (8'd27),
     .default_coreid_y           (8'd13),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd443)
+    .flat_tileid                (32'd443)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[443]   )
@@ -135539,7 +135539,7 @@ tile475 (
     .default_coreid_x           (8'd27),
     .default_coreid_y           (8'd14),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd475)
+    .flat_tileid                (32'd475)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[475]   )
@@ -135648,7 +135648,7 @@ tile507 (
     .default_coreid_x           (8'd27),
     .default_coreid_y           (8'd15),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd507)
+    .flat_tileid                (32'd507)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[507]   )
@@ -135757,7 +135757,7 @@ tile539 (
     .default_coreid_x           (8'd27),
     .default_coreid_y           (8'd16),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd539)
+    .flat_tileid                (32'd539)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[539]   )
@@ -135866,7 +135866,7 @@ tile571 (
     .default_coreid_x           (8'd27),
     .default_coreid_y           (8'd17),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd571)
+    .flat_tileid                (32'd571)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[571]   )
@@ -135975,7 +135975,7 @@ tile603 (
     .default_coreid_x           (8'd27),
     .default_coreid_y           (8'd18),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd603)
+    .flat_tileid                (32'd603)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[603]   )
@@ -136084,7 +136084,7 @@ tile635 (
     .default_coreid_x           (8'd27),
     .default_coreid_y           (8'd19),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd635)
+    .flat_tileid                (32'd635)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[635]   )
@@ -136193,7 +136193,7 @@ tile667 (
     .default_coreid_x           (8'd27),
     .default_coreid_y           (8'd20),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd667)
+    .flat_tileid                (32'd667)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[667]   )
@@ -136302,7 +136302,7 @@ tile699 (
     .default_coreid_x           (8'd27),
     .default_coreid_y           (8'd21),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd699)
+    .flat_tileid                (32'd699)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[699]   )
@@ -136411,7 +136411,7 @@ tile731 (
     .default_coreid_x           (8'd27),
     .default_coreid_y           (8'd22),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd731)
+    .flat_tileid                (32'd731)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[731]   )
@@ -136520,7 +136520,7 @@ tile763 (
     .default_coreid_x           (8'd27),
     .default_coreid_y           (8'd23),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd763)
+    .flat_tileid                (32'd763)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[763]   )
@@ -136629,7 +136629,7 @@ tile795 (
     .default_coreid_x           (8'd27),
     .default_coreid_y           (8'd24),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd795)
+    .flat_tileid                (32'd795)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[795]   )
@@ -136738,7 +136738,7 @@ tile827 (
     .default_coreid_x           (8'd27),
     .default_coreid_y           (8'd25),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd827)
+    .flat_tileid                (32'd827)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[827]   )
@@ -136847,7 +136847,7 @@ tile859 (
     .default_coreid_x           (8'd27),
     .default_coreid_y           (8'd26),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd859)
+    .flat_tileid                (32'd859)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[859]   )
@@ -136956,7 +136956,7 @@ tile891 (
     .default_coreid_x           (8'd27),
     .default_coreid_y           (8'd27),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd891)
+    .flat_tileid                (32'd891)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[891]   )
@@ -137065,7 +137065,7 @@ tile923 (
     .default_coreid_x           (8'd27),
     .default_coreid_y           (8'd28),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd923)
+    .flat_tileid                (32'd923)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[923]   )
@@ -137174,7 +137174,7 @@ tile955 (
     .default_coreid_x           (8'd27),
     .default_coreid_y           (8'd29),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd955)
+    .flat_tileid                (32'd955)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[955]   )
@@ -137283,7 +137283,7 @@ tile987 (
     .default_coreid_x           (8'd27),
     .default_coreid_y           (8'd30),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd987)
+    .flat_tileid                (32'd987)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[987]   )
@@ -137392,7 +137392,7 @@ tile1019 (
     .default_coreid_x           (8'd27),
     .default_coreid_y           (8'd31),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd1019)
+    .flat_tileid                (32'd1019)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[1019]   )
@@ -137501,7 +137501,7 @@ tile28 (
     .default_coreid_x           (8'd28),
     .default_coreid_y           (8'd0),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd28)
+    .flat_tileid                (32'd28)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[28]   )
@@ -137610,7 +137610,7 @@ tile60 (
     .default_coreid_x           (8'd28),
     .default_coreid_y           (8'd1),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd60)
+    .flat_tileid                (32'd60)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[60]   )
@@ -137719,7 +137719,7 @@ tile92 (
     .default_coreid_x           (8'd28),
     .default_coreid_y           (8'd2),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd92)
+    .flat_tileid                (32'd92)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[92]   )
@@ -137828,7 +137828,7 @@ tile124 (
     .default_coreid_x           (8'd28),
     .default_coreid_y           (8'd3),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd124)
+    .flat_tileid                (32'd124)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[124]   )
@@ -137937,7 +137937,7 @@ tile156 (
     .default_coreid_x           (8'd28),
     .default_coreid_y           (8'd4),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd156)
+    .flat_tileid                (32'd156)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[156]   )
@@ -138046,7 +138046,7 @@ tile188 (
     .default_coreid_x           (8'd28),
     .default_coreid_y           (8'd5),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd188)
+    .flat_tileid                (32'd188)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[188]   )
@@ -138155,7 +138155,7 @@ tile220 (
     .default_coreid_x           (8'd28),
     .default_coreid_y           (8'd6),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd220)
+    .flat_tileid                (32'd220)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[220]   )
@@ -138264,7 +138264,7 @@ tile252 (
     .default_coreid_x           (8'd28),
     .default_coreid_y           (8'd7),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd252)
+    .flat_tileid                (32'd252)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[252]   )
@@ -138373,7 +138373,7 @@ tile284 (
     .default_coreid_x           (8'd28),
     .default_coreid_y           (8'd8),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd284)
+    .flat_tileid                (32'd284)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[284]   )
@@ -138482,7 +138482,7 @@ tile316 (
     .default_coreid_x           (8'd28),
     .default_coreid_y           (8'd9),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd316)
+    .flat_tileid                (32'd316)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[316]   )
@@ -138591,7 +138591,7 @@ tile348 (
     .default_coreid_x           (8'd28),
     .default_coreid_y           (8'd10),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd348)
+    .flat_tileid                (32'd348)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[348]   )
@@ -138700,7 +138700,7 @@ tile380 (
     .default_coreid_x           (8'd28),
     .default_coreid_y           (8'd11),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd380)
+    .flat_tileid                (32'd380)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[380]   )
@@ -138809,7 +138809,7 @@ tile412 (
     .default_coreid_x           (8'd28),
     .default_coreid_y           (8'd12),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd412)
+    .flat_tileid                (32'd412)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[412]   )
@@ -138918,7 +138918,7 @@ tile444 (
     .default_coreid_x           (8'd28),
     .default_coreid_y           (8'd13),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd444)
+    .flat_tileid                (32'd444)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[444]   )
@@ -139027,7 +139027,7 @@ tile476 (
     .default_coreid_x           (8'd28),
     .default_coreid_y           (8'd14),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd476)
+    .flat_tileid                (32'd476)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[476]   )
@@ -139136,7 +139136,7 @@ tile508 (
     .default_coreid_x           (8'd28),
     .default_coreid_y           (8'd15),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd508)
+    .flat_tileid                (32'd508)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[508]   )
@@ -139245,7 +139245,7 @@ tile540 (
     .default_coreid_x           (8'd28),
     .default_coreid_y           (8'd16),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd540)
+    .flat_tileid                (32'd540)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[540]   )
@@ -139354,7 +139354,7 @@ tile572 (
     .default_coreid_x           (8'd28),
     .default_coreid_y           (8'd17),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd572)
+    .flat_tileid                (32'd572)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[572]   )
@@ -139463,7 +139463,7 @@ tile604 (
     .default_coreid_x           (8'd28),
     .default_coreid_y           (8'd18),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd604)
+    .flat_tileid                (32'd604)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[604]   )
@@ -139572,7 +139572,7 @@ tile636 (
     .default_coreid_x           (8'd28),
     .default_coreid_y           (8'd19),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd636)
+    .flat_tileid                (32'd636)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[636]   )
@@ -139681,7 +139681,7 @@ tile668 (
     .default_coreid_x           (8'd28),
     .default_coreid_y           (8'd20),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd668)
+    .flat_tileid                (32'd668)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[668]   )
@@ -139790,7 +139790,7 @@ tile700 (
     .default_coreid_x           (8'd28),
     .default_coreid_y           (8'd21),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd700)
+    .flat_tileid                (32'd700)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[700]   )
@@ -139899,7 +139899,7 @@ tile732 (
     .default_coreid_x           (8'd28),
     .default_coreid_y           (8'd22),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd732)
+    .flat_tileid                (32'd732)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[732]   )
@@ -140008,7 +140008,7 @@ tile764 (
     .default_coreid_x           (8'd28),
     .default_coreid_y           (8'd23),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd764)
+    .flat_tileid                (32'd764)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[764]   )
@@ -140117,7 +140117,7 @@ tile796 (
     .default_coreid_x           (8'd28),
     .default_coreid_y           (8'd24),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd796)
+    .flat_tileid                (32'd796)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[796]   )
@@ -140226,7 +140226,7 @@ tile828 (
     .default_coreid_x           (8'd28),
     .default_coreid_y           (8'd25),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd828)
+    .flat_tileid                (32'd828)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[828]   )
@@ -140335,7 +140335,7 @@ tile860 (
     .default_coreid_x           (8'd28),
     .default_coreid_y           (8'd26),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd860)
+    .flat_tileid                (32'd860)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[860]   )
@@ -140444,7 +140444,7 @@ tile892 (
     .default_coreid_x           (8'd28),
     .default_coreid_y           (8'd27),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd892)
+    .flat_tileid                (32'd892)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[892]   )
@@ -140553,7 +140553,7 @@ tile924 (
     .default_coreid_x           (8'd28),
     .default_coreid_y           (8'd28),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd924)
+    .flat_tileid                (32'd924)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[924]   )
@@ -140662,7 +140662,7 @@ tile956 (
     .default_coreid_x           (8'd28),
     .default_coreid_y           (8'd29),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd956)
+    .flat_tileid                (32'd956)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[956]   )
@@ -140771,7 +140771,7 @@ tile988 (
     .default_coreid_x           (8'd28),
     .default_coreid_y           (8'd30),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd988)
+    .flat_tileid                (32'd988)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[988]   )
@@ -140880,7 +140880,7 @@ tile1020 (
     .default_coreid_x           (8'd28),
     .default_coreid_y           (8'd31),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd1020)
+    .flat_tileid                (32'd1020)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[1020]   )
@@ -140989,7 +140989,7 @@ tile29 (
     .default_coreid_x           (8'd29),
     .default_coreid_y           (8'd0),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd29)
+    .flat_tileid                (32'd29)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[29]   )
@@ -141098,7 +141098,7 @@ tile61 (
     .default_coreid_x           (8'd29),
     .default_coreid_y           (8'd1),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd61)
+    .flat_tileid                (32'd61)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[61]   )
@@ -141207,7 +141207,7 @@ tile93 (
     .default_coreid_x           (8'd29),
     .default_coreid_y           (8'd2),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd93)
+    .flat_tileid                (32'd93)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[93]   )
@@ -141316,7 +141316,7 @@ tile125 (
     .default_coreid_x           (8'd29),
     .default_coreid_y           (8'd3),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd125)
+    .flat_tileid                (32'd125)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[125]   )
@@ -141425,7 +141425,7 @@ tile157 (
     .default_coreid_x           (8'd29),
     .default_coreid_y           (8'd4),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd157)
+    .flat_tileid                (32'd157)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[157]   )
@@ -141534,7 +141534,7 @@ tile189 (
     .default_coreid_x           (8'd29),
     .default_coreid_y           (8'd5),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd189)
+    .flat_tileid                (32'd189)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[189]   )
@@ -141643,7 +141643,7 @@ tile221 (
     .default_coreid_x           (8'd29),
     .default_coreid_y           (8'd6),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd221)
+    .flat_tileid                (32'd221)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[221]   )
@@ -141752,7 +141752,7 @@ tile253 (
     .default_coreid_x           (8'd29),
     .default_coreid_y           (8'd7),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd253)
+    .flat_tileid                (32'd253)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[253]   )
@@ -141861,7 +141861,7 @@ tile285 (
     .default_coreid_x           (8'd29),
     .default_coreid_y           (8'd8),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd285)
+    .flat_tileid                (32'd285)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[285]   )
@@ -141970,7 +141970,7 @@ tile317 (
     .default_coreid_x           (8'd29),
     .default_coreid_y           (8'd9),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd317)
+    .flat_tileid                (32'd317)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[317]   )
@@ -142079,7 +142079,7 @@ tile349 (
     .default_coreid_x           (8'd29),
     .default_coreid_y           (8'd10),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd349)
+    .flat_tileid                (32'd349)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[349]   )
@@ -142188,7 +142188,7 @@ tile381 (
     .default_coreid_x           (8'd29),
     .default_coreid_y           (8'd11),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd381)
+    .flat_tileid                (32'd381)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[381]   )
@@ -142297,7 +142297,7 @@ tile413 (
     .default_coreid_x           (8'd29),
     .default_coreid_y           (8'd12),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd413)
+    .flat_tileid                (32'd413)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[413]   )
@@ -142406,7 +142406,7 @@ tile445 (
     .default_coreid_x           (8'd29),
     .default_coreid_y           (8'd13),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd445)
+    .flat_tileid                (32'd445)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[445]   )
@@ -142515,7 +142515,7 @@ tile477 (
     .default_coreid_x           (8'd29),
     .default_coreid_y           (8'd14),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd477)
+    .flat_tileid                (32'd477)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[477]   )
@@ -142624,7 +142624,7 @@ tile509 (
     .default_coreid_x           (8'd29),
     .default_coreid_y           (8'd15),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd509)
+    .flat_tileid                (32'd509)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[509]   )
@@ -142733,7 +142733,7 @@ tile541 (
     .default_coreid_x           (8'd29),
     .default_coreid_y           (8'd16),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd541)
+    .flat_tileid                (32'd541)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[541]   )
@@ -142842,7 +142842,7 @@ tile573 (
     .default_coreid_x           (8'd29),
     .default_coreid_y           (8'd17),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd573)
+    .flat_tileid                (32'd573)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[573]   )
@@ -142951,7 +142951,7 @@ tile605 (
     .default_coreid_x           (8'd29),
     .default_coreid_y           (8'd18),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd605)
+    .flat_tileid                (32'd605)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[605]   )
@@ -143060,7 +143060,7 @@ tile637 (
     .default_coreid_x           (8'd29),
     .default_coreid_y           (8'd19),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd637)
+    .flat_tileid                (32'd637)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[637]   )
@@ -143169,7 +143169,7 @@ tile669 (
     .default_coreid_x           (8'd29),
     .default_coreid_y           (8'd20),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd669)
+    .flat_tileid                (32'd669)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[669]   )
@@ -143278,7 +143278,7 @@ tile701 (
     .default_coreid_x           (8'd29),
     .default_coreid_y           (8'd21),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd701)
+    .flat_tileid                (32'd701)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[701]   )
@@ -143387,7 +143387,7 @@ tile733 (
     .default_coreid_x           (8'd29),
     .default_coreid_y           (8'd22),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd733)
+    .flat_tileid                (32'd733)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[733]   )
@@ -143496,7 +143496,7 @@ tile765 (
     .default_coreid_x           (8'd29),
     .default_coreid_y           (8'd23),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd765)
+    .flat_tileid                (32'd765)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[765]   )
@@ -143605,7 +143605,7 @@ tile797 (
     .default_coreid_x           (8'd29),
     .default_coreid_y           (8'd24),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd797)
+    .flat_tileid                (32'd797)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[797]   )
@@ -143714,7 +143714,7 @@ tile829 (
     .default_coreid_x           (8'd29),
     .default_coreid_y           (8'd25),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd829)
+    .flat_tileid                (32'd829)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[829]   )
@@ -143823,7 +143823,7 @@ tile861 (
     .default_coreid_x           (8'd29),
     .default_coreid_y           (8'd26),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd861)
+    .flat_tileid                (32'd861)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[861]   )
@@ -143932,7 +143932,7 @@ tile893 (
     .default_coreid_x           (8'd29),
     .default_coreid_y           (8'd27),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd893)
+    .flat_tileid                (32'd893)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[893]   )
@@ -144041,7 +144041,7 @@ tile925 (
     .default_coreid_x           (8'd29),
     .default_coreid_y           (8'd28),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd925)
+    .flat_tileid                (32'd925)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[925]   )
@@ -144150,7 +144150,7 @@ tile957 (
     .default_coreid_x           (8'd29),
     .default_coreid_y           (8'd29),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd957)
+    .flat_tileid                (32'd957)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[957]   )
@@ -144259,7 +144259,7 @@ tile989 (
     .default_coreid_x           (8'd29),
     .default_coreid_y           (8'd30),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd989)
+    .flat_tileid                (32'd989)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[989]   )
@@ -144368,7 +144368,7 @@ tile1021 (
     .default_coreid_x           (8'd29),
     .default_coreid_y           (8'd31),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd1021)
+    .flat_tileid                (32'd1021)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[1021]   )
@@ -144477,7 +144477,7 @@ tile30 (
     .default_coreid_x           (8'd30),
     .default_coreid_y           (8'd0),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd30)
+    .flat_tileid                (32'd30)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[30]   )
@@ -144586,7 +144586,7 @@ tile62 (
     .default_coreid_x           (8'd30),
     .default_coreid_y           (8'd1),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd62)
+    .flat_tileid                (32'd62)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[62]   )
@@ -144695,7 +144695,7 @@ tile94 (
     .default_coreid_x           (8'd30),
     .default_coreid_y           (8'd2),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd94)
+    .flat_tileid                (32'd94)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[94]   )
@@ -144804,7 +144804,7 @@ tile126 (
     .default_coreid_x           (8'd30),
     .default_coreid_y           (8'd3),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd126)
+    .flat_tileid                (32'd126)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[126]   )
@@ -144913,7 +144913,7 @@ tile158 (
     .default_coreid_x           (8'd30),
     .default_coreid_y           (8'd4),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd158)
+    .flat_tileid                (32'd158)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[158]   )
@@ -145022,7 +145022,7 @@ tile190 (
     .default_coreid_x           (8'd30),
     .default_coreid_y           (8'd5),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd190)
+    .flat_tileid                (32'd190)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[190]   )
@@ -145131,7 +145131,7 @@ tile222 (
     .default_coreid_x           (8'd30),
     .default_coreid_y           (8'd6),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd222)
+    .flat_tileid                (32'd222)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[222]   )
@@ -145240,7 +145240,7 @@ tile254 (
     .default_coreid_x           (8'd30),
     .default_coreid_y           (8'd7),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd254)
+    .flat_tileid                (32'd254)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[254]   )
@@ -145349,7 +145349,7 @@ tile286 (
     .default_coreid_x           (8'd30),
     .default_coreid_y           (8'd8),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd286)
+    .flat_tileid                (32'd286)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[286]   )
@@ -145458,7 +145458,7 @@ tile318 (
     .default_coreid_x           (8'd30),
     .default_coreid_y           (8'd9),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd318)
+    .flat_tileid                (32'd318)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[318]   )
@@ -145567,7 +145567,7 @@ tile350 (
     .default_coreid_x           (8'd30),
     .default_coreid_y           (8'd10),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd350)
+    .flat_tileid                (32'd350)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[350]   )
@@ -145676,7 +145676,7 @@ tile382 (
     .default_coreid_x           (8'd30),
     .default_coreid_y           (8'd11),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd382)
+    .flat_tileid                (32'd382)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[382]   )
@@ -145785,7 +145785,7 @@ tile414 (
     .default_coreid_x           (8'd30),
     .default_coreid_y           (8'd12),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd414)
+    .flat_tileid                (32'd414)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[414]   )
@@ -145894,7 +145894,7 @@ tile446 (
     .default_coreid_x           (8'd30),
     .default_coreid_y           (8'd13),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd446)
+    .flat_tileid                (32'd446)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[446]   )
@@ -146003,7 +146003,7 @@ tile478 (
     .default_coreid_x           (8'd30),
     .default_coreid_y           (8'd14),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd478)
+    .flat_tileid                (32'd478)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[478]   )
@@ -146112,7 +146112,7 @@ tile510 (
     .default_coreid_x           (8'd30),
     .default_coreid_y           (8'd15),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd510)
+    .flat_tileid                (32'd510)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[510]   )
@@ -146221,7 +146221,7 @@ tile542 (
     .default_coreid_x           (8'd30),
     .default_coreid_y           (8'd16),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd542)
+    .flat_tileid                (32'd542)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[542]   )
@@ -146330,7 +146330,7 @@ tile574 (
     .default_coreid_x           (8'd30),
     .default_coreid_y           (8'd17),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd574)
+    .flat_tileid                (32'd574)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[574]   )
@@ -146439,7 +146439,7 @@ tile606 (
     .default_coreid_x           (8'd30),
     .default_coreid_y           (8'd18),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd606)
+    .flat_tileid                (32'd606)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[606]   )
@@ -146548,7 +146548,7 @@ tile638 (
     .default_coreid_x           (8'd30),
     .default_coreid_y           (8'd19),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd638)
+    .flat_tileid                (32'd638)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[638]   )
@@ -146657,7 +146657,7 @@ tile670 (
     .default_coreid_x           (8'd30),
     .default_coreid_y           (8'd20),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd670)
+    .flat_tileid                (32'd670)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[670]   )
@@ -146766,7 +146766,7 @@ tile702 (
     .default_coreid_x           (8'd30),
     .default_coreid_y           (8'd21),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd702)
+    .flat_tileid                (32'd702)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[702]   )
@@ -146875,7 +146875,7 @@ tile734 (
     .default_coreid_x           (8'd30),
     .default_coreid_y           (8'd22),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd734)
+    .flat_tileid                (32'd734)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[734]   )
@@ -146984,7 +146984,7 @@ tile766 (
     .default_coreid_x           (8'd30),
     .default_coreid_y           (8'd23),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd766)
+    .flat_tileid                (32'd766)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[766]   )
@@ -147093,7 +147093,7 @@ tile798 (
     .default_coreid_x           (8'd30),
     .default_coreid_y           (8'd24),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd798)
+    .flat_tileid                (32'd798)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[798]   )
@@ -147202,7 +147202,7 @@ tile830 (
     .default_coreid_x           (8'd30),
     .default_coreid_y           (8'd25),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd830)
+    .flat_tileid                (32'd830)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[830]   )
@@ -147311,7 +147311,7 @@ tile862 (
     .default_coreid_x           (8'd30),
     .default_coreid_y           (8'd26),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd862)
+    .flat_tileid                (32'd862)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[862]   )
@@ -147420,7 +147420,7 @@ tile894 (
     .default_coreid_x           (8'd30),
     .default_coreid_y           (8'd27),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd894)
+    .flat_tileid                (32'd894)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[894]   )
@@ -147529,7 +147529,7 @@ tile926 (
     .default_coreid_x           (8'd30),
     .default_coreid_y           (8'd28),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd926)
+    .flat_tileid                (32'd926)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[926]   )
@@ -147638,7 +147638,7 @@ tile958 (
     .default_coreid_x           (8'd30),
     .default_coreid_y           (8'd29),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd958)
+    .flat_tileid                (32'd958)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[958]   )
@@ -147747,7 +147747,7 @@ tile990 (
     .default_coreid_x           (8'd30),
     .default_coreid_y           (8'd30),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd990)
+    .flat_tileid                (32'd990)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[990]   )
@@ -147856,7 +147856,7 @@ tile1022 (
     .default_coreid_x           (8'd30),
     .default_coreid_y           (8'd31),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd1022)
+    .flat_tileid                (32'd1022)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[1022]   )
@@ -147965,7 +147965,7 @@ tile31 (
     .default_coreid_x           (8'd31),
     .default_coreid_y           (8'd0),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd31)
+    .flat_tileid                (32'd31)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[31]   )
@@ -148074,7 +148074,7 @@ tile63 (
     .default_coreid_x           (8'd31),
     .default_coreid_y           (8'd1),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd63)
+    .flat_tileid                (32'd63)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[63]   )
@@ -148183,7 +148183,7 @@ tile95 (
     .default_coreid_x           (8'd31),
     .default_coreid_y           (8'd2),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd95)
+    .flat_tileid                (32'd95)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[95]   )
@@ -148292,7 +148292,7 @@ tile127 (
     .default_coreid_x           (8'd31),
     .default_coreid_y           (8'd3),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd127)
+    .flat_tileid                (32'd127)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[127]   )
@@ -148401,7 +148401,7 @@ tile159 (
     .default_coreid_x           (8'd31),
     .default_coreid_y           (8'd4),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd159)
+    .flat_tileid                (32'd159)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[159]   )
@@ -148510,7 +148510,7 @@ tile191 (
     .default_coreid_x           (8'd31),
     .default_coreid_y           (8'd5),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd191)
+    .flat_tileid                (32'd191)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[191]   )
@@ -148619,7 +148619,7 @@ tile223 (
     .default_coreid_x           (8'd31),
     .default_coreid_y           (8'd6),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd223)
+    .flat_tileid                (32'd223)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[223]   )
@@ -148728,7 +148728,7 @@ tile255 (
     .default_coreid_x           (8'd31),
     .default_coreid_y           (8'd7),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd255)
+    .flat_tileid                (32'd255)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[255]   )
@@ -148837,7 +148837,7 @@ tile287 (
     .default_coreid_x           (8'd31),
     .default_coreid_y           (8'd8),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd287)
+    .flat_tileid                (32'd287)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[287]   )
@@ -148946,7 +148946,7 @@ tile319 (
     .default_coreid_x           (8'd31),
     .default_coreid_y           (8'd9),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd319)
+    .flat_tileid                (32'd319)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[319]   )
@@ -149055,7 +149055,7 @@ tile351 (
     .default_coreid_x           (8'd31),
     .default_coreid_y           (8'd10),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd351)
+    .flat_tileid                (32'd351)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[351]   )
@@ -149164,7 +149164,7 @@ tile383 (
     .default_coreid_x           (8'd31),
     .default_coreid_y           (8'd11),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd383)
+    .flat_tileid                (32'd383)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[383]   )
@@ -149273,7 +149273,7 @@ tile415 (
     .default_coreid_x           (8'd31),
     .default_coreid_y           (8'd12),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd415)
+    .flat_tileid                (32'd415)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[415]   )
@@ -149382,7 +149382,7 @@ tile447 (
     .default_coreid_x           (8'd31),
     .default_coreid_y           (8'd13),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd447)
+    .flat_tileid                (32'd447)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[447]   )
@@ -149491,7 +149491,7 @@ tile479 (
     .default_coreid_x           (8'd31),
     .default_coreid_y           (8'd14),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd479)
+    .flat_tileid                (32'd479)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[479]   )
@@ -149600,7 +149600,7 @@ tile511 (
     .default_coreid_x           (8'd31),
     .default_coreid_y           (8'd15),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd511)
+    .flat_tileid                (32'd511)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[511]   )
@@ -149709,7 +149709,7 @@ tile543 (
     .default_coreid_x           (8'd31),
     .default_coreid_y           (8'd16),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd543)
+    .flat_tileid                (32'd543)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[543]   )
@@ -149818,7 +149818,7 @@ tile575 (
     .default_coreid_x           (8'd31),
     .default_coreid_y           (8'd17),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd575)
+    .flat_tileid                (32'd575)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[575]   )
@@ -149927,7 +149927,7 @@ tile607 (
     .default_coreid_x           (8'd31),
     .default_coreid_y           (8'd18),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd607)
+    .flat_tileid                (32'd607)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[607]   )
@@ -150036,7 +150036,7 @@ tile639 (
     .default_coreid_x           (8'd31),
     .default_coreid_y           (8'd19),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd639)
+    .flat_tileid                (32'd639)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[639]   )
@@ -150145,7 +150145,7 @@ tile671 (
     .default_coreid_x           (8'd31),
     .default_coreid_y           (8'd20),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd671)
+    .flat_tileid                (32'd671)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[671]   )
@@ -150254,7 +150254,7 @@ tile703 (
     .default_coreid_x           (8'd31),
     .default_coreid_y           (8'd21),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd703)
+    .flat_tileid                (32'd703)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[703]   )
@@ -150363,7 +150363,7 @@ tile735 (
     .default_coreid_x           (8'd31),
     .default_coreid_y           (8'd22),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd735)
+    .flat_tileid                (32'd735)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[735]   )
@@ -150472,7 +150472,7 @@ tile767 (
     .default_coreid_x           (8'd31),
     .default_coreid_y           (8'd23),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd767)
+    .flat_tileid                (32'd767)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[767]   )
@@ -150581,7 +150581,7 @@ tile799 (
     .default_coreid_x           (8'd31),
     .default_coreid_y           (8'd24),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd799)
+    .flat_tileid                (32'd799)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[799]   )
@@ -150690,7 +150690,7 @@ tile831 (
     .default_coreid_x           (8'd31),
     .default_coreid_y           (8'd25),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd831)
+    .flat_tileid                (32'd831)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[831]   )
@@ -150799,7 +150799,7 @@ tile863 (
     .default_coreid_x           (8'd31),
     .default_coreid_y           (8'd26),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd863)
+    .flat_tileid                (32'd863)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[863]   )
@@ -150908,7 +150908,7 @@ tile895 (
     .default_coreid_x           (8'd31),
     .default_coreid_y           (8'd27),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd895)
+    .flat_tileid                (32'd895)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[895]   )
@@ -151017,7 +151017,7 @@ tile927 (
     .default_coreid_x           (8'd31),
     .default_coreid_y           (8'd28),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd927)
+    .flat_tileid                (32'd927)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[927]   )
@@ -151126,7 +151126,7 @@ tile959 (
     .default_coreid_x           (8'd31),
     .default_coreid_y           (8'd29),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd959)
+    .flat_tileid                (32'd959)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[959]   )
@@ -151235,7 +151235,7 @@ tile991 (
     .default_coreid_x           (8'd31),
     .default_coreid_y           (8'd30),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd991)
+    .flat_tileid                (32'd991)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[991]   )
@@ -151344,7 +151344,7 @@ tile1023 (
     .default_coreid_x           (8'd31),
     .default_coreid_y           (8'd31),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd1023)
+    .flat_tileid                (32'd1023)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[1023]   )

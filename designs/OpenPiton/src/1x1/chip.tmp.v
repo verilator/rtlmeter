@@ -963,7 +963,7 @@ tile0 (
     .default_coreid_x           (8'd0),
     .default_coreid_y           (8'd0),
     .default_total_num_tiles    (default_total_num_tiles      ),
-    .flat_tileid                (`JTAG_FLATID_WIDTH'd0)
+    .flat_tileid                (32'd0)
 `ifdef PITON_RV64_PLATFORM
 `ifdef PITON_RV64_DEBUGUNIT
     ,.debug_req_i         ( debug_req_i[0]   )
