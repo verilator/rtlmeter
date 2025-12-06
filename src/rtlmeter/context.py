@@ -14,6 +14,7 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 
+import multiprocessing
 import os
 import time
 from functools import cached_property
@@ -77,10 +78,12 @@ class Context:
                     value.append(f"{designName}:{configName}:{testName}")
         return sorted(value)
 
-    # CPUs usable by this process
+    # Number of logical processors usable by this process
     @cached_property
-    def usableCpus(self) -> List[int]:
-        return sorted(_ for _ in os.sched_getaffinity(0))
+    def nProc(self) -> int:
+        if hasattr(os, "sched_getaffinity"):
+            return len(os.sched_getaffinity(0))
+        return multiprocessing.cpu_count()
 
     # Set deadline to now + 'timeout' minutes
     def setTimeout(self, timeout: Optional[int]) -> None:

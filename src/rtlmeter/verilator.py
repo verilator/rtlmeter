@@ -103,7 +103,7 @@ def _cppbuild(cgraph: CGraph, descr: CompileDescriptor, compileDir: str) -> CNod
         cmd = [
             "make",
             "-j",
-            str(len(CTX.usableCpus)),
+            str(CTX.nProc),
             "-C",
             "obj_dir",
             "-f",

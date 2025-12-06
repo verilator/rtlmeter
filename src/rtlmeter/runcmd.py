@@ -19,6 +19,7 @@ import os
 import shlex
 import stat
 import subprocess
+import sys
 import time
 from typing import Dict, Final, List
 
@@ -32,6 +33,11 @@ _TIMEFORMAT: Final[str] = """{
     "memory" : %M
 }
 """
+
+
+TIME_CMD = "time"
+if sys.platform == "darwin":
+    TIME_CMD = "gtime"  # On macOS use GNU time
 
 
 def runcmd(
@@ -67,7 +73,7 @@ def runcmd(
 
     # Actual command line to run, using the cmd file
     timeFile = os.path.join(tagDir, "time.json")
-    cmd = ["time", "-o", timeFile, "-f", _TIMEFORMAT, cmdFileName]
+    cmd = [TIME_CMD, "-o", timeFile, "-f", _TIMEFORMAT, cmdFileName]
 
     # Apply timeout if a deadline is set
     if (timeout := CTX.timeout()) is not None:
