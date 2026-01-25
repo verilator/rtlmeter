@@ -25,6 +25,7 @@ venv:
 	# Create virtual environment using the host python3 from $$PATH
 	python3 -m venv $(ROOT_DIR)/venv
 	# Install python3 dependencies
+	$(ROOT_DIR)/venv/bin/pip3 install -r python-requirements.txt || \
 	$(ROOT_DIR)/venv/bin/pip3 install -r python-requirements.txt
 
 .PHONY: typecheck

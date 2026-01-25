@@ -90,10 +90,14 @@ jobs:
     steps:
       - name: Install dependencies
         run: |
+          sudo apt update || \
           sudo apt update
+          sudo apt install ccache mold help2man libfl-dev libsystemc-dev || \
           sudo apt install ccache mold help2man libfl-dev libsystemc-dev
           # Some conflict of libunwind verison on 22.04, can live without it
-          [[ "${{ matrix.os }}" == "ubuntu-22.04" ]] || sudo apt install libgoogle-perftools-dev
+          [[ "${{ matrix.os }}" == "ubuntu-22.04" ]] || \
+            sudo apt install libgoogle-perftools-dev || \
+            sudo apt install libgoogle-perftools-dev
       - name: Checkout Verilator
         uses: actions/checkout@v6
         with:
@@ -147,7 +151,9 @@ jobs:
         run: make venv
       - name: Install dependencies
         run: |
+          sudo apt update || \
           sudo apt update
+          sudo apt install ccache mold || \
           sudo apt install ccache mold
       - name: Download Verilator installation archive
         uses: actions/download-artifact@v7
