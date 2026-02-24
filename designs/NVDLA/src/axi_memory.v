@@ -150,7 +150,8 @@ module axi_memory #(
       end
 
       if (wvalid & wready) begin
-        wentry_t wentry = wqueue.pop_front();
+        wentry_t wentry;
+        wentry = wqueue.pop_front();
         for (int unsigned word = 0; word < 16; ++word) begin : write_word
           for (int unsigned i = 0; i < 4; ++i) begin : write_byte
             if (wstrb[4*word + i]) begin
