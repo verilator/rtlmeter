@@ -156,7 +156,7 @@ jobs:
           sudo apt install ccache mold || \
           sudo apt install ccache mold
       - name: Download Verilator installation archive
-        uses: actions/download-artifact@v7
+        uses: actions/download-artifact@v8
         with:
           name: verilator-${{ matrix.cxx }}-${{ matrix.os }}
       - name: Unpack Verilator installation archive
