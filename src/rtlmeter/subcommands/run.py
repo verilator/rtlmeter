@@ -1,3 +1,4 @@
+# pylint: disable=R0913,R0917
 # Copyright 2025 RTLMeter contributors
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -40,6 +41,7 @@ def addHooks(
     dir: str,
     startNode: CNode,
     endNode: CNode,
+    noPostHook: bool,
 ) -> Tuple[CNode, CNode]:
     # If prep hook is given, run it before everything else
     if descr.prepHook is not None:
@@ -48,8 +50,8 @@ def addHooks(
         node = cgraph.addNode(f"{descr.case} - Prep hook", dir, step, lambda: runcmd([hook], step))
         cgraph.addEdge(node, startNode)
         startNode = node
-    # If post hook is given, run it after everything else
-    if descr.postHook is not None:
+    # If post hook is given, run it after everything else, unless explicitly told not to
+    if descr.postHook is not None and not noPostHook:
         hook = descr.postHook
         step = "postHook"
         node = cgraph.addNode(f"{descr.case} - Post hook", dir, step, lambda: runcmd([hook], step))
@@ -65,7 +67,7 @@ def compile(
     # Compilation
     startNode, endNode = sim.compile(cgraph, descr, compileDir, extraArgs)
     # Add prep and post hooks
-    startNode, endNode = addHooks(cgraph, descr, compileDir, startNode, endNode)
+    startNode, endNode = addHooks(cgraph, descr, compileDir, startNode, endNode, False)
 
     # Before anything else, link resource files for compilation
     def linkFiles() -> bool:
@@ -96,10 +98,12 @@ def compile(
 def execute(
     cgraph: CGraph, descr: ExecuteDescriptor, compileDir: str, executeDir: str, extraArgs: List[str]
 ) -> Tuple[CNode, CNode]:
+    # Suppress post hook if has +max_cycles argument as run will not terminate normally
+    hasMaxCycles = any(map(lambda _: _.startswith("+max_cycles="), extraArgs))
     # Execution
     startNode, endNode = sim.execute(cgraph, descr, compileDir, executeDir, extraArgs)
     # Add prep and post hooks
-    startNode, endNode = addHooks(cgraph, descr, executeDir, startNode, endNode)
+    startNode, endNode = addHooks(cgraph, descr, executeDir, startNode, endNode, hasMaxCycles)
 
     # Before anything else, link resource files for execution
     def linkFiles() -> bool:
