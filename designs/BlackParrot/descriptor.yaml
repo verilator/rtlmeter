@@ -406,6 +406,11 @@ compile:
     - -Gsim_clock_period_p=10
     - -Gsim_reset_cycles_lo_p=0
     - -Gsim_reset_cycles_hi_p=20
+    - -Wno-ASCRANGE
+    - -Wno-TIMESCALEMOD
+    - -Wno-WIDTHCONCAT
+    - -Wno-WIDTHEXPAND
+    - -Wno-WIDTHTRUNC
 
 execute:
   common:

@@ -474,7 +474,7 @@ compile:
     - src/px_had_sync.v
     - src/sync.v
     - src/tap2_sm.v
-  verilatorArgs: [ --autoflush ]
+  verilatorArgs: [ --autoflush, -Wno-CASEINCOMPLETE, -Wno-IMPLICIT, -Wno-WIDTHEXPAND, -Wno-WIDTHTRUNC ]
   topModule: tb
   mainClock: tb.clk
 

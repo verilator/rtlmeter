@@ -156,6 +156,10 @@ compile:
   mainClock: tb.clk
   verilatorArgs:
     - --autoflush
+    - -Wno-ASCRANGE
+    - -Wno-UNSIGNED
+    - -Wno-WIDTHEXPAND
+    - -Wno-WIDTHTRUNC
 
 execute:
   common:

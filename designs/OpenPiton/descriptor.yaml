@@ -298,6 +298,13 @@ compile:
   mainClock: cmp_top.core_ref_clk
   verilatorArgs:
     - --autoflush
+    - -Wno-ASCRANGE
+    - -Wno-CASEINCOMPLETE
+    - -Wno-SELRANGE
+    - -Wno-UNSIGNED
+    - -Wno-WIDTHCONCAT
+    - -Wno-WIDTHEXPAND
+    - -Wno-WIDTHTRUNC
 
 execute:
   common:

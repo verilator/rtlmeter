@@ -298,7 +298,7 @@ compile:
     - src/uart_ctrl.v
     - src/uart_trans.v
     - src/uart.v
-  verilatorArgs: [ --autoflush ]
+  verilatorArgs: [ --autoflush, -Wno-CASEINCOMPLETE, -Wno-IMPLICIT, -Wno-WIDTHEXPAND, -Wno-WIDTHTRUNC ]
   topModule: tb
   mainClock: tb.clk
 

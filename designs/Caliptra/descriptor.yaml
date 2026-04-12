@@ -661,7 +661,11 @@ compile:
   mainClock: caliptra_top_tb.core_clk
   verilatorArgs: [
     --autoflush,
-    --timescale, 1ns/100ps
+    --timescale, 1ns/100ps,
+    -Wno-ASCRANGE,
+    -Wno-CMPCONST,
+    -Wno-WIDTHEXPAND,
+    -Wno-WIDTHTRUNC
   ]
 
 execute:

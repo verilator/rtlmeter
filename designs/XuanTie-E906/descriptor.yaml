@@ -256,7 +256,7 @@ compile:
     - src/wic_top.v
     - src/wic_awake_en_32.v
     - src/wic.v
-  verilatorArgs: [ --autoflush ]
+  verilatorArgs: [ --autoflush, -Wno-CASEINCOMPLETE, -Wno-IMPLICIT, -Wno-WIDTHEXPAND, -Wno-WIDTHTRUNC ]
   topModule: tb
   mainClock: tb.clk
 
