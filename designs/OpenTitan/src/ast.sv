@@ -632,7 +632,8 @@ assign rst_src_sys_n = scan_mode ? scan_reset_n : vcmain_pok_por_sys;
 logic [EntropyRateWidth-1:0] dv_entropy_rate_value;
 
 initial begin : erate_plusargs
-  dv_entropy_rate_value = EntropyRateWidth'($urandom_range(0, (2**EntropyRateWidth -1)));
+  // dv_entropy_rate_value = EntropyRateWidth'($urandom_range(0, (2**EntropyRateWidth -1)));
+  dv_entropy_rate_value = EntropyRateWidth'(2**EntropyRateWidth - 1);
   void'($value$plusargs("entropy_rate_value=%0d", dv_entropy_rate_value));
   `ASSERT_I(DvErateValueCheck, dv_entropy_rate_value inside {[0:(2**EntropyRateWidth -1)]})
 end
