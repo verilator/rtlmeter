@@ -14,7 +14,7 @@ module tb;
   logic [`VX_MEM_TAG_WIDTH-1:0]     mem_req_tag;
   logic                             mem_req_ready = 1'b0;
 
-  logic                             mem_rsp_valid = 1'b0;
+  logic                             mem_rsp_valid;
   logic [`VX_MEM_DATA_WIDTH-1:0]    mem_rsp_data;
   logic [`VX_MEM_TAG_WIDTH-1:0]     mem_rsp_tag;
   logic                             mem_rsp_ready;
