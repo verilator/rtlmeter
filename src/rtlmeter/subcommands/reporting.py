@@ -20,6 +20,7 @@ import json
 import os
 import subprocess
 import sys
+import warnings
 from typing import Any, Dict, Final, List, final
 
 import numpy as np
@@ -346,26 +347,33 @@ def rawdataMain(args: argparse.Namespace) -> None:
                     continue
 
                 samples = stepData[metric]
+                sampleValues = [_.value for _ in samples]
                 n = len(samples)
-                # Make up some defautls that will display correctly if not enough samples
+                # Make up some defaults that will display correctly if not enough samples
                 zscores = [None for _ in samples]
                 outlierVotes = [0 for _ in samples]
-                if n >= 2:
-                    zscores = scipy.stats.zscore(
-                        [_.value for _ in samples], ddof=1, nan_policy="raise"
-                    )
-                if n >= 4:
+                # Z-scores and outlier detection only makes sense if samples actually vary
+                hasVariance = n >= 2 and np.std(sampleValues) > 0
+                if hasVariance:
+                    zscores = scipy.stats.zscore(sampleValues, ddof=1, nan_policy="raise")
+                if n >= 4 and hasVariance:
                     # Add a bit of dithering to split quantized samples
                     rng = np.random.default_rng(seed=9876)
-                    values = [[_.value + rng.normal(scale=1e-4)] for _ in samples]
+                    values = [[v + rng.normal(scale=1e-4)] for v in sampleValues]
                     # Run with up to 9 neighborhood sizes
                     minNeighbours = max(int(np.sqrt(n)), 3)
                     maxNeighbours = n - 1
-                    for i in np.unique(np.linspace(minNeighbours, maxNeighbours, 9, dtype=int)):
-                        lof = LocalOutlierFactor(n_neighbors=i, algorithm="brute")
-                        for j, prediction in enumerate(lof.fit_predict(values)):
-                            if prediction == -1:
-                                outlierVotes[j] += 1
+                    with warnings.catch_warnings():
+                        warnings.filterwarnings(
+                            "ignore",
+                            message="Duplicate values are leading to incorrect results",
+                            category=UserWarning,
+                        )
+                        for i in np.unique(np.linspace(minNeighbours, maxNeighbours, 9, dtype=int)):
+                            lof = LocalOutlierFactor(n_neighbors=i, algorithm="brute")
+                            for j, prediction in enumerate(lof.fit_predict(values)):
+                                if prediction == -1:
+                                    outlierVotes[j] += 1
 
                 if table:
                     table.append(tabulate.SEPARATING_LINE)
