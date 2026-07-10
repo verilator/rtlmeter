@@ -35,6 +35,7 @@ jobs:
         os:
           - ubuntu-22.04
           - ubuntu-24.04
+          - ubuntu-26.04
     runs-on: ${{ matrix.os }}
     outputs:
       cases: ${{ steps.gatherCases.outputs.cases }}
@@ -62,7 +63,7 @@ jobs:
         run: make spellcheck
       - name: Gather cases for run
         id: gatherCases
-        if: ${{ matrix.os == 'ubuntu-24.04' }}
+        if: ${{ matrix.os == 'ubuntu-26.04' }}
         run: |
           # Gather all configurations into a JSON list
           echo "cases=[" >> cases.json
@@ -85,7 +86,7 @@ jobs:
           - g++
           - clang++
         os:
-          - ubuntu-24.04
+          - ubuntu-26.04
     runs-on: ${{ matrix.os }}
     steps:
       - name: Install dependencies
@@ -132,7 +133,7 @@ jobs:
           - g++
           - clang++
         os:
-          - ubuntu-24.04
+          - ubuntu-26.04
         case: ${{ fromJson(needs.check.outputs.cases) }}
     runs-on: ${{ matrix.os }}
     steps:
