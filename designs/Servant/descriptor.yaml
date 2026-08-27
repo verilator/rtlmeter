@@ -39,30 +39,46 @@ compile:
   mainClock: servant_tb.wb_clk
 
 execute:
+  common:
+    postHook: tests/post.bash
   tests:
     hello:
-      args:
-        - "+firmware=hello_uart.hex"
       files:
-        - sw/hello_uart.hex
+        - tests/hello/program.hex
+    cmark:
+      files:
+        - tests/cmark/program.hex
+    dhry:
+      files:
+        - tests/dhry/program.hex
     phil:
-      args:
-        - "+firmware=zephyr_phil.hex"
       files:
-        - sw/zephyr_phil.hex
+        - tests/phil/program.hex
 
 configurations:
   serv:
     execute:
       tests:
+        cmark:
+          args:
+            - "+iterations=2"
+        dhry:
+          args:
+            - "+iterations=2500"
         phil:
           args:
-            - "+uart_max_lines=100"
+            - "+iterations=20"
   qerv:
     compile:
       verilatorArgs: [-Gwidth=4]
     execute:
       tests:
+        cmark:
+          args:
+            - "+iterations=7"
+        dhry:
+          args:
+            - "+iterations=8000"
         phil:
           args:
-            - "+uart_max_lines=150"
+            - "+iterations=30"

@@ -13,12 +13,17 @@ module servant_sim
    parameter compressed = 0;
    parameter align = compressed;
 
-   reg [1023:0] firmware_file;
-   initial
-     if ($value$plusargs("firmware=%s", firmware_file)) begin
-        $display("Loading RAM from %0s", firmware_file);
-        $readmemh(firmware_file, dut.ram.mem);
-     end
+   localparam iterations_addr = memsize/4 - 1;
+
+   integer iterations;
+
+   initial begin
+      $readmemh("program.hex", dut.ram.mem);
+      if ($value$plusargs("iterations=%d", iterations)) begin
+         $display("Iterations: %0d", iterations);
+         dut.ram.mem[iterations_addr] = iterations;
+      end
+   end
 
    servant
      #(.memfile  (memfile),
