@@ -21424,7 +21424,7 @@ always @(posedge clk) begin
     hit_bad <= 1'b0;
   end else begin
     if (&good) begin
-      $display("All threads hit good tap - PASS");
+      $display("All threads hit good trap - PASS");
       $finish;
     end
     if (hit_bad) begin
