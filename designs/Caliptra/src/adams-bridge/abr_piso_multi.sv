@@ -19,14 +19,14 @@ module abr_piso_multi #(
   parameter int PISO_BUFFER_W = 1344,
   parameter int PISO_PTR_W = $clog2(PISO_BUFFER_W),
   parameter int PISO_ACT_INPUT_RATE = 1088,
-  parameter int PISO_ACT_OUTPUT_RATE = 80,
-  parameter int INPUT_RATES [NUM_MODES] = '{1088, 1088, 1088, 1088, 1088},
-  parameter int OUTPUT_RATES[NUM_MODES] = '{80, 80, 80, 80, 80}
+  parameter int PISO_ACT_OUTPUT_RATE = 80
 )(
   input  logic                          clk,
   input  logic                          rst_b,
   input  logic                          zeroize,
   input  logic [$clog2(NUM_MODES)-1:0]  mode,
+  input  int                            input_rates_i [NUM_MODES],
+  input  int                            output_rates_i[NUM_MODES],
   input  logic                          valid_i,
   output logic                          hold_o,
   input  logic [PISO_ACT_INPUT_RATE-1:0] data_i,
@@ -46,8 +46,8 @@ module abr_piso_multi #(
 
   // Select input/output rates based on mode
   always_comb begin
-    current_input_rate  = INPUT_RATES[mode][PISO_PTR_W-1:0];
-    current_output_rate = OUTPUT_RATES[mode][PISO_PTR_W-1:0];
+    current_input_rate  = input_rates_i[mode][PISO_PTR_W-1:0];
+    current_output_rate = output_rates_i[mode][PISO_PTR_W-1:0];
   end
 
   // Flow control

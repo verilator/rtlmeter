@@ -424,14 +424,17 @@ end
     .NUM_MODES(5),
     .PISO_BUFFER_W(REJS_PISO_BUFFER_W),
     .PISO_ACT_INPUT_RATE(REJS_PISO_INPUT_RATE),
-    .PISO_ACT_OUTPUT_RATE(REJS_PISO_OUTPUT_RATE),
-    .INPUT_RATES('{REJS_PISO_INPUT_RATE, REJB_PISO_INPUT_RATE, EXP_PISO_INPUT_RATE, SIB_PISO_INPUT_RATE, CBD_PISO_INPUT_RATE}),
-    .OUTPUT_RATES('{REJS_PISO_OUTPUT_RATE, REJB_PISO_OUTPUT_RATE, EXP_PISO_OUTPUT_RATE, SIB_PISO_OUTPUT_RATE, CBD_PISO_OUTPUT_RATE})
+    .PISO_ACT_OUTPUT_RATE(REJS_PISO_OUTPUT_RATE)
   ) abr_piso_inst (
     .clk(clk),
     .rst_b(rst_b),
     .zeroize(zeroize_piso),
     .mode(piso_mode),
+
+    // Moved from params to inputs to work around verilator issue, see: verilator/rtlmeter#46
+    .input_rates_i('{REJS_PISO_INPUT_RATE, REJB_PISO_INPUT_RATE, EXP_PISO_INPUT_RATE, SIB_PISO_INPUT_RATE, CBD_PISO_INPUT_RATE}),
+    .output_rates_i('{REJS_PISO_OUTPUT_RATE, REJB_PISO_OUTPUT_RATE, EXP_PISO_OUTPUT_RATE, SIB_PISO_OUTPUT_RATE, CBD_PISO_OUTPUT_RATE}),
+
     .valid_i(sha3_piso_dv),
     .hold_o(sha3_state_hold),
     .data_i(sha3_state[0][REJS_PISO_INPUT_RATE-1:0]),
