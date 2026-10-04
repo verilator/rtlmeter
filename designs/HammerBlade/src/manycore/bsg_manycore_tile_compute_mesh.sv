@@ -72,6 +72,7 @@ module bsg_manycore_tile_compute_mesh
     , output logic [y_cord_width_p-1:0] global_y_o
   );
 
+  /* verilator hier_block */
 
   //-------------------------------------------
   //As the manycore will distribute across large area, it will take long

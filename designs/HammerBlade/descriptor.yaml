@@ -227,6 +227,8 @@ compile:
 execute:
   common:
     postHook: tests/check.py
+    tags:
+      - hier
 configurations:
   16x8:
     compile:
