@@ -752,7 +752,7 @@ eh2_veer_wrapper rvtop (
 assign tck = 0;
 assign tms = 1;
 assign tdi = 0;
-assign trstn = 1;
+assign trstn = 0;
 assign srstn = 1;
 
 `ifdef RV_BUILD_AHB_LITE
