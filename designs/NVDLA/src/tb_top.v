@@ -248,7 +248,7 @@ module tb_top;
       reset = 1'b0;
       #(simulation_cycle*20);
       reset = 1'b1;
-      @(posedge mseq2tb_test_done);
+      wait (mseq2tb_test_done === 1'b1);
       #(simulation_cycle*20);
       @(posedge clk);
     end
