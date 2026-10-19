@@ -522,7 +522,8 @@ module tb_top
     logic [pt.DCCM_NUM_BANKS-1:0][pt.DCCM_FDATA_WIDTH-1:0] dccm_wr_fdata_bank;
     logic [pt.DCCM_NUM_BANKS-1:0][pt.DCCM_FDATA_WIDTH-1:0] dccm_bank_fdout;
 
-    tb_top_pkg::veer_sram_error_injection_mode_t error_injection_mode;
+    // Upstream resets this to 0 since chipsalliance/Cores-VeeR-EL2@21c5e9b.
+    tb_top_pkg::veer_sram_error_injection_mode_t error_injection_mode = '0;
 
 `define DEC rvtop_wrapper.rvtop.veer.dec
 
