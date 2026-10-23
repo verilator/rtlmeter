@@ -136,4 +136,33 @@ configurations:
         dhry:
           args: [ +iterations=7000 ]
 
-
+  # Default configuration with a VPI client (src/vpi/vpi_client.cpp) that monitors the
+  # external AXI buses, re-drives the memory models' handshake registers when they change,
+  # and samples GPRs/CSRs every 1000 cycles. Iteration counts are deliberately minimal until
+  # --vpi-lazy is available in Verilator, to be raised afterwards.
+  vpi:
+    compile:
+      verilogIncludeFiles:
+        - src/default/common_defines.vh
+        - src/default/el2_param.vh
+        - src/default/el2_pdef.vh
+        - src/default/pic_map_auto.h
+      cppSourceFiles:
+        - src/vpi/vpi_client.cpp
+      verilatorArgs: [
+        --vpi,
+        --public-flat-rw,
+        -Wno-NOEFFECT,
+        --future0, vpi-lazy,
+        --vpi-lazy
+      ]
+    execute:
+      tests:
+        hello:
+          tags: [ sanity ]
+        cmark:
+          args: [ +iterations=1 ]
+        cmark_iccm:
+          args: [ +iterations=1 ]
+        dhry:
+          args: [ +iterations=1000 ]
