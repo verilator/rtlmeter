@@ -166,18 +166,18 @@ io_xbar_output_control control(.thanks_0(thanks_0_out), .thanks_1(thanks_1_out),
 //NOTE TO READER.  I like the way that these instantiations look so if it
 //really bothers you go open this in emacs and re-tabify everything
 //and don't complain to me
-always @ (current_route_connection or route_req_0_in or route_req_1_in or route_req_2_in or route_req_3_in or route_req_4_in or route_req_5_in or route_req_6_in or route_req_7_in)
+always_comb
 begin
 	case(current_route_connection)
     
-	`IO_XBAR_ROUTE_0:    current_route_req <= route_req_0_in;
-	`IO_XBAR_ROUTE_1:    current_route_req <= route_req_1_in;
-	`IO_XBAR_ROUTE_2:    current_route_req <= route_req_2_in;
-	`IO_XBAR_ROUTE_3:    current_route_req <= route_req_3_in;
-	`IO_XBAR_ROUTE_4:    current_route_req <= route_req_4_in;
-	`IO_XBAR_ROUTE_5:    current_route_req <= route_req_5_in;
-	`IO_XBAR_ROUTE_6:    current_route_req <= route_req_6_in;
-	`IO_XBAR_ROUTE_7:    current_route_req <= route_req_7_in;
+	`IO_XBAR_ROUTE_0:    current_route_req = route_req_0_in;
+	`IO_XBAR_ROUTE_1:    current_route_req = route_req_1_in;
+	`IO_XBAR_ROUTE_2:    current_route_req = route_req_2_in;
+	`IO_XBAR_ROUTE_3:    current_route_req = route_req_3_in;
+	`IO_XBAR_ROUTE_4:    current_route_req = route_req_4_in;
+	`IO_XBAR_ROUTE_5:    current_route_req = route_req_5_in;
+	`IO_XBAR_ROUTE_6:    current_route_req = route_req_6_in;
+	`IO_XBAR_ROUTE_7:    current_route_req = route_req_7_in;
 
     /*
     //original
@@ -187,7 +187,7 @@ begin
 	`ROUTE_D:	current_route_req <= route_req_d_in;
 	`ROUTE_X:	current_route_req <= route_req_x_in;
     */
-	default:	current_route_req <= 1'bx;
+	default:	current_route_req = 1'bx;
 	endcase
 end
 
