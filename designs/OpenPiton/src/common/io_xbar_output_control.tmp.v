@@ -167,46 +167,46 @@ assign valid_out = valid_out_internal;
 
 //a mux for current_route_f's tail bit
 
-always @ (current_route_f or tail_0_in or tail_1_in or tail_2_in or tail_3_in or tail_4_in or tail_5_in or tail_6_in or tail_7_in)
+always_comb
 begin
 	case(current_route_f) //synopsys parallel_case
 	
 	`IO_XBAR_ROUTE_0:
 	begin
-		tail_current_route <= tail_0_in;
+		tail_current_route = tail_0_in;
 	end
 	`IO_XBAR_ROUTE_1:
 	begin
-		tail_current_route <= tail_1_in;
+		tail_current_route = tail_1_in;
 	end
 	`IO_XBAR_ROUTE_2:
 	begin
-		tail_current_route <= tail_2_in;
+		tail_current_route = tail_2_in;
 	end
 	`IO_XBAR_ROUTE_3:
 	begin
-		tail_current_route <= tail_3_in;
+		tail_current_route = tail_3_in;
 	end
 	`IO_XBAR_ROUTE_4:
 	begin
-		tail_current_route <= tail_4_in;
+		tail_current_route = tail_4_in;
 	end
 	`IO_XBAR_ROUTE_5:
 	begin
-		tail_current_route <= tail_5_in;
+		tail_current_route = tail_5_in;
 	end
 	`IO_XBAR_ROUTE_6:
 	begin
-		tail_current_route <= tail_6_in;
+		tail_current_route = tail_6_in;
 	end
 	`IO_XBAR_ROUTE_7:
 	begin
-		tail_current_route <= tail_7_in;
+		tail_current_route = tail_7_in;
 	end
 
 	default:
 	begin
-		tail_current_route <= 1'bx; //This is probably dangerous, but I
+		tail_current_route = 1'bx; //This is probably dangerous, but I
 					    //really need the speed here and
 					    //I don't want the synthesizer to
 					    //mess me up if I put a real value
@@ -215,7 +215,7 @@ begin
 	endcase
 end
 
-always @ (current_route_f or valid_out_internal)
+always_comb
 begin
 	case(current_route_f)
 	/*
@@ -232,104 +232,104 @@ begin
 	
 	`IO_XBAR_ROUTE_0:
 	begin
-		thanks_0 <= valid_out_internal;
-		thanks_1 <= 1'b0;
-		thanks_2 <= 1'b0;
-		thanks_3 <= 1'b0;
-		thanks_4 <= 1'b0;
-		thanks_5 <= 1'b0;
-		thanks_6 <= 1'b0;
-		thanks_7 <= 1'b0;
+		thanks_0 = valid_out_internal;
+		thanks_1 = 1'b0;
+		thanks_2 = 1'b0;
+		thanks_3 = 1'b0;
+		thanks_4 = 1'b0;
+		thanks_5 = 1'b0;
+		thanks_6 = 1'b0;
+		thanks_7 = 1'b0;
 	end
 	`IO_XBAR_ROUTE_1:
 	begin
-		thanks_0 <= 1'b0;
-		thanks_1 <= valid_out_internal;
-		thanks_2 <= 1'b0;
-		thanks_3 <= 1'b0;
-		thanks_4 <= 1'b0;
-		thanks_5 <= 1'b0;
-		thanks_6 <= 1'b0;
-		thanks_7 <= 1'b0;
+		thanks_0 = 1'b0;
+		thanks_1 = valid_out_internal;
+		thanks_2 = 1'b0;
+		thanks_3 = 1'b0;
+		thanks_4 = 1'b0;
+		thanks_5 = 1'b0;
+		thanks_6 = 1'b0;
+		thanks_7 = 1'b0;
 	end
 	`IO_XBAR_ROUTE_2:
 	begin
-		thanks_0 <= 1'b0;
-		thanks_1 <= 1'b0;
-		thanks_2 <= valid_out_internal;
-		thanks_3 <= 1'b0;
-		thanks_4 <= 1'b0;
-		thanks_5 <= 1'b0;
-		thanks_6 <= 1'b0;
-		thanks_7 <= 1'b0;
+		thanks_0 = 1'b0;
+		thanks_1 = 1'b0;
+		thanks_2 = valid_out_internal;
+		thanks_3 = 1'b0;
+		thanks_4 = 1'b0;
+		thanks_5 = 1'b0;
+		thanks_6 = 1'b0;
+		thanks_7 = 1'b0;
 	end
 	`IO_XBAR_ROUTE_3:
 	begin
-		thanks_0 <= 1'b0;
-		thanks_1 <= 1'b0;
-		thanks_2 <= 1'b0;
-		thanks_3 <= valid_out_internal;
-		thanks_4 <= 1'b0;
-		thanks_5 <= 1'b0;
-		thanks_6 <= 1'b0;
-		thanks_7 <= 1'b0;
+		thanks_0 = 1'b0;
+		thanks_1 = 1'b0;
+		thanks_2 = 1'b0;
+		thanks_3 = valid_out_internal;
+		thanks_4 = 1'b0;
+		thanks_5 = 1'b0;
+		thanks_6 = 1'b0;
+		thanks_7 = 1'b0;
 	end
 	`IO_XBAR_ROUTE_4:
 	begin
-		thanks_0 <= 1'b0;
-		thanks_1 <= 1'b0;
-		thanks_2 <= 1'b0;
-		thanks_3 <= 1'b0;
-		thanks_4 <= valid_out_internal;
-		thanks_5 <= 1'b0;
-		thanks_6 <= 1'b0;
-		thanks_7 <= 1'b0;
+		thanks_0 = 1'b0;
+		thanks_1 = 1'b0;
+		thanks_2 = 1'b0;
+		thanks_3 = 1'b0;
+		thanks_4 = valid_out_internal;
+		thanks_5 = 1'b0;
+		thanks_6 = 1'b0;
+		thanks_7 = 1'b0;
 	end
 	`IO_XBAR_ROUTE_5:
 	begin
-		thanks_0 <= 1'b0;
-		thanks_1 <= 1'b0;
-		thanks_2 <= 1'b0;
-		thanks_3 <= 1'b0;
-		thanks_4 <= 1'b0;
-		thanks_5 <= valid_out_internal;
-		thanks_6 <= 1'b0;
-		thanks_7 <= 1'b0;
+		thanks_0 = 1'b0;
+		thanks_1 = 1'b0;
+		thanks_2 = 1'b0;
+		thanks_3 = 1'b0;
+		thanks_4 = 1'b0;
+		thanks_5 = valid_out_internal;
+		thanks_6 = 1'b0;
+		thanks_7 = 1'b0;
 	end
 	`IO_XBAR_ROUTE_6:
 	begin
-		thanks_0 <= 1'b0;
-		thanks_1 <= 1'b0;
-		thanks_2 <= 1'b0;
-		thanks_3 <= 1'b0;
-		thanks_4 <= 1'b0;
-		thanks_5 <= 1'b0;
-		thanks_6 <= valid_out_internal;
-		thanks_7 <= 1'b0;
+		thanks_0 = 1'b0;
+		thanks_1 = 1'b0;
+		thanks_2 = 1'b0;
+		thanks_3 = 1'b0;
+		thanks_4 = 1'b0;
+		thanks_5 = 1'b0;
+		thanks_6 = valid_out_internal;
+		thanks_7 = 1'b0;
 	end
 	`IO_XBAR_ROUTE_7:
 	begin
-		thanks_0 <= 1'b0;
-		thanks_1 <= 1'b0;
-		thanks_2 <= 1'b0;
-		thanks_3 <= 1'b0;
-		thanks_4 <= 1'b0;
-		thanks_5 <= 1'b0;
-		thanks_6 <= 1'b0;
-		thanks_7 <= valid_out_internal;
+		thanks_0 = 1'b0;
+		thanks_1 = 1'b0;
+		thanks_2 = 1'b0;
+		thanks_3 = 1'b0;
+		thanks_4 = 1'b0;
+		thanks_5 = 1'b0;
+		thanks_6 = 1'b0;
+		thanks_7 = valid_out_internal;
 	end
 
 	default:
 	begin
 	
-		thanks_0 <= 1'bx;
-		thanks_1 <= 1'bx;
-		thanks_2 <= 1'bx;
-		thanks_3 <= 1'bx;
-		thanks_4 <= 1'bx;
-		thanks_5 <= 1'bx;
-		thanks_6 <= 1'bx;
-		thanks_7 <= 1'bx;
+		thanks_0 = 1'bx;
+		thanks_1 = 1'bx;
+		thanks_2 = 1'bx;
+		thanks_3 = 1'bx;
+		thanks_4 = 1'bx;
+		thanks_5 = 1'bx;
+		thanks_6 = 1'bx;
+		thanks_7 = 1'bx;
 
 	/*
 	//original
@@ -382,7 +382,7 @@ end
 //end the rotating priority encoder
 
 //this is the rotating priority encoder
-always @(current_route_f or route_req_0_in or route_req_1_in or route_req_2_in or route_req_3_in or route_req_4_in or route_req_5_in or route_req_6_in or route_req_7_in)
+always_comb
 begin
 	case(current_route_f)
 	/*
@@ -395,47 +395,47 @@ begin
 	
 	`IO_XBAR_ROUTE_0:
 	begin
-		new_route <= (route_req_1_in)?`IO_XBAR_ROUTE_1:((route_req_2_in)?`IO_XBAR_ROUTE_2:((route_req_3_in)?`IO_XBAR_ROUTE_3:((route_req_4_in)?`IO_XBAR_ROUTE_4:((route_req_5_in)?`IO_XBAR_ROUTE_5:((route_req_6_in)?`IO_XBAR_ROUTE_6:((route_req_7_in)?`IO_XBAR_ROUTE_7:`IO_XBAR_ROUTE_0))))));
+		new_route = (route_req_1_in)?`IO_XBAR_ROUTE_1:((route_req_2_in)?`IO_XBAR_ROUTE_2:((route_req_3_in)?`IO_XBAR_ROUTE_3:((route_req_4_in)?`IO_XBAR_ROUTE_4:((route_req_5_in)?`IO_XBAR_ROUTE_5:((route_req_6_in)?`IO_XBAR_ROUTE_6:((route_req_7_in)?`IO_XBAR_ROUTE_7:`IO_XBAR_ROUTE_0))))));
 	end
 	`IO_XBAR_ROUTE_1:
 	begin
-		new_route <= (route_req_2_in)?`IO_XBAR_ROUTE_2:((route_req_3_in)?`IO_XBAR_ROUTE_3:((route_req_4_in)?`IO_XBAR_ROUTE_4:((route_req_5_in)?`IO_XBAR_ROUTE_5:((route_req_6_in)?`IO_XBAR_ROUTE_6:((route_req_7_in)?`IO_XBAR_ROUTE_7:((route_req_0_in)?`IO_XBAR_ROUTE_0:`IO_XBAR_ROUTE_0))))));
+		new_route = (route_req_2_in)?`IO_XBAR_ROUTE_2:((route_req_3_in)?`IO_XBAR_ROUTE_3:((route_req_4_in)?`IO_XBAR_ROUTE_4:((route_req_5_in)?`IO_XBAR_ROUTE_5:((route_req_6_in)?`IO_XBAR_ROUTE_6:((route_req_7_in)?`IO_XBAR_ROUTE_7:((route_req_0_in)?`IO_XBAR_ROUTE_0:`IO_XBAR_ROUTE_0))))));
 	end
 	`IO_XBAR_ROUTE_2:
 	begin
-		new_route <= (route_req_3_in)?`IO_XBAR_ROUTE_3:((route_req_4_in)?`IO_XBAR_ROUTE_4:((route_req_5_in)?`IO_XBAR_ROUTE_5:((route_req_6_in)?`IO_XBAR_ROUTE_6:((route_req_7_in)?`IO_XBAR_ROUTE_7:((route_req_0_in)?`IO_XBAR_ROUTE_0:((route_req_1_in)?`IO_XBAR_ROUTE_1:`IO_XBAR_ROUTE_0))))));
+		new_route = (route_req_3_in)?`IO_XBAR_ROUTE_3:((route_req_4_in)?`IO_XBAR_ROUTE_4:((route_req_5_in)?`IO_XBAR_ROUTE_5:((route_req_6_in)?`IO_XBAR_ROUTE_6:((route_req_7_in)?`IO_XBAR_ROUTE_7:((route_req_0_in)?`IO_XBAR_ROUTE_0:((route_req_1_in)?`IO_XBAR_ROUTE_1:`IO_XBAR_ROUTE_0))))));
 	end
 	`IO_XBAR_ROUTE_3:
 	begin
-		new_route <= (route_req_4_in)?`IO_XBAR_ROUTE_4:((route_req_5_in)?`IO_XBAR_ROUTE_5:((route_req_6_in)?`IO_XBAR_ROUTE_6:((route_req_7_in)?`IO_XBAR_ROUTE_7:((route_req_0_in)?`IO_XBAR_ROUTE_0:((route_req_1_in)?`IO_XBAR_ROUTE_1:((route_req_2_in)?`IO_XBAR_ROUTE_2:`IO_XBAR_ROUTE_0))))));
+		new_route = (route_req_4_in)?`IO_XBAR_ROUTE_4:((route_req_5_in)?`IO_XBAR_ROUTE_5:((route_req_6_in)?`IO_XBAR_ROUTE_6:((route_req_7_in)?`IO_XBAR_ROUTE_7:((route_req_0_in)?`IO_XBAR_ROUTE_0:((route_req_1_in)?`IO_XBAR_ROUTE_1:((route_req_2_in)?`IO_XBAR_ROUTE_2:`IO_XBAR_ROUTE_0))))));
 	end
 	`IO_XBAR_ROUTE_4:
 	begin
-		new_route <= (route_req_5_in)?`IO_XBAR_ROUTE_5:((route_req_6_in)?`IO_XBAR_ROUTE_6:((route_req_7_in)?`IO_XBAR_ROUTE_7:((route_req_0_in)?`IO_XBAR_ROUTE_0:((route_req_1_in)?`IO_XBAR_ROUTE_1:((route_req_2_in)?`IO_XBAR_ROUTE_2:((route_req_3_in)?`IO_XBAR_ROUTE_3:`IO_XBAR_ROUTE_0))))));
+		new_route = (route_req_5_in)?`IO_XBAR_ROUTE_5:((route_req_6_in)?`IO_XBAR_ROUTE_6:((route_req_7_in)?`IO_XBAR_ROUTE_7:((route_req_0_in)?`IO_XBAR_ROUTE_0:((route_req_1_in)?`IO_XBAR_ROUTE_1:((route_req_2_in)?`IO_XBAR_ROUTE_2:((route_req_3_in)?`IO_XBAR_ROUTE_3:`IO_XBAR_ROUTE_0))))));
 	end
 	`IO_XBAR_ROUTE_5:
 	begin
-		new_route <= (route_req_6_in)?`IO_XBAR_ROUTE_6:((route_req_7_in)?`IO_XBAR_ROUTE_7:((route_req_0_in)?`IO_XBAR_ROUTE_0:((route_req_1_in)?`IO_XBAR_ROUTE_1:((route_req_2_in)?`IO_XBAR_ROUTE_2:((route_req_3_in)?`IO_XBAR_ROUTE_3:((route_req_4_in)?`IO_XBAR_ROUTE_4:`IO_XBAR_ROUTE_0))))));
+		new_route = (route_req_6_in)?`IO_XBAR_ROUTE_6:((route_req_7_in)?`IO_XBAR_ROUTE_7:((route_req_0_in)?`IO_XBAR_ROUTE_0:((route_req_1_in)?`IO_XBAR_ROUTE_1:((route_req_2_in)?`IO_XBAR_ROUTE_2:((route_req_3_in)?`IO_XBAR_ROUTE_3:((route_req_4_in)?`IO_XBAR_ROUTE_4:`IO_XBAR_ROUTE_0))))));
 	end
 	`IO_XBAR_ROUTE_6:
 	begin
-		new_route <= (route_req_7_in)?`IO_XBAR_ROUTE_7:((route_req_0_in)?`IO_XBAR_ROUTE_0:((route_req_1_in)?`IO_XBAR_ROUTE_1:((route_req_2_in)?`IO_XBAR_ROUTE_2:((route_req_3_in)?`IO_XBAR_ROUTE_3:((route_req_4_in)?`IO_XBAR_ROUTE_4:((route_req_5_in)?`IO_XBAR_ROUTE_5:`IO_XBAR_ROUTE_0))))));
+		new_route = (route_req_7_in)?`IO_XBAR_ROUTE_7:((route_req_0_in)?`IO_XBAR_ROUTE_0:((route_req_1_in)?`IO_XBAR_ROUTE_1:((route_req_2_in)?`IO_XBAR_ROUTE_2:((route_req_3_in)?`IO_XBAR_ROUTE_3:((route_req_4_in)?`IO_XBAR_ROUTE_4:((route_req_5_in)?`IO_XBAR_ROUTE_5:`IO_XBAR_ROUTE_0))))));
 	end
 	`IO_XBAR_ROUTE_7:
 	begin
-		new_route <= (route_req_0_in)?`IO_XBAR_ROUTE_0:((route_req_1_in)?`IO_XBAR_ROUTE_1:((route_req_2_in)?`IO_XBAR_ROUTE_2:((route_req_3_in)?`IO_XBAR_ROUTE_3:((route_req_4_in)?`IO_XBAR_ROUTE_4:((route_req_5_in)?`IO_XBAR_ROUTE_5:((route_req_6_in)?`IO_XBAR_ROUTE_6:`IO_XBAR_ROUTE_0))))));
+		new_route = (route_req_0_in)?`IO_XBAR_ROUTE_0:((route_req_1_in)?`IO_XBAR_ROUTE_1:((route_req_2_in)?`IO_XBAR_ROUTE_2:((route_req_3_in)?`IO_XBAR_ROUTE_3:((route_req_4_in)?`IO_XBAR_ROUTE_4:((route_req_5_in)?`IO_XBAR_ROUTE_5:((route_req_6_in)?`IO_XBAR_ROUTE_6:`IO_XBAR_ROUTE_0))))));
 	end
 
 	default:
 	begin
-		new_route <= `IO_XBAR_ROUTE_0;
+		new_route = `IO_XBAR_ROUTE_0;
 			//this one I am not willing to chince on
 	end
 	endcase
 end
 //end the rotating priority encoder
 
-always @(current_route_f or planned_f)
+always_comb
 begin
 	if(planned_f)
 	begin
@@ -443,102 +443,102 @@ begin
 		
 		`IO_XBAR_ROUTE_0:
 			begin
-				route_req_0_mask <= 1'b0;
-				route_req_1_mask <= 1'b1;
-				route_req_2_mask <= 1'b1;
-				route_req_3_mask <= 1'b1;
-				route_req_4_mask <= 1'b1;
-				route_req_5_mask <= 1'b1;
-				route_req_6_mask <= 1'b1;
-				route_req_7_mask <= 1'b1;
+				route_req_0_mask = 1'b0;
+				route_req_1_mask = 1'b1;
+				route_req_2_mask = 1'b1;
+				route_req_3_mask = 1'b1;
+				route_req_4_mask = 1'b1;
+				route_req_5_mask = 1'b1;
+				route_req_6_mask = 1'b1;
+				route_req_7_mask = 1'b1;
 			end
 		`IO_XBAR_ROUTE_1:
 			begin
-				route_req_0_mask <= 1'b1;
-				route_req_1_mask <= 1'b0;
-				route_req_2_mask <= 1'b1;
-				route_req_3_mask <= 1'b1;
-				route_req_4_mask <= 1'b1;
-				route_req_5_mask <= 1'b1;
-				route_req_6_mask <= 1'b1;
-				route_req_7_mask <= 1'b1;
+				route_req_0_mask = 1'b1;
+				route_req_1_mask = 1'b0;
+				route_req_2_mask = 1'b1;
+				route_req_3_mask = 1'b1;
+				route_req_4_mask = 1'b1;
+				route_req_5_mask = 1'b1;
+				route_req_6_mask = 1'b1;
+				route_req_7_mask = 1'b1;
 			end
 		`IO_XBAR_ROUTE_2:
 			begin
-				route_req_0_mask <= 1'b1;
-				route_req_1_mask <= 1'b1;
-				route_req_2_mask <= 1'b0;
-				route_req_3_mask <= 1'b1;
-				route_req_4_mask <= 1'b1;
-				route_req_5_mask <= 1'b1;
-				route_req_6_mask <= 1'b1;
-				route_req_7_mask <= 1'b1;
+				route_req_0_mask = 1'b1;
+				route_req_1_mask = 1'b1;
+				route_req_2_mask = 1'b0;
+				route_req_3_mask = 1'b1;
+				route_req_4_mask = 1'b1;
+				route_req_5_mask = 1'b1;
+				route_req_6_mask = 1'b1;
+				route_req_7_mask = 1'b1;
 			end
 		`IO_XBAR_ROUTE_3:
 			begin
-				route_req_0_mask <= 1'b1;
-				route_req_1_mask <= 1'b1;
-				route_req_2_mask <= 1'b1;
-				route_req_3_mask <= 1'b0;
-				route_req_4_mask <= 1'b1;
-				route_req_5_mask <= 1'b1;
-				route_req_6_mask <= 1'b1;
-				route_req_7_mask <= 1'b1;
+				route_req_0_mask = 1'b1;
+				route_req_1_mask = 1'b1;
+				route_req_2_mask = 1'b1;
+				route_req_3_mask = 1'b0;
+				route_req_4_mask = 1'b1;
+				route_req_5_mask = 1'b1;
+				route_req_6_mask = 1'b1;
+				route_req_7_mask = 1'b1;
 			end
 		`IO_XBAR_ROUTE_4:
 			begin
-				route_req_0_mask <= 1'b1;
-				route_req_1_mask <= 1'b1;
-				route_req_2_mask <= 1'b1;
-				route_req_3_mask <= 1'b1;
-				route_req_4_mask <= 1'b0;
-				route_req_5_mask <= 1'b1;
-				route_req_6_mask <= 1'b1;
-				route_req_7_mask <= 1'b1;
+				route_req_0_mask = 1'b1;
+				route_req_1_mask = 1'b1;
+				route_req_2_mask = 1'b1;
+				route_req_3_mask = 1'b1;
+				route_req_4_mask = 1'b0;
+				route_req_5_mask = 1'b1;
+				route_req_6_mask = 1'b1;
+				route_req_7_mask = 1'b1;
 			end
 		`IO_XBAR_ROUTE_5:
 			begin
-				route_req_0_mask <= 1'b1;
-				route_req_1_mask <= 1'b1;
-				route_req_2_mask <= 1'b1;
-				route_req_3_mask <= 1'b1;
-				route_req_4_mask <= 1'b1;
-				route_req_5_mask <= 1'b0;
-				route_req_6_mask <= 1'b1;
-				route_req_7_mask <= 1'b1;
+				route_req_0_mask = 1'b1;
+				route_req_1_mask = 1'b1;
+				route_req_2_mask = 1'b1;
+				route_req_3_mask = 1'b1;
+				route_req_4_mask = 1'b1;
+				route_req_5_mask = 1'b0;
+				route_req_6_mask = 1'b1;
+				route_req_7_mask = 1'b1;
 			end
 		`IO_XBAR_ROUTE_6:
 			begin
-				route_req_0_mask <= 1'b1;
-				route_req_1_mask <= 1'b1;
-				route_req_2_mask <= 1'b1;
-				route_req_3_mask <= 1'b1;
-				route_req_4_mask <= 1'b1;
-				route_req_5_mask <= 1'b1;
-				route_req_6_mask <= 1'b0;
-				route_req_7_mask <= 1'b1;
+				route_req_0_mask = 1'b1;
+				route_req_1_mask = 1'b1;
+				route_req_2_mask = 1'b1;
+				route_req_3_mask = 1'b1;
+				route_req_4_mask = 1'b1;
+				route_req_5_mask = 1'b1;
+				route_req_6_mask = 1'b0;
+				route_req_7_mask = 1'b1;
 			end
 		`IO_XBAR_ROUTE_7:
 			begin
-				route_req_0_mask <= 1'b1;
-				route_req_1_mask <= 1'b1;
-				route_req_2_mask <= 1'b1;
-				route_req_3_mask <= 1'b1;
-				route_req_4_mask <= 1'b1;
-				route_req_5_mask <= 1'b1;
-				route_req_6_mask <= 1'b1;
-				route_req_7_mask <= 1'b0;
+				route_req_0_mask = 1'b1;
+				route_req_1_mask = 1'b1;
+				route_req_2_mask = 1'b1;
+				route_req_3_mask = 1'b1;
+				route_req_4_mask = 1'b1;
+				route_req_5_mask = 1'b1;
+				route_req_6_mask = 1'b1;
+				route_req_7_mask = 1'b0;
 			end
 		default:
 			begin
-				route_req_0_mask <= 1'b1;
-				route_req_1_mask <= 1'b1;
-				route_req_2_mask <= 1'b1;
-				route_req_3_mask <= 1'b1;
-				route_req_4_mask <= 1'b1;
-				route_req_5_mask <= 1'b1;
-				route_req_6_mask <= 1'b1;
-				route_req_7_mask <= 1'b1;
+				route_req_0_mask = 1'b1;
+				route_req_1_mask = 1'b1;
+				route_req_2_mask = 1'b1;
+				route_req_3_mask = 1'b1;
+				route_req_4_mask = 1'b1;
+				route_req_5_mask = 1'b1;
+				route_req_6_mask = 1'b1;
+				route_req_7_mask = 1'b1;
 			end
 
 		/*
@@ -565,14 +565,14 @@ begin
 	else
 	begin
 	
-		route_req_0_mask <= 1'b1;
-		route_req_1_mask <= 1'b1;
-		route_req_2_mask <= 1'b1;
-		route_req_3_mask <= 1'b1;
-		route_req_4_mask <= 1'b1;
-		route_req_5_mask <= 1'b1;
-		route_req_6_mask <= 1'b1;
-		route_req_7_mask <= 1'b1;
+		route_req_0_mask = 1'b1;
+		route_req_1_mask = 1'b1;
+		route_req_2_mask = 1'b1;
+		route_req_3_mask = 1'b1;
+		route_req_4_mask = 1'b1;
+		route_req_5_mask = 1'b1;
+		route_req_6_mask = 1'b1;
+		route_req_7_mask = 1'b1;
 
 	/*
 	//original
@@ -586,83 +586,83 @@ begin
 end
 
 //calculation of new_route_needed
-always @ (planned_f or tail_current_route or valid_out_internal or default_ready)
+always_comb
 begin
 	case({default_ready, valid_out_internal, tail_current_route, planned_f}) //synopsys parallel_case
-	4'b0000:	new_route_needed <= 1'b1;
-	4'b0001:	new_route_needed <= 1'b0;
-	4'b0010:	new_route_needed <= 1'b1;
-	4'b0011:	new_route_needed <= 1'b0;
-	4'b0100:	new_route_needed <= 1'b0;	//This line should probably be turned to a 1 if we are to implement "Mikes fairness" schema
-	4'b0101:	new_route_needed <= 1'b0;	//This line should probably be turned to a 1 if we are to implement "Mikes fairness" schema
-	4'b0110:	new_route_needed <= 1'b1;
-	4'b0111:	new_route_needed <= 1'b1;
+	4'b0000:	new_route_needed = 1'b1;
+	4'b0001:	new_route_needed = 1'b0;
+	4'b0010:	new_route_needed = 1'b1;
+	4'b0011:	new_route_needed = 1'b0;
+	4'b0100:	new_route_needed = 1'b0;	//This line should probably be turned to a 1 if we are to implement "Mikes fairness" schema
+	4'b0101:	new_route_needed = 1'b0;	//This line should probably be turned to a 1 if we are to implement "Mikes fairness" schema
+	4'b0110:	new_route_needed = 1'b1;
+	4'b0111:	new_route_needed = 1'b1;
 
-	4'b1000:	new_route_needed <= 1'b1;
-	4'b1001:	new_route_needed <= 1'b0;
+	4'b1000:	new_route_needed = 1'b1;
+	4'b1001:	new_route_needed = 1'b0;
 //	4'b1010:	new_route_needed <= 1'b0;	//this is scary CHECK THIS BEFORE CHIP SHIPS
-	4'b1010:	new_route_needed <= 1'b1;	//this is the case where there is a zero length message on the default route that is not being sent this cycle therefore we should let something be locked in, but it doesn't necessarily just the default route.  Remember that the default route is the last choice in the priority encoder, but if nothing else is requesting, the default route will be planned and locked in.
+	4'b1010:	new_route_needed = 1'b1;	//this is the case where there is a zero length message on the default route that is not being sent this cycle therefore we should let something be locked in, but it doesn't necessarily just the default route.  Remember that the default route is the last choice in the priority encoder, but if nothing else is requesting, the default route will be planned and locked in.
     //yanqiz change from 0->1
-	4'b1011:	new_route_needed <= 1'b0;
-	4'b1100:	new_route_needed <= 1'b0;
-	4'b1101:	new_route_needed <= 1'b0;
-	4'b1110:	new_route_needed <= 1'b1;
-	4'b1111:	new_route_needed <= 1'b1;
-	default:	new_route_needed <= 1'b1;
+	4'b1011:	new_route_needed = 1'b0;
+	4'b1100:	new_route_needed = 1'b0;
+	4'b1101:	new_route_needed = 1'b0;
+	4'b1110:	new_route_needed = 1'b1;
+	4'b1111:	new_route_needed = 1'b1;
+	default:	new_route_needed = 1'b1;
 			//safest choice should never occur
 	endcase
 end
 
 //calculation of planned_temp
 //random five input function
-always @ (planned_f or tail_current_route or valid_out_internal or default_ready or route_req_all_or_with_planned or route_req_all_but_default)
+always_comb
 begin
 	case({route_req_all_or_with_planned, default_ready, valid_out_internal, tail_current_route, planned_f}) //synopsys parallel_case
-	5'b00000:	planned_temp <= 1'b0;
-	5'b00001:	planned_temp <= 1'b1;
-	5'b00010:	planned_temp <= 1'b0;
-	5'b00011:	planned_temp <= 1'b1;
-	5'b00100:	planned_temp <= 1'b0;	//error what did we just send
-	5'b00101:	planned_temp <= 1'b1;
-	5'b00110:	planned_temp <= 1'b0;	//error
-	5'b00111:	planned_temp <= 1'b0;
+	5'b00000:	planned_temp = 1'b0;
+	5'b00001:	planned_temp = 1'b1;
+	5'b00010:	planned_temp = 1'b0;
+	5'b00011:	planned_temp = 1'b1;
+	5'b00100:	planned_temp = 1'b0;	//error what did we just send
+	5'b00101:	planned_temp = 1'b1;
+	5'b00110:	planned_temp = 1'b0;	//error
+	5'b00111:	planned_temp = 1'b0;
 
-	5'b01000:	planned_temp <= 1'b0;	//error
-	5'b01001:	planned_temp <= 1'b1;
-	5'b01010:	planned_temp <= 1'b0;	//This actually cannot happen
-	5'b01011:	planned_temp <= 1'b1;
-	5'b01100:	planned_temp <= 1'b0;	//What did we just send?
-	5'b01101:	planned_temp <= 1'b1;
-	5'b01110:	planned_temp <= 1'b0;	//error
-	5'b01111:	planned_temp <= 1'b0;	//The default route is
+	5'b01000:	planned_temp = 1'b0;	//error
+	5'b01001:	planned_temp = 1'b1;
+	5'b01010:	planned_temp = 1'b0;	//This actually cannot happen
+	5'b01011:	planned_temp = 1'b1;
+	5'b01100:	planned_temp = 1'b0;	//What did we just send?
+	5'b01101:	planned_temp = 1'b1;
+	5'b01110:	planned_temp = 1'b0;	//error
+	5'b01111:	planned_temp = 1'b0;	//The default route is
 						//currently planned but
 						//is ending this cycle
 						//and nobody else wants to go
 						//This is a delayed zero length
 						//message on the through route
-	5'b10000:	planned_temp <= 1'b1;
-	5'b10001:	planned_temp <= 1'b1;
-	5'b10010:	planned_temp <= 1'b1;
-	5'b10011:	planned_temp <= 1'b1;
-	5'b10100:	planned_temp <= 1'b1;
-	5'b10101:	planned_temp <= 1'b1;
-	5'b10110:	planned_temp <= 1'b1;
-	5'b10111:	planned_temp <= 1'b1;
-	5'b11000:	planned_temp <= 1'b1;
-	5'b11001:	planned_temp <= 1'b1;
-	5'b11010:	planned_temp <= 1'b1;
-	5'b11011:	planned_temp <= 1'b1;
-	5'b11100:	planned_temp <= 1'b1;
-	5'b11101:	planned_temp <= 1'b1;
+	5'b10000:	planned_temp = 1'b1;
+	5'b10001:	planned_temp = 1'b1;
+	5'b10010:	planned_temp = 1'b1;
+	5'b10011:	planned_temp = 1'b1;
+	5'b10100:	planned_temp = 1'b1;
+	5'b10101:	planned_temp = 1'b1;
+	5'b10110:	planned_temp = 1'b1;
+	5'b10111:	planned_temp = 1'b1;
+	5'b11000:	planned_temp = 1'b1;
+	5'b11001:	planned_temp = 1'b1;
+	5'b11010:	planned_temp = 1'b1;
+	5'b11011:	planned_temp = 1'b1;
+	5'b11100:	planned_temp = 1'b1;
+	5'b11101:	planned_temp = 1'b1;
 //	5'b11110:	planned_temp <= 1'b0;	//This is wrong becasue if
 						//there is a default
 						//route zero length message
 						//that is being sent and
 						//somebody else wants to send
 						//on the next cycle
-	5'b11110:	planned_temp <= route_req_all_but_default;
-	5'b11111:	planned_temp <= 1'b1;
-	default:	planned_temp <= 1'b0;
+	5'b11110:	planned_temp = route_req_all_but_default;
+	5'b11111:	planned_temp = 1'b1;
+	default:	planned_temp = 1'b0;
 	endcase
 end
 
