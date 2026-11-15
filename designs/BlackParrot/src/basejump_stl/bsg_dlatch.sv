@@ -12,7 +12,7 @@ module bsg_dlatch #(parameter `BSG_INV_PARAM(width_p)
     $fatal( 1, "Error: you must admit this is a bad idea before you are allowed to use the bsg_dlatch module!" );
 
   logic [width_p-1:0] data_r;
-  always_latch
+  always @(clk_i or data_i)
     begin
       if (clk_i)
         data_r <= data_i;
