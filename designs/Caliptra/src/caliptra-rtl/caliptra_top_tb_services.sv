@@ -2559,14 +2559,33 @@ endgenerate //IV_NO
         dummy_iccm_preloader.ram = '{default:8'h0};
         dummy_dccm_preloader.ram = '{default:8'h0};
         `endif
+        // These files give byte addresses, and a $readmemh address names a
+        // word of a memory's first dimension (IEEE 1800-2023 21.4.3), so each
+        // file is read into a byte array and copied into the memory's rows.
         hex_file_is_empty = $system("test -s program.hex");
-        if (!hex_file_is_empty) $readmemh("program.hex",  imem_inst1.ram,0,`CALIPTRA_IMEM_BYTE_SIZE-1);
+        if (!hex_file_is_empty) begin : load_program_hex
+            bit [7:0] image [`CALIPTRA_IMEM_BYTE_SIZE];
+            $readmemh("program.hex", image, 0, `CALIPTRA_IMEM_BYTE_SIZE-1);
+            foreach (image[i]) imem_inst1.ram[i / (`CALIPTRA_IMEM_DATA_WIDTH/8)][i % (`CALIPTRA_IMEM_DATA_WIDTH/8)] = image[i];
+        end
         hex_file_is_empty = $system("test -s mailbox.hex");
-        if (!hex_file_is_empty) $readmemh("mailbox.hex",  dummy_mbox_preloader.ram,0,MBOX_DIR_MEM_SIZE-1);
+        if (!hex_file_is_empty) begin : load_mailbox_hex
+            bit [7:0] image [MBOX_DIR_MEM_SIZE];
+            $readmemh("mailbox.hex", image, 0, MBOX_DIR_MEM_SIZE-1);
+            foreach (image[i]) dummy_mbox_preloader.ram[i / (CPTRA_MBOX_DATA_W/8)][i % (CPTRA_MBOX_DATA_W/8)] = image[i];
+        end
         hex_file_is_empty = $system("test -s dccm.hex");
-        if (!hex_file_is_empty) $readmemh("dccm.hex",     dummy_dccm_preloader.ram,0,`RV_DCCM_EADR - `RV_DCCM_SADR);
+        if (!hex_file_is_empty) begin : load_dccm_hex
+            bit [7:0] image [`RV_DCCM_EADR - `RV_DCCM_SADR + 1];
+            $readmemh("dccm.hex", image, 0, `RV_DCCM_EADR - `RV_DCCM_SADR);
+            foreach (image[i]) dummy_dccm_preloader.ram[i / DCCM_PRELOADER_BYTE_WIDTH][i % DCCM_PRELOADER_BYTE_WIDTH] = image[i];
+        end
         hex_file_is_empty = $system("test -s iccm.hex");
-        if (!hex_file_is_empty) $readmemh("iccm.hex",     dummy_iccm_preloader.ram,0,`RV_ICCM_EADR - `RV_ICCM_SADR);
+        if (!hex_file_is_empty) begin : load_iccm_hex
+            bit [7:0] image [`RV_ICCM_EADR - `RV_ICCM_SADR + 1];
+            $readmemh("iccm.hex", image, 0, `RV_ICCM_EADR - `RV_ICCM_SADR);
+            foreach (image[i]) dummy_iccm_preloader.ram[i / ICCM_PRELOADER_BYTE_WIDTH][i % ICCM_PRELOADER_BYTE_WIDTH] = image[i];
+        end
 
         begin
           int unsigned iterations;
