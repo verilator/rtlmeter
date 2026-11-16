@@ -136,6 +136,24 @@ module chip_sim_tb;
   `undef RV_CORE_IBEX
   `undef SIM_SRAM_IF
 
+  // The workload images contain only flash data. Initialize the information
+  // pages read during boot explicitly, matching the zero contents used by
+  // these benchmarks under Verilator's default initialization policy.
+  `define FLASH_INFO_MEM(bank, info_type) \
+    u_dut.top_earlgrey.u_flash_ctrl.u_eflash.u_flash.gen_generic.u_impl_generic \
+      .gen_prim_flash_banks[bank].u_prim_flash_bank.gen_info_types[info_type] \
+      .u_info_mem.gen_generic.u_impl_generic.mem
+  for (genvar bank = 0; bank < flash_ctrl_pkg::NumBanks; bank++) begin : gen_flash_info_init
+    for (genvar info_type = 0; info_type < flash_ctrl_pkg::InfoTypes; info_type++) begin : gen_type
+      initial begin
+        for (int word_idx = 0; word_idx < $size(`FLASH_INFO_MEM(bank, info_type)); word_idx++) begin
+          `FLASH_INFO_MEM(bank, info_type)[word_idx] = '0;
+        end
+      end
+    end
+  end
+  `undef FLASH_INFO_MEM
+
   initial begin
     $readmemh(
       "rom.vmem",

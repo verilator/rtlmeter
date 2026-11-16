@@ -220,16 +220,21 @@ module chip_earlgrey_verilator (
   assign pad2ast = '0;
 
   logic clk_aon;
-  // reset is not used below becuase verilator uses only sync resets
-  // and also does not under 'x'.
-  // if we allow the divider below to reset, clk_aon will be silenced,
-  // and as a result all the clk_aon logic inside top_earlgrey does not
-  // get reset
+  // Initialize the AON divider and power-sequence counter before the first
+  // testbench clock edge. Keep this reset separate from POR so clk_aon keeps
+  // running while the design is held in reset.
+  logic aon_startup_rst_n = 1'b1;
+  initial begin
+    #1;
+    aon_startup_rst_n = 1'b0;
+    #1;
+    aon_startup_rst_n = 1'b1;
+  end
   prim_clock_div #(
     .Divisor(4)
   ) u_aon_div (
     .clk_i,
-    .rst_ni(1'b1),
+    .rst_ni(aon_startup_rst_n),
     .step_down_req_i('0),
     .step_down_ack_o(),
     .test_en_i('0),
@@ -253,8 +258,10 @@ module chip_earlgrey_verilator (
   logic vcc_supp;
 
   // keep incrementing until saturation
-  always_ff @(posedge clk_aon) begin
-    if (cnt < 4'hf) begin
+  always_ff @(posedge clk_aon or negedge aon_startup_rst_n) begin
+    if (!aon_startup_rst_n) begin
+      cnt <= '0;
+    end else if (cnt < 4'hf) begin
       cnt <= cnt + 1'b1;
     end
   end
@@ -502,6 +509,7 @@ module chip_earlgrey_verilator (
   ) top_earlgrey (
     // update por / reset connections, this is not quite right here
     .por_n_i                      (por_n             ),
+    .fpga_info_i                  (32'h0             ),
     .clk_main_i                   (clk_i             ),
     .clk_io_i                     (clk_i             ),
     .clk_usb_i                    (clk_i             ),
