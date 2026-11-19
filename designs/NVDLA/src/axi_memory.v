@@ -100,6 +100,8 @@ module axi_memory #(
   always @(posedge clk) begin
     if (!reset) begin
       wempty <= 1'b1;
+      rvalid <= 1'b0;
+      bvalid <= 1'b0;
       cycle <= 64'd0;
       if (wqueue.size() != 0) $error("wqueue not empty at reset");
       if (bqueue.size() != 0) $error("bqueue not empty at reset");
