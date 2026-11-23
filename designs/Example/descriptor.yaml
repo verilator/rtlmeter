@@ -11,6 +11,9 @@ compile:
   mainClock: top.clk
 
 execute:
+  common:
+    # All tests run for the same number of main clock cycles
+    expectedCycles: 1000000
   tests:
     hello:
       # Run without any arguments

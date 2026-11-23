@@ -96,13 +96,17 @@ configurations:
       tests:
         hello:
           tags: [ sanity ]
+          expectedCycles: 2229
         cmark:
           args: [ +iterations=14 ]
+          expectedCycles: 5277908
         cmark_iccm:
           args: [ +iterations=22 ]
+          expectedCycles: 6025629
         dhry:
           args: [ +iterations=17500 ]
           tags: [ standard ]
+          expectedCycles: 5984259
 
   hiperf:
     compile:
@@ -113,12 +117,17 @@ configurations:
         - src/hiperf/pic_map_auto.h
     execute:
       tests:
+        hello:
+          expectedCycles: 2231
         cmark:
           args: [ +iterations=11 ]
+          expectedCycles: 4142321
         cmark_iccm:
           args: [ +iterations=16 ]
+          expectedCycles: 4375757
         dhry:
           args: [ +iterations=13600 ]
+          expectedCycles: 4654380
 
   asic:
     compile:
@@ -129,11 +138,16 @@ configurations:
         - src/asic/pic_map_auto.h
     execute:
       tests:
+        hello:
+          expectedCycles: 2229
         cmark:
           args: [ +iterations=6 ]
+          expectedCycles: 2276050
         cmark_iccm:
           args: [ +iterations=9 ]
+          expectedCycles: 2476047
         dhry:
           args: [ +iterations=7000 ]
+          expectedCycles: 2403723
 
 

@@ -59,26 +59,36 @@ configurations:
   serv:
     execute:
       tests:
+        hello:
+          expectedCycles: 53738
         cmark:
           args:
             - "+iterations=2"
+          expectedCycles: 104636599
         dhry:
           args:
             - "+iterations=2500"
+          expectedCycles: 115529887
         phil:
           args:
             - "+iterations=20"
+          expectedCycles: 122144087
   qerv:
     compile:
       verilatorArgs: [-Gwidth=4]
     execute:
       tests:
+        hello:
+          expectedCycles: 16560
         cmark:
           args:
             - "+iterations=7"
+          expectedCycles: 107456741
         dhry:
           args:
             - "+iterations=8000"
+          expectedCycles: 108534965
         phil:
           args:
             - "+iterations=30"
+          expectedCycles: 119962620

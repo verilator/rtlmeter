@@ -312,6 +312,7 @@ execute:
         - tests/hello/inst.pat
       tags:
         - sanity
+      expectedCycles: 3326
     cmark:
       files:
         - tests/cmark/data.pat
@@ -320,9 +321,11 @@ execute:
         - +iterations=9
       tags:
         - standard
+      expectedCycles: 2578397
     memcpy:
       files:
         - tests/memcpy/data.pat
         - tests/memcpy/inst.pat
       args:
         - +iterations=7000
+      expectedCycles: 2694375

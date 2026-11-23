@@ -193,11 +193,14 @@ configurations:
       tests:
         hello:
           tags: [ sanity ]
+          expectedCycles: 40897
         sgemm:
           args: [ +iterations=3 ]
           tags: [ standard ]
+          expectedCycles: 4186488
         saxpy:
           args: [ +iterations=3 ]
+          expectedCycles: 3846786
 
   sane:
     compile:
@@ -208,11 +211,15 @@ configurations:
         NUM_THREADS: 8
     execute:
       tests:
+        hello:
+          expectedCycles: 77398
         sgemm:
           args: [ +iterations=1 ]
+          expectedCycles: 161875
         saxpy:
           args: [ +iterations=1 ]
           tags: [ standard ]
+          expectedCycles: 166501
 
   huge:
     compile:

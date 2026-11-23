@@ -263,6 +263,11 @@ by being self checking, and terminate the simulation with a non-zero exist
 status, or you can use the test ``postHook`` in the design descriptor to run an
 external script that can check output or log files.
 
+Please also record the number of simulated clock cycles of each case using
+``expectedCycles`` in the design descriptor. Clock cycle counts should be
+deterministic, so this provides an additional sanity check on simulation
+behavior.
+
 Otherwise there is no restriction on what a test does when it is executed, but
 there are some helpful considerations.
 

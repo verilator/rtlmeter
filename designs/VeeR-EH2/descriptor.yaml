@@ -101,19 +101,26 @@ configurations:
       tests:
         hello:
           tags: [ sanity ]
+          expectedCycles: 2325
         cmark:
           args: [ +iterations=4 ]
+          expectedCycles: 1977460
         cmark_mt:
           args: [ +iterations=4 ]
+          expectedCycles: 2205574
         cmark_iccm:
           args: [ +iterations=9 ]
+          expectedCycles: 1931665
         cmark_iccm_mt:
           args: [ +iterations=6 ]
           tags: [ standard ]
+          expectedCycles: 1870617
         dhry:
           args: [ +iterations=7700 ]
+          expectedCycles: 1945683
         dhry_mt:
           args: [ +iterations=6300 ]
+          expectedCycles: 1872247
 
   hiperf:
     compile:
@@ -124,18 +131,26 @@ configurations:
         - src/hiperf/pic_map_auto.h
     execute:
       tests:
+        hello:
+          expectedCycles: 2348
         cmark:
           args: [ +iterations=2 ]
+          expectedCycles: 995619
         cmark_mt:
           args: [ +iterations=2 ]
+          expectedCycles: 1108560
         cmark_iccm:
           args: [ +iterations=5 ]
+          expectedCycles: 1062861
         cmark_iccm_mt:
           args: [ +iterations=4 ]
+          expectedCycles: 1240092
         dhry:
           args: [ +iterations=3800 ]
+          expectedCycles: 966863
         dhry_mt:
           args: [ +iterations=3300 ]
+          expectedCycles: 947773
 
   asic:
     compile:
@@ -146,16 +161,24 @@ configurations:
         - src/asic/pic_map_auto.h
     execute:
       tests:
+        hello:
+          expectedCycles: 2325
         cmark:
           args: [ +iterations=2 ]
+          expectedCycles: 1002875
         cmark_mt:
           args: [ +iterations=2 ]
+          expectedCycles: 1118081
         cmark_iccm:
           args: [ +iterations=3 ]
+          expectedCycles: 653417
         cmark_iccm_mt:
           args: [ +iterations=3 ]
+          expectedCycles: 944538
         dhry:
           args: [ +iterations=2600 ]
+          expectedCycles: 665528
         dhry_mt:
           args: [ +iterations=2100 ]
+          expectedCycles: 633216
 

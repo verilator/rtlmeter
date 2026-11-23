@@ -679,6 +679,7 @@ execute:
         - tests/hello/iccm.hex
         - tests/hello/mailbox.hex
         - tests/hello/program.hex
+      expectedCycles: 4870
     hmac:
       args: [ +iterations=1 ]
       tags: [ standard ]
@@ -687,6 +688,7 @@ execute:
         - tests/hmac/iccm.hex
         - tests/hmac/mailbox.hex
         - tests/hmac/program.hex
+      expectedCycles: 74529
     mlkem:
       args: [ +iterations=1 ]
       files:
@@ -694,6 +696,7 @@ execute:
         - tests/mlkem/iccm.hex
         - tests/mlkem/mailbox.hex
         - tests/mlkem/program.hex
+      expectedCycles: 299403
     sha3:
       args: [ +iterations=1 ]
       files:
@@ -701,6 +704,7 @@ execute:
         - tests/sha3/iccm.hex
         - tests/sha3/mailbox.hex
         - tests/sha3/program.hex
+      expectedCycles: 94259
     trng:
       args: [ +iterations=1 ]
       files:
@@ -708,3 +712,4 @@ execute:
         - tests/trng/iccm.hex
         - tests/trng/mailbox.hex
         - tests/trng/program.hex
+      expectedCycles: 121296

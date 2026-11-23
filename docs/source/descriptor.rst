@@ -205,6 +205,16 @@ Execute descriptor
    simulation.  You can use this for example to check output files are correct,
    if necessary.
 
+``expectedCycles``
+
+   The number of main clock cycles the simulation is expected to run for.
+   If given, after simulation (and after the ``postHook``, if any), RTLMeter
+   checks that the number of simulated clock cycles equals this value, and
+   fails the case if it differs. As the number of cycles usually depends on the
+   configuration, this is normally given in the configuration and test specific
+   execute descriptor. The check is skipped when running with the
+   ``+max_cycles`` simulator argument.
+
 .. _combining-descriptors:
 
 Combining descriptors

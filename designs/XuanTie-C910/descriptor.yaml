@@ -490,12 +490,14 @@ execute:
         - tests/hello/inst.pat
       tags:
         - sanity
+      expectedCycles: 4470
     cmark:
       files:
         - tests/cmark/data.pat
         - tests/cmark/inst.pat
       args:
         - +iterations=1
+      expectedCycles: 200737
     memcpy:
       files:
         - tests/memcpy/data.pat
@@ -504,3 +506,4 @@ execute:
         - +iterations=900
       tags:
         - standard
+      expectedCycles: 232771

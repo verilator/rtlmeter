@@ -443,6 +443,7 @@ execute:
         - tests/relu/mem-expect-0.hex
       tags:
         - sanity
+      expectedCycles: 2400
     conv:
       files:
         - tests/conv/input.txn.raw
@@ -451,6 +452,7 @@ execute:
         - tests/conv/mem-expect-0.hex
       args:
         - +iterations=9
+      expectedCycles: 68672
     pool:
       files:
         - tests/pool/input.txn.raw
@@ -458,6 +460,7 @@ execute:
         - tests/pool/mem-expect-0.hex
       args:
         - +iterations=28
+      expectedCycles: 81724
     relu:
       files:
         - tests/relu/input.txn.raw
@@ -465,6 +468,7 @@ execute:
         - tests/relu/mem-expect-0.hex
       args:
         - +iterations=34
+      expectedCycles: 80940
     gnet:
       files:
         - tests/gnet/input.txn.raw
@@ -474,6 +478,7 @@ execute:
         - tests/gnet/mem-expect-0.hex
       args:
         - +iterations=1
+      expectedCycles: 48409
     anet:
       files:
         - tests/anet/input.txn.raw
@@ -482,3 +487,4 @@ execute:
         - tests/anet/mem-expect-0.hex
       args:
         - +iterations=1
+      expectedCycles: 157951
