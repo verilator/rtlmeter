@@ -341161,7 +341161,6 @@ module LoadQueueReplay(
     s0_can_go_REG_bits_robIdx_value <= io_redirect_bits_robIdx_value;
     s0_can_go_REG_bits_level <= io_redirect_bits_level;
     if (s0_can_go) begin
-      s1_oldestSel_0_valid_r <= s0_oldestSel_0_valid;
       s1_oldestSel_0_bits_r <=
         {|(oldestSel[5:4]),
          |(oldestSel[3:2]),
@@ -341173,7 +341172,6 @@ module LoadQueueReplay(
     s0_can_go_REG_1_bits_robIdx_value <= io_redirect_bits_robIdx_value;
     s0_can_go_REG_1_bits_level <= io_redirect_bits_level;
     if (s0_can_go_1) begin
-      s1_oldestSel_1_valid_r <= s0_oldestSel_1_valid;
       s1_oldestSel_1_bits_r <=
         {|(oldestSel_1[5:4]),
          |(oldestSel_1[3:2]),
@@ -341184,18 +341182,6 @@ module LoadQueueReplay(
     s1_cancel_REG_bits_robIdx_flag <= io_redirect_bits_robIdx_flag;
     s1_cancel_REG_bits_robIdx_value <= io_redirect_bits_robIdx_value;
     s1_cancel_REG_bits_level <= io_redirect_bits_level;
-    if (s1_can_go_0 | _lastReplay_WIRE_0)
-      s2_oldestSel_0_valid_r <=
-        s1_can_go_0 & s1_oldestSel_0_valid_r
-        & ~(io_redirect_valid
-            & (io_redirect_bits_level
-               & _s1_cancel_flushItself_T_5 == _needCancel_11_flushItself_T_2
-               | s1_cancel_differentFlag ^ s1_cancel_compare) | s1_cancel_REG_valid
-            & (s1_cancel_REG_bits_level
-               & _s1_cancel_flushItself_T_5 == {s1_cancel_REG_bits_robIdx_flag,
-                                                s1_cancel_REG_bits_robIdx_value} | _GEN_4
-               ^ s1_cancel_REG_bits_robIdx_flag
-               ^ _GEN_6 > s1_cancel_REG_bits_robIdx_value));
     if (s1_can_go_0) begin
       s2_oldestSel_0_bits_r <= s1_oldestSel_0_bits_r;
       s2_replayUop_cf_exceptionVec_6 <= _GEN_252[s1_oldestSel_0_bits_r];
@@ -341233,18 +341219,6 @@ module LoadQueueReplay(
     s1_cancel_REG_1_bits_robIdx_flag <= io_redirect_bits_robIdx_flag;
     s1_cancel_REG_1_bits_robIdx_value <= io_redirect_bits_robIdx_value;
     s1_cancel_REG_1_bits_level <= io_redirect_bits_level;
-    if (s1_can_go_1 | _lastReplay_WIRE_1)
-      s2_oldestSel_1_valid_r <=
-        s1_can_go_1 & s1_oldestSel_1_valid_r
-        & ~(io_redirect_valid
-            & (io_redirect_bits_level
-               & _s1_cancel_flushItself_T_13 == _needCancel_11_flushItself_T_2
-               | s1_cancel_differentFlag_2 ^ s1_cancel_compare_2) | s1_cancel_REG_1_valid
-            & (s1_cancel_REG_1_bits_level
-               & _s1_cancel_flushItself_T_13 == {s1_cancel_REG_1_bits_robIdx_flag,
-                                                 s1_cancel_REG_1_bits_robIdx_value}
-               | _GEN_7 ^ s1_cancel_REG_1_bits_robIdx_flag
-               ^ _GEN_8 > s1_cancel_REG_1_bits_robIdx_value));
     if (s1_can_go_1) begin
       s2_oldestSel_1_bits_r <= s1_oldestSel_1_bits_r;
       s2_replayUop_1_cf_exceptionVec_6 <= _GEN_252[s1_oldestSel_1_bits_r];
@@ -341280,6 +341254,46 @@ module LoadQueueReplay(
     end
     lastReplay_0 <= _lastReplay_WIRE_0;
     lastReplay_1 <= _lastReplay_WIRE_1;
+  end
+  // The replay selection valids are reset, as XiangShan does since
+  // https://github.com/OpenXiangShan/XiangShan/pull/2831
+  always @(posedge clock or posedge reset) begin
+    if (reset) begin
+      s1_oldestSel_0_valid_r <= 1'h0;
+      s1_oldestSel_1_valid_r <= 1'h0;
+      s2_oldestSel_0_valid_r <= 1'h0;
+      s2_oldestSel_1_valid_r <= 1'h0;
+    end
+    else begin
+      if (s0_can_go)
+        s1_oldestSel_0_valid_r <= s0_oldestSel_0_valid;
+      if (s0_can_go_1)
+        s1_oldestSel_1_valid_r <= s0_oldestSel_1_valid;
+      if (s1_can_go_0 | _lastReplay_WIRE_0)
+        s2_oldestSel_0_valid_r <=
+          s1_can_go_0 & s1_oldestSel_0_valid_r
+          & ~(io_redirect_valid
+              & (io_redirect_bits_level
+                 & _s1_cancel_flushItself_T_5 == _needCancel_11_flushItself_T_2
+                 | s1_cancel_differentFlag ^ s1_cancel_compare) | s1_cancel_REG_valid
+              & (s1_cancel_REG_bits_level
+                 & _s1_cancel_flushItself_T_5 == {s1_cancel_REG_bits_robIdx_flag,
+                                                  s1_cancel_REG_bits_robIdx_value} | _GEN_4
+                 ^ s1_cancel_REG_bits_robIdx_flag
+                 ^ _GEN_6 > s1_cancel_REG_bits_robIdx_value));
+      if (s1_can_go_1 | _lastReplay_WIRE_1)
+        s2_oldestSel_1_valid_r <=
+          s1_can_go_1 & s1_oldestSel_1_valid_r
+          & ~(io_redirect_valid
+              & (io_redirect_bits_level
+                 & _s1_cancel_flushItself_T_13 == _needCancel_11_flushItself_T_2
+                 | s1_cancel_differentFlag_2 ^ s1_cancel_compare_2) | s1_cancel_REG_1_valid
+              & (s1_cancel_REG_1_bits_level
+                 & _s1_cancel_flushItself_T_13 == {s1_cancel_REG_1_bits_robIdx_flag,
+                                                   s1_cancel_REG_1_bits_robIdx_value}
+                 | _GEN_7 ^ s1_cancel_REG_1_bits_robIdx_flag
+                 ^ _GEN_8 > s1_cancel_REG_1_bits_robIdx_value));
+    end
   end
   `ifdef ENABLE_INITIAL_REG_
     `ifdef FIRRTL_BEFORE_INITIAL
@@ -342084,6 +342098,10 @@ module LoadQueueReplay(
         check_cond_REG_19 = 1'h0;
         replay_hint_priority_beat1Counter = 64'h0;
         check_cond_REG_20 = 1'h0;
+        s1_oldestSel_0_valid_r = 1'h0;
+        s1_oldestSel_1_valid_r = 1'h0;
+        s2_oldestSel_0_valid_r = 1'h0;
+        s2_oldestSel_1_valid_r = 1'h0;
       end
     end
     `ifdef FIRRTL_AFTER_INITIAL

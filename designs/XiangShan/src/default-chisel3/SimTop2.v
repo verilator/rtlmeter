@@ -128264,9 +128264,6 @@ module LoadQueueReplay(
     if (s0_can_go) begin
       s1_oldestSel_0_bits_r <= _s1_oldestSel_0_bits_T_18;
     end
-    if (s1_can_go_0 | _s1_can_go_0_T_4) begin
-      s2_oldestSel_0_valid_r <= s1_can_go_0 & s1_oldestSelV;
-    end
     if (s1_can_go_0) begin
       if (7'h47 == s1_oldestSel_0_bits_r) begin
         s2_replayUop_robIdx_flag <= uop_71_robIdx_flag;
@@ -128293,14 +128290,8 @@ module LoadQueueReplay(
     s0_can_go_REG_bits_robIdx_flag <= io_redirect_bits_robIdx_flag;
     s0_can_go_REG_bits_robIdx_value <= io_redirect_bits_robIdx_value;
     s0_can_go_REG_bits_level <= io_redirect_bits_level;
-    if (s0_can_go) begin
-      s1_oldestSel_0_valid_r <= oldest_valid;
-    end
     if (s0_can_go_1) begin
       s1_oldestSel_1_bits_r <= _s1_oldestSel_1_bits_T_18;
-    end
-    if (s1_can_go_1 | _s1_can_go_1_T_4) begin
-      s2_oldestSel_1_valid_r <= s1_can_go_1 & s1_oldestSelV_1;
     end
     if (s1_can_go_1) begin
       if (7'h47 == s1_oldestSel_1_bits_r) begin
@@ -128328,9 +128319,6 @@ module LoadQueueReplay(
     s0_can_go_REG_1_bits_robIdx_flag <= io_redirect_bits_robIdx_flag;
     s0_can_go_REG_1_bits_robIdx_value <= io_redirect_bits_robIdx_value;
     s0_can_go_REG_1_bits_level <= io_redirect_bits_level;
-    if (s0_can_go_1) begin
-      s1_oldestSel_1_valid_r <= oldest_1_valid;
-    end
     s1_cancel_REG_valid <= io_redirect_valid;
     s1_cancel_REG_bits_robIdx_flag <= io_redirect_bits_robIdx_flag;
     s1_cancel_REG_bits_robIdx_value <= io_redirect_bits_robIdx_value;
@@ -140853,6 +140841,36 @@ module LoadQueueReplay(
       check_cond_REG_20 <= 1'h1;
     end
   end
+  // The replay selection valids are reset, as XiangShan does since
+  // https://github.com/OpenXiangShan/XiangShan/pull/2831
+  always @(posedge clock or posedge reset) begin
+    if (reset) begin
+      s1_oldestSel_0_valid_r <= 1'h0;
+    end else if (s0_can_go) begin
+      s1_oldestSel_0_valid_r <= oldest_valid;
+    end
+  end
+  always @(posedge clock or posedge reset) begin
+    if (reset) begin
+      s1_oldestSel_1_valid_r <= 1'h0;
+    end else if (s0_can_go_1) begin
+      s1_oldestSel_1_valid_r <= oldest_1_valid;
+    end
+  end
+  always @(posedge clock or posedge reset) begin
+    if (reset) begin
+      s2_oldestSel_0_valid_r <= 1'h0;
+    end else if (s1_can_go_0 | _s1_can_go_0_T_4) begin
+      s2_oldestSel_0_valid_r <= s1_can_go_0 & s1_oldestSelV;
+    end
+  end
+  always @(posedge clock or posedge reset) begin
+    if (reset) begin
+      s2_oldestSel_1_valid_r <= 1'h0;
+    end else if (s1_can_go_1 | _s1_can_go_1_T_4) begin
+      s2_oldestSel_1_valid_r <= s1_can_go_1 & s1_oldestSelV_1;
+    end
+  end
 
 `ifdef RANDOMIZE_GARBAGE_ASSIGN
 `define RANDOMIZE
@@ -148813,6 +148831,18 @@ initial begin
   end
   if (reset) begin
     check_cond_REG_20 = 1'h0;
+  end
+  if (reset) begin
+    s1_oldestSel_0_valid_r = 1'h0;
+  end
+  if (reset) begin
+    s1_oldestSel_1_valid_r = 1'h0;
+  end
+  if (reset) begin
+    s2_oldestSel_0_valid_r = 1'h0;
+  end
+  if (reset) begin
+    s2_oldestSel_1_valid_r = 1'h0;
   end
   `endif
 end
