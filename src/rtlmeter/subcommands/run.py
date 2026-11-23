@@ -98,12 +98,29 @@ def compile(
 def execute(
     cgraph: CGraph, descr: ExecuteDescriptor, compileDir: str, executeDir: str, extraArgs: List[str]
 ) -> Tuple[CNode, CNode]:
-    # Suppress post hook if has +max_cycles argument as run will not terminate normally
+    # Suppress post hook and cycle count check if has +max_cycles argument as
+    # run will not terminate normally
     hasMaxCycles = any(map(lambda _: _.startswith("+max_cycles="), extraArgs))
     # Execution
     startNode, endNode = sim.execute(cgraph, descr, compileDir, executeDir, extraArgs)
     # Add prep and post hooks
     startNode, endNode = addHooks(cgraph, descr, executeDir, startNode, endNode, hasMaxCycles)
+
+    # After everything else, check the number of simulated cycles, if given
+    def checkCycles() -> bool:
+        with open("_rtlmeter_cycles.txt", "r", encoding="utf-8") as fd:
+            cycles = int(fd.read())
+        if cycles != descr.expectedCycles:
+            misc.error(f"Simulated {cycles} cycles, but expected {descr.expectedCycles}")
+            return False
+        return True
+
+    if descr.expectedCycles is not None and not hasMaxCycles:
+        checkNode = cgraph.addNode(
+            f"{descr.case} - Check cycle count", executeDir, "checkCycles", checkCycles
+        )
+        cgraph.addEdge(endNode, checkNode)
+        endNode = checkNode
 
     # Before anything else, link resource files for execution
     def linkFiles() -> bool:

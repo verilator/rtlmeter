@@ -143,11 +143,13 @@ execute:
         - tests/hello/case.pat
       tags:
         - sanity
+      expectedCycles: 5393
     cmark:
       files:
         - tests/cmark/case.pat
       args:
         - +iterations=120
+      expectedCycles: 55492726
     memcpy:
       files:
         - tests/memcpy/case.pat
@@ -155,3 +157,4 @@ execute:
         - +iterations=60000
       tags:
         - standard
+      expectedCycles: 54683189

@@ -684,11 +684,13 @@ execute:
         - tests/hello/flash0.vmem
       tags:
         - sanity
+      expectedCycles: 102709
     cmark:
       files:
         - tests/cmark/flash0.vmem
       args:
         - +iterations=1
+      expectedCycles: 865439
     sha:
       files:
         - tests/sha/flash0.vmem
@@ -696,13 +698,16 @@ execute:
         - +iterations=3
       tags:
         - standard
+      expectedCycles: 679627
     rsa:
       files:
         - tests/rsa/flash0.vmem
       args:
         - +iterations=3
+      expectedCycles: 700037
     aes:
       files:
         - tests/aes/flash0.vmem
       args:
         - +iterations=3
+      expectedCycles: 665044

@@ -170,11 +170,15 @@ configurations:
         RTLMETER_FF_DELAY: "#1"
     execute:
       tests:
+        hello:
+          expectedCycles: 5080
         cmark:
           args: [ +iterations=2 ]
           tags: [ standard ]
+          expectedCycles: 1052628
         dhry:
           args: [ +iterations=1500 ]
+          expectedCycles: 1038170
 
   nodelay:
     compile:
@@ -182,7 +186,11 @@ configurations:
         RTLMETER_FF_DELAY: ""
     execute:
       tests:
+        hello:
+          expectedCycles: 5080
         cmark:
           args: [ +iterations=45 ]
+          expectedCycles: 23034498
         dhry:
           args: [ +iterations=34000 ]
+          expectedCycles: 22845855

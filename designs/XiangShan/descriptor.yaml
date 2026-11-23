@@ -67,8 +67,17 @@ configurations:
         - src/mini-chisel6/constantin.cpp
     execute:
       tests:
+        hello:
+          expectedCycles: 4804
         cmark:
           tags: [ standard ]
+          expectedCycles: 293571
+        dhry:
+          expectedCycles: 341981
+        microbench:
+          expectedCycles: 352165
+        linux:
+          expectedCycles: 6271466
 
   default-chisel6:
     compile:
@@ -83,6 +92,17 @@ configurations:
     execute:
       common:
         tags: [ large ]
+      tests:
+        hello:
+          expectedCycles: 10389
+        cmark:
+          expectedCycles: 186696
+        dhry:
+          expectedCycles: 144938
+        microbench:
+          expectedCycles: 230766
+        linux:
+          expectedCycles: 2967880
 
   mini-chisel3:
     compile:
@@ -98,8 +118,17 @@ configurations:
         NO_XS_ASSERT_BEFORE : 5
     execute:
       tests:
+        hello:
+          expectedCycles: 4804
+        cmark:
+          expectedCycles: 293571
+        dhry:
+          expectedCycles: 341981
         microbench:
           tags: [ standard ]
+          expectedCycles: 349526
+        linux:
+          expectedCycles: 6265922
 
   default-chisel3:
     compile:
@@ -117,3 +146,14 @@ configurations:
     execute:
       common:
         tags: [ large ]
+      tests:
+        hello:
+          expectedCycles: 10389
+        cmark:
+          expectedCycles: 186696
+        dhry:
+          expectedCycles: 144938
+        microbench:
+          expectedCycles: 232920
+        linux:
+          expectedCycles: 2965394

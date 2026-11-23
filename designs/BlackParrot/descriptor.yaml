@@ -438,37 +438,48 @@ configurations:
         hello:
           tags:
             - sanity
+          expectedCycles: 5481
         cmark:
           args: [ +iterations=8 ]
           files:
             - tests/cmark/1x1/prog.mem
           tags:
             - standard
+          expectedCycles: 2725898
         dhry:
           args: [ +iterations=15000 ]
+          expectedCycles: 2783858
   2x2:
     compile:
       verilogDefines:
         BP_CFG_FLOWVAR: e_bp_multicore_4_cfg
     execute:
       tests:
+        hello:
+          expectedCycles: 8014
         cmark:
           args: [ +iterations=1 ]
           files:
             - tests/cmark/2x2/prog.mem
+          expectedCycles: 548600
         dhry:
           args: [ +iterations=2200 ]
           tags:
             - standard
+          expectedCycles: 542828
   4x4:
     compile:
       verilogDefines:
         BP_CFG_FLOWVAR: e_bp_multicore_16_cfg
     execute:
       tests:
+        hello:
+          expectedCycles: 24109
         cmark:
           args: [ +iterations=1 ]
           files:
             - tests/cmark/4x4/prog.mem
+          expectedCycles: 876965
         dhry:
           args: [ +iterations=300 ]
+          expectedCycles: 221220

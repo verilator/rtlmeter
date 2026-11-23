@@ -353,17 +353,21 @@ configurations:
       tests:
         hello:
           tags: [ sanity ]
+          expectedCycles: 4753
         token:
           args:
             - +iterations=1100
+          expectedCycles: 1689951
         fib:
           args:
             - +iterations=900
           tags:
             - standard
+          expectedCycles: 1704395
         dhry:
           args:
             - +iterations=6200
+          expectedCycles: 1609277
   2x2:
     compile:
       verilogSourceFiles:
@@ -386,17 +390,22 @@ configurations:
         args:
           - +nCores=4
       tests:
+        hello:
+          expectedCycles: 6598
         token:
           args:
             - +iterations=110
+          expectedCycles: 480150
         fib:
           args:
             - +iterations=162
+          expectedCycles: 470015
         dhry:
           args:
             - +iterations=1700
           tags:
             - standard
+          expectedCycles: 448568
   4x4:
     compile:
       verilogSourceFiles:
@@ -419,15 +428,20 @@ configurations:
         args:
           - +nCores=16
       tests:
+        hello:
+          expectedCycles: 18511
         token:
           args:
             - +iterations=3
+          expectedCycles: 98171
         fib:
           args:
             - +iterations=6
+          expectedCycles: 100186
         dhry:
           args:
             - +iterations=2
+          expectedCycles: 111764
   8x8:
     compile:
       verilogSourceFiles:
@@ -450,15 +464,20 @@ configurations:
         args:
           - +nCores=64
       tests:
+        hello:
+          expectedCycles: 20692
         token:
           args:
             - +iterations=1
+          expectedCycles: 135886
         fib:
           args:
             - +iterations=1
+          expectedCycles: 42893
         dhry:
           args:
             - +iterations=1
+          expectedCycles: 60148
   16x16:
     compile:
       verilogSourceFiles:
@@ -490,6 +509,7 @@ configurations:
         dhry:
           args:
             - +iterations=1
+          expectedCycles: 144980
   32x32:
     compile:
       verilogSourceFiles:

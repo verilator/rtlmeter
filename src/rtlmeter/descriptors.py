@@ -156,6 +156,8 @@ class ExecuteDescriptor:
     files: List[str]
     tags: List[str]
 
+    expectedCycles: int | None
+
     def __init__(self, case: str) -> None:
         self.design, self.config, self.test = case.split(":")
         self.case = f"{self.design}:{self.config}:{self.test}"
@@ -191,3 +193,9 @@ class ExecuteDescriptor:
 
         # tags are optionsl
         self.tags = gatherList("tags")
+
+        # expectedCycles is optional
+        if (value := gatherScalar("expectedCycles")) is not None:
+            self.expectedCycles = int(value)
+        else:
+            self.expectedCycles = None

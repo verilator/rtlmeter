@@ -253,9 +253,11 @@ configurations:
         hello:
           args: [+nbf_file=amoadd.nbf, +num_finish=1, +iterations=1]
           tags: [sanity]
+          expectedCycles: 36402
         amoadd:
           args: [+nbf_file=amoadd.nbf, +num_finish=1, +iterations=90]
           tags: [standard]
+          expectedCycles: 260664
   2x1:
     compile:
       verilogDefines:
@@ -279,6 +281,8 @@ configurations:
         hello:
           args: [+nbf_file=amoadd.nbf, +num_finish=1, +iterations=1]
           tags: [sanity]
+          expectedCycles: 1182
         amoadd:
           args: [+nbf_file=amoadd.nbf, +num_finish=1, +iterations=60000]
           tags: [standard]
+          expectedCycles: 7801052

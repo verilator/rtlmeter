@@ -63,7 +63,8 @@ the following structure (with some entries omitted):
                 └── hello
                     ├── _files
                     ├── _execute
-                    └── _postHook
+                    ├── _postHook
+                    └── _checkCycles
 
 For a given configuration, compilation is performed, and artifacts are stored
 in the ``<DESIGN>/<CONFIGURATION>/compile-0`` subdirectory.
