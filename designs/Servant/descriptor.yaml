@@ -37,6 +37,8 @@ compile:
     - servile/servile.v
   topModule: servant_tb
   mainClock: servant_tb.wb_clk
+  verilatorArgs:
+    - -Wno-USEBEFOREDECL
 
 execute:
   common:
